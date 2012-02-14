@@ -1,0 +1,8 @@
+2012-02-07 21:14:56,658 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=MAP, sessionId=
+2012-02-07 21:14:57,328 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2012-02-07 21:14:57,534 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2012-02-07 21:14:57,534 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2012-02-07 21:14:58,936 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2012-02-07 21:15:00,331 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2012-02-07 21:15:00,353 INFO org.apache.hadoop.mapred.TaskRunner: Task:attempt_201202072113_0001_m_000003_0 is done. And is in the process of commiting
+2012-02-07 21:15:00,369 INFO org.apache.hadoop.mapred.TaskRunner: Task 'attempt_201202072113_0001_m_000003_0' done.

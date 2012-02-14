@@ -1,0 +1,14 @@
+2012-02-07 21:18:14,528 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=MAP, sessionId=
+2012-02-07 21:18:15,076 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2012-02-07 21:18:15,243 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2012-02-07 21:18:15,243 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2012-02-07 21:18:17,177 INFO org.apache.hadoop.mapred.MapTask: Spilling map output: record full = true
+2012-02-07 21:18:17,177 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufend = 2616512; bufvoid = 99614720
+2012-02-07 21:18:17,177 INFO org.apache.hadoop.mapred.MapTask: kvstart = 0; kvend = 262144; length = 327680
+2012-02-07 21:18:17,477 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2012-02-07 21:18:18,877 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2012-02-07 21:18:19,246 INFO org.apache.hadoop.mapred.MapTask: Finished spill 1
+2012-02-07 21:18:19,274 INFO org.apache.hadoop.mapred.Merger: Merging 2 sorted segments
+2012-02-07 21:18:19,298 INFO org.apache.hadoop.mapred.Merger: Down to the last merge-pass, with 2 segments left of total size: 807004 bytes
+2012-02-07 21:18:19,728 INFO org.apache.hadoop.mapred.TaskRunner: Task:attempt_201202072117_0001_m_000000_0 is done. And is in the process of commiting
+2012-02-07 21:18:19,739 INFO org.apache.hadoop.mapred.TaskRunner: Task 'attempt_201202072117_0001_m_000000_0' done.

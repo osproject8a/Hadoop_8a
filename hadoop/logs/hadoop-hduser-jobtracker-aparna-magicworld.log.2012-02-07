@@ -1,0 +1,1241 @@
+2012-02-07 20:09:47,609 INFO org.apache.hadoop.mapred.JobTracker: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting JobTracker
+STARTUP_MSG:   host = aparna-magicworld/127.0.1.1
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.2
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-0.20 -r 911707; compiled by 'chrisdo' on Fri Feb 19 08:07:34 UTC 2010
+************************************************************/
+2012-02-07 20:09:47,729 INFO org.apache.hadoop.mapred.JobTracker: Scheduler configured with (memSizeForMapSlotOnJT, memSizeForReduceSlotOnJT, limitMaxMemForMapTasks, limitMaxMemForReduceTasks) (-1, -1, -1, -1)
+2012-02-07 20:09:47,791 INFO org.apache.hadoop.ipc.metrics.RpcMetrics: Initializing RPC Metrics with hostName=JobTracker, port=54311
+2012-02-07 20:09:53,021 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2012-02-07 20:09:53,290 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50030
+2012-02-07 20:09:53,300 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50030 webServer.getConnectors()[0].getLocalPort() returned 50030
+2012-02-07 20:09:53,300 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50030
+2012-02-07 20:09:53,300 INFO org.mortbay.log: jetty-6.1.14
+2012-02-07 20:09:53,817 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50030
+2012-02-07 20:09:53,819 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2012-02-07 20:09:53,820 INFO org.apache.hadoop.mapred.JobTracker: JobTracker up at: 54311
+2012-02-07 20:09:53,820 INFO org.apache.hadoop.mapred.JobTracker: JobTracker webserver: 50030
+2012-02-07 20:09:53,995 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2012-02-07 20:09:54,237 INFO org.apache.hadoop.mapred.CompletedJobStatusStore: Completed job store is inactive
+2012-02-07 20:09:54,812 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2012-02-07 20:09:54,813 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 54311: starting
+2012-02-07 20:09:54,814 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 54311: starting
+2012-02-07 20:09:54,814 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 54311: starting
+2012-02-07 20:09:54,815 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 54311: starting
+2012-02-07 20:09:54,815 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 54311: starting
+2012-02-07 20:09:54,815 INFO org.apache.hadoop.ipc.Server: IPC Server handler 4 on 54311: starting
+2012-02-07 20:09:54,835 INFO org.apache.hadoop.ipc.Server: IPC Server handler 6 on 54311: starting
+2012-02-07 20:09:54,836 INFO org.apache.hadoop.ipc.Server: IPC Server handler 5 on 54311: starting
+2012-02-07 20:09:54,836 INFO org.apache.hadoop.ipc.Server: IPC Server handler 7 on 54311: starting
+2012-02-07 20:09:54,836 INFO org.apache.hadoop.ipc.Server: IPC Server handler 8 on 54311: starting
+2012-02-07 20:09:54,837 INFO org.apache.hadoop.mapred.JobTracker: Starting RUNNING
+2012-02-07 20:09:54,843 INFO org.apache.hadoop.ipc.Server: IPC Server handler 9 on 54311: starting
+2012-02-07 20:09:57,751 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /default-rack/kamal-3000-N100
+2012-02-07 20:10:04,889 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /default-rack/aparna-magicworld
+2012-02-07 20:14:19,671 INFO org.apache.hadoop.mapred.JobTracker: Initializing job_201202072009_0001
+2012-02-07 20:14:19,671 INFO org.apache.hadoop.mapred.JobInProgress: Initializing job_201202072009_0001
+2012-02-07 20:14:20,466 INFO org.apache.hadoop.mapred.JobInProgress: Input size for job job_201202072009_0001 = 5617403. Number of splits = 4
+2012-02-07 20:14:20,466 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201202072009_0001_m_000000 has split on node:/default-rack/aparna-magicworld
+2012-02-07 20:14:20,927 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201202072009_0001_m_000000 has split on node:/default-rack/kamal-3000-N100
+2012-02-07 20:14:20,927 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201202072009_0001_m_000001 has split on node:/default-rack/aparna-magicworld
+2012-02-07 20:14:20,928 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201202072009_0001_m_000001 has split on node:/default-rack/kamal-3000-N100
+2012-02-07 20:14:20,928 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201202072009_0001_m_000002 has split on node:/default-rack/aparna-magicworld
+2012-02-07 20:14:20,928 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201202072009_0001_m_000002 has split on node:/default-rack/kamal-3000-N100
+2012-02-07 20:14:20,928 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201202072009_0001_m_000003 has split on node:/default-rack/aparna-magicworld
+2012-02-07 20:14:20,929 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201202072009_0001_m_000003 has split on node:/default-rack/kamal-3000-N100
+2012-02-07 20:14:22,808 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201202072009_0001_m_000005_0' to tip task_201202072009_0001_m_000005, for tracker 'tracker_kamal-3000-N100:localhost/127.0.0.1:42004'
+2012-02-07 20:14:38,809 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201202072009_0001_m_000005_0' has completed task_201202072009_0001_m_000005 successfully.
+2012-02-07 20:14:38,816 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201202072009_0001_m_000000_0' to tip task_201202072009_0001_m_000000, for tracker 'tracker_kamal-3000-N100:localhost/127.0.0.1:42004'
+2012-02-07 20:14:38,820 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201202072009_0001_m_000000
+2012-02-07 20:14:38,820 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201202072009_0001_m_000001_0' to tip task_201202072009_0001_m_000001, for tracker 'tracker_kamal-3000-N100:localhost/127.0.0.1:42004'
+2012-02-07 20:14:38,820 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201202072009_0001_m_000001
+2012-02-07 20:14:41,164 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201202072009_0001_m_000002_0' to tip task_201202072009_0001_m_000002, for tracker 'tracker_aparna-magicworld:localhost/127.0.0.1:57158'
+2012-02-07 20:14:41,165 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201202072009_0001_m_000002
+2012-02-07 20:14:41,166 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201202072009_0001_m_000003_0' to tip task_201202072009_0001_m_000003, for tracker 'tracker_aparna-magicworld:localhost/127.0.0.1:57158'
+2012-02-07 20:14:41,166 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201202072009_0001_m_000003
+2012-02-07 20:14:47,250 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201202072009_0001_m_000002_0' has completed task_201202072009_0001_m_000002 successfully.
+2012-02-07 20:14:47,250 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:1  completedMapsInputSize:1423802  completedMapsOutputSize:466814
+2012-02-07 20:14:47,254 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201202072009_0001_m_000003_0' has completed task_201202072009_0001_m_000003 successfully.
+2012-02-07 20:14:47,254 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:2  completedMapsInputSize:2098369  completedMapsOutputSize:733827
+2012-02-07 20:14:47,268 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201202072009_0001_r_000000_0' to tip task_201202072009_0001_r_000000, for tracker 'tracker_aparna-magicworld:localhost/127.0.0.1:57158'
+2012-02-07 20:15:23,324 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201202072009_0001_m_000000_1' to tip task_201202072009_0001_m_000000, for tracker 'tracker_aparna-magicworld:localhost/127.0.0.1:57158'
+2012-02-07 20:15:23,324 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201202072009_0001_m_000000
+2012-02-07 20:15:29,335 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201202072009_0001_m_000000_1' has completed task_201202072009_0001_m_000000 successfully.
+2012-02-07 20:15:29,335 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:3  completedMapsInputSize:4044256  completedMapsOutputSize:1540833
+2012-02-07 20:15:29,339 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201202072009_0001_m_000001_1' to tip task_201202072009_0001_m_000001, for tracker 'tracker_aparna-magicworld:localhost/127.0.0.1:57158'
+2012-02-07 20:15:29,339 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201202072009_0001_m_000001
+2012-02-07 20:15:35,355 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201202072009_0001_m_000001_1' has completed task_201202072009_0001_m_000001 successfully.
+2012-02-07 20:15:35,355 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:4  completedMapsInputSize:5617407  completedMapsOutputSize:2281347
+2012-02-07 20:16:53,713 INFO org.apache.hadoop.mapred.JobTracker: Adding task (cleanup)'attempt_201202072009_0001_m_000000_0' to tip task_201202072009_0001_m_000000, for tracker 'tracker_kamal-3000-N100:localhost/127.0.0.1:42004'
+2012-02-07 20:16:59,141 INFO org.apache.hadoop.mapred.JobTracker: Adding task (cleanup)'attempt_201202072009_0001_m_000001_0' to tip task_201202072009_0001_m_000001, for tracker 'tracker_kamal-3000-N100:localhost/127.0.0.1:42004'
+2012-02-07 20:17:38,506 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201202072009_0001_r_000000_0' has completed task_201202072009_0001_r_000000 successfully.
+2012-02-07 20:17:38,518 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201202072009_0001_m_000004_0' to tip task_201202072009_0001_m_000004, for tracker 'tracker_aparna-magicworld:localhost/127.0.0.1:57158'
+2012-02-07 20:17:41,524 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201202072009_0001_m_000004_0' has completed task_201202072009_0001_m_000004 successfully.
+2012-02-07 20:17:41,525 INFO org.apache.hadoop.mapred.JobInProgress: Job job_201202072009_0001 has completed successfully.
+2012-02-07 20:17:42,601 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201202072009_0001_m_000000_1' from 'tracker_aparna-magicworld:localhost/127.0.0.1:57158'
+2012-02-07 20:17:42,601 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201202072009_0001_m_000001_1' from 'tracker_aparna-magicworld:localhost/127.0.0.1:57158'
+2012-02-07 20:17:42,601 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201202072009_0001_m_000002_0' from 'tracker_aparna-magicworld:localhost/127.0.0.1:57158'
+2012-02-07 20:17:42,601 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201202072009_0001_m_000003_0' from 'tracker_aparna-magicworld:localhost/127.0.0.1:57158'
+2012-02-07 20:17:42,601 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201202072009_0001_m_000004_0' from 'tracker_aparna-magicworld:localhost/127.0.0.1:57158'
+2012-02-07 20:17:42,602 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201202072009_0001_r_000000_0' from 'tracker_aparna-magicworld:localhost/127.0.0.1:57158'
+2012-02-07 20:17:43,282 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201202072009_0001_m_000005_0' from 'tracker_kamal-3000-N100:localhost/127.0.0.1:42004'
+2012-02-07 20:17:46,451 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201202072009_0001_m_000000_0' from 'tracker_kamal-3000-N100:localhost/127.0.0.1:42004'
+2012-02-07 20:17:46,451 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201202072009_0001_m_000001_0' from 'tracker_kamal-3000-N100:localhost/127.0.0.1:42004'
+2012-02-07 20:24:18,619 INFO org.apache.hadoop.mapred.JobTracker: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down JobTracker at aparna-magicworld/127.0.1.1
+************************************************************/
+2012-02-07 20:28:33,405 INFO org.apache.hadoop.mapred.JobTracker: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting JobTracker
+STARTUP_MSG:   host = aparna-magicworld/127.0.1.1
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.2
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-0.20 -r 911707; compiled by 'chrisdo' on Fri Feb 19 08:07:34 UTC 2010
+************************************************************/
+2012-02-07 20:28:33,524 INFO org.apache.hadoop.mapred.JobTracker: Scheduler configured with (memSizeForMapSlotOnJT, memSizeForReduceSlotOnJT, limitMaxMemForMapTasks, limitMaxMemForReduceTasks) (-1, -1, -1, -1)
+2012-02-07 20:28:33,586 INFO org.apache.hadoop.ipc.metrics.RpcMetrics: Initializing RPC Metrics with hostName=JobTracker, port=54311
+2012-02-07 20:28:38,676 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2012-02-07 20:28:38,808 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50030
+2012-02-07 20:28:38,810 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50030 webServer.getConnectors()[0].getLocalPort() returned 50030
+2012-02-07 20:28:38,810 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50030
+2012-02-07 20:28:38,810 INFO org.mortbay.log: jetty-6.1.14
+2012-02-07 20:28:39,318 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50030
+2012-02-07 20:28:39,321 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2012-02-07 20:28:39,322 INFO org.apache.hadoop.mapred.JobTracker: JobTracker up at: 54311
+2012-02-07 20:28:39,322 INFO org.apache.hadoop.mapred.JobTracker: JobTracker webserver: 50030
+2012-02-07 20:28:39,641 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2012-02-07 20:28:39,788 INFO org.apache.hadoop.mapred.CompletedJobStatusStore: Completed job store is inactive
+2012-02-07 20:28:40,041 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2012-02-07 20:28:40,041 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 54311: starting
+2012-02-07 20:28:40,043 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 54311: starting
+2012-02-07 20:28:40,044 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 54311: starting
+2012-02-07 20:28:40,044 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 54311: starting
+2012-02-07 20:28:40,056 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 54311: starting
+2012-02-07 20:28:40,059 INFO org.apache.hadoop.ipc.Server: IPC Server handler 4 on 54311: starting
+2012-02-07 20:28:40,059 INFO org.apache.hadoop.ipc.Server: IPC Server handler 6 on 54311: starting
+2012-02-07 20:28:40,059 INFO org.apache.hadoop.ipc.Server: IPC Server handler 5 on 54311: starting
+2012-02-07 20:28:40,065 INFO org.apache.hadoop.ipc.Server: IPC Server handler 7 on 54311: starting
+2012-02-07 20:28:40,066 INFO org.apache.hadoop.ipc.Server: IPC Server handler 8 on 54311: starting
+2012-02-07 20:28:40,066 INFO org.apache.hadoop.mapred.JobTracker: Starting RUNNING
+2012-02-07 20:28:40,066 INFO org.apache.hadoop.ipc.Server: IPC Server handler 9 on 54311: starting
+2012-02-07 20:29:04,236 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /default-rack/kamal-3000-N100
+2012-02-07 20:30:46,312 INFO org.apache.hadoop.mapred.JobTracker: Initializing job_201202072028_0001
+2012-02-07 20:30:46,314 INFO org.apache.hadoop.mapred.JobInProgress: Initializing job_201202072028_0001
+2012-02-07 20:30:46,685 INFO org.apache.hadoop.mapred.JobInProgress: Input size for job job_201202072028_0001 = 5617403. Number of splits = 4
+2012-02-07 20:30:46,685 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /default-rack/aparna-magicworld
+2012-02-07 20:30:46,686 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201202072028_0001_m_000000 has split on node:/default-rack/aparna-magicworld
+2012-02-07 20:30:46,768 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201202072028_0001_m_000000 has split on node:/default-rack/kamal-3000-N100
+2012-02-07 20:30:46,768 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201202072028_0001_m_000001 has split on node:/default-rack/aparna-magicworld
+2012-02-07 20:30:46,768 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201202072028_0001_m_000001 has split on node:/default-rack/kamal-3000-N100
+2012-02-07 20:30:46,769 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201202072028_0001_m_000002 has split on node:/default-rack/aparna-magicworld
+2012-02-07 20:30:46,769 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201202072028_0001_m_000002 has split on node:/default-rack/kamal-3000-N100
+2012-02-07 20:30:46,769 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201202072028_0001_m_000003 has split on node:/default-rack/aparna-magicworld
+2012-02-07 20:30:46,769 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201202072028_0001_m_000003 has split on node:/default-rack/kamal-3000-N100
+2012-02-07 20:30:46,851 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201202072028_0001_m_000005_0' to tip task_201202072028_0001_m_000005, for tracker 'tracker_kamal-3000-N100:localhost/127.0.0.1:58620'
+2012-02-07 20:31:06,031 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201202072028_0001_m_000005_0' has completed task_201202072028_0001_m_000005 successfully.
+2012-02-07 20:31:06,038 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201202072028_0001_m_000000_0' to tip task_201202072028_0001_m_000000, for tracker 'tracker_kamal-3000-N100:localhost/127.0.0.1:58620'
+2012-02-07 20:31:06,042 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201202072028_0001_m_000000
+2012-02-07 20:31:06,043 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201202072028_0001_m_000001_0' to tip task_201202072028_0001_m_000001, for tracker 'tracker_kamal-3000-N100:localhost/127.0.0.1:58620'
+2012-02-07 20:31:06,044 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201202072028_0001_m_000001
+2012-02-07 20:37:28,402 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201202072028_0001_m_000000_0' has completed task_201202072028_0001_m_000000 successfully.
+2012-02-07 20:37:28,403 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:1  completedMapsInputSize:1945887  completedMapsOutputSize:807006
+2012-02-07 20:37:28,407 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201202072028_0001_m_000001_0' has completed task_201202072028_0001_m_000001 successfully.
+2012-02-07 20:37:28,407 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:2  completedMapsInputSize:3519038  completedMapsOutputSize:1547520
+2012-02-07 20:37:28,412 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201202072028_0001_m_000002_0' to tip task_201202072028_0001_m_000002, for tracker 'tracker_kamal-3000-N100:localhost/127.0.0.1:58620'
+2012-02-07 20:37:28,413 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201202072028_0001_m_000002
+2012-02-07 20:37:28,414 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201202072028_0001_m_000003_0' to tip task_201202072028_0001_m_000003, for tracker 'tracker_kamal-3000-N100:localhost/127.0.0.1:58620'
+2012-02-07 20:37:28,414 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201202072028_0001_m_000003
+2012-02-07 20:37:28,424 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201202072028_0001_r_000000_0' to tip task_201202072028_0001_r_000000, for tracker 'tracker_kamal-3000-N100:localhost/127.0.0.1:58620'
+2012-02-07 20:39:25,669 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201202072028_0001_m_000002_0' has completed task_201202072028_0001_m_000002 successfully.
+2012-02-07 20:39:25,669 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:3  completedMapsInputSize:4942840  completedMapsOutputSize:2014334
+2012-02-07 20:39:25,672 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201202072028_0001_m_000003_0' has completed task_201202072028_0001_m_000003 successfully.
+2012-02-07 20:39:25,672 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:4  completedMapsInputSize:5617407  completedMapsOutputSize:2281347
+2012-02-07 20:39:52,994 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201202072028_0001_r_000000_0' has completed task_201202072028_0001_r_000000 successfully.
+2012-02-07 20:39:53,003 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201202072028_0001_m_000004_0' to tip task_201202072028_0001_m_000004, for tracker 'tracker_kamal-3000-N100:localhost/127.0.0.1:58620'
+2012-02-07 20:39:59,012 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201202072028_0001_m_000004_0' has completed task_201202072028_0001_m_000004 successfully.
+2012-02-07 20:39:59,014 INFO org.apache.hadoop.mapred.JobInProgress: Job job_201202072028_0001 has completed successfully.
+2012-02-07 20:39:59,302 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201202072028_0001_m_000000_0' from 'tracker_kamal-3000-N100:localhost/127.0.0.1:58620'
+2012-02-07 20:39:59,302 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201202072028_0001_m_000001_0' from 'tracker_kamal-3000-N100:localhost/127.0.0.1:58620'
+2012-02-07 20:39:59,303 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201202072028_0001_m_000002_0' from 'tracker_kamal-3000-N100:localhost/127.0.0.1:58620'
+2012-02-07 20:39:59,303 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201202072028_0001_m_000003_0' from 'tracker_kamal-3000-N100:localhost/127.0.0.1:58620'
+2012-02-07 20:39:59,303 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201202072028_0001_m_000004_0' from 'tracker_kamal-3000-N100:localhost/127.0.0.1:58620'
+2012-02-07 20:39:59,303 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201202072028_0001_m_000005_0' from 'tracker_kamal-3000-N100:localhost/127.0.0.1:58620'
+2012-02-07 20:39:59,303 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201202072028_0001_r_000000_0' from 'tracker_kamal-3000-N100:localhost/127.0.0.1:58620'
+2012-02-07 21:05:35,064 INFO org.apache.hadoop.mapred.JobTracker: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down JobTracker at aparna-magicworld/127.0.1.1
+************************************************************/
+2012-02-07 21:06:54,902 INFO org.apache.hadoop.mapred.JobTracker: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting JobTracker
+STARTUP_MSG:   host = aparna-magicworld/127.0.1.1
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.2
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-0.20 -r 911707; compiled by 'chrisdo' on Fri Feb 19 08:07:34 UTC 2010
+************************************************************/
+2012-02-07 21:06:55,022 INFO org.apache.hadoop.mapred.JobTracker: Scheduler configured with (memSizeForMapSlotOnJT, memSizeForReduceSlotOnJT, limitMaxMemForMapTasks, limitMaxMemForReduceTasks) (-1, -1, -1, -1)
+2012-02-07 21:06:55,084 INFO org.apache.hadoop.ipc.metrics.RpcMetrics: Initializing RPC Metrics with hostName=JobTracker, port=54311
+2012-02-07 21:07:00,170 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2012-02-07 21:07:00,301 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50030
+2012-02-07 21:07:00,303 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50030 webServer.getConnectors()[0].getLocalPort() returned 50030
+2012-02-07 21:07:00,303 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50030
+2012-02-07 21:07:00,303 INFO org.mortbay.log: jetty-6.1.14
+2012-02-07 21:07:00,815 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50030
+2012-02-07 21:07:00,817 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2012-02-07 21:07:00,818 INFO org.apache.hadoop.mapred.JobTracker: JobTracker up at: 54311
+2012-02-07 21:07:00,818 INFO org.apache.hadoop.mapred.JobTracker: JobTracker webserver: 50030
+2012-02-07 21:07:01,015 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2012-02-07 21:07:01,022 INFO org.apache.hadoop.mapred.JobTracker: problem cleaning system directory: hdfs://master:54310/app/hadoop/tmp/mapred/system
+org.apache.hadoop.ipc.RemoteException: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot delete /app/hadoop/tmp/mapred/system. Name node is in safe mode.
+The ratio of reported blocks 0.0000 has not reached the threshold 0.9990. Safe mode will be turned off automatically.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:1700)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:1680)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.delete(NameNode.java:517)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:508)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:959)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:955)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:953)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:740)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.delete(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:82)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:59)
+	at $Proxy4.delete(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient.delete(DFSClient.java:582)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.delete(DistributedFileSystem.java:227)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:1695)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:183)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:175)
+	at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:3702)
+2012-02-07 21:07:11,028 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2012-02-07 21:07:11,030 INFO org.apache.hadoop.mapred.JobTracker: problem cleaning system directory: hdfs://master:54310/app/hadoop/tmp/mapred/system
+org.apache.hadoop.ipc.RemoteException: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot delete /app/hadoop/tmp/mapred/system. Name node is in safe mode.
+The ratio of reported blocks 0.0000 has not reached the threshold 0.9990. Safe mode will be turned off automatically.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:1700)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:1680)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.delete(NameNode.java:517)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:508)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:959)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:955)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:953)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:740)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.delete(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:82)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:59)
+	at $Proxy4.delete(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient.delete(DFSClient.java:582)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.delete(DistributedFileSystem.java:227)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:1695)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:183)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:175)
+	at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:3702)
+2012-02-07 21:07:21,034 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2012-02-07 21:07:21,037 INFO org.apache.hadoop.mapred.JobTracker: problem cleaning system directory: hdfs://master:54310/app/hadoop/tmp/mapred/system
+org.apache.hadoop.ipc.RemoteException: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot delete /app/hadoop/tmp/mapred/system. Name node is in safe mode.
+The ratio of reported blocks 0.0000 has not reached the threshold 0.9990. Safe mode will be turned off automatically.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:1700)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:1680)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.delete(NameNode.java:517)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:508)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:959)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:955)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:953)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:740)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.delete(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:82)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:59)
+	at $Proxy4.delete(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient.delete(DFSClient.java:582)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.delete(DistributedFileSystem.java:227)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:1695)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:183)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:175)
+	at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:3702)
+2012-02-07 21:07:31,041 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2012-02-07 21:07:31,045 INFO org.apache.hadoop.mapred.JobTracker: problem cleaning system directory: hdfs://master:54310/app/hadoop/tmp/mapred/system
+org.apache.hadoop.ipc.RemoteException: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot delete /app/hadoop/tmp/mapred/system. Name node is in safe mode.
+The ratio of reported blocks 0.0000 has not reached the threshold 0.9990. Safe mode will be turned off automatically.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:1700)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:1680)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.delete(NameNode.java:517)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:508)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:959)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:955)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:953)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:740)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.delete(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:82)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:59)
+	at $Proxy4.delete(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient.delete(DFSClient.java:582)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.delete(DistributedFileSystem.java:227)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:1695)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:183)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:175)
+	at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:3702)
+2012-02-07 21:07:41,050 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2012-02-07 21:07:41,052 INFO org.apache.hadoop.mapred.JobTracker: problem cleaning system directory: hdfs://master:54310/app/hadoop/tmp/mapred/system
+org.apache.hadoop.ipc.RemoteException: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot delete /app/hadoop/tmp/mapred/system. Name node is in safe mode.
+The ratio of reported blocks 0.0000 has not reached the threshold 0.9990. Safe mode will be turned off automatically.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:1700)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:1680)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.delete(NameNode.java:517)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:508)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:959)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:955)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:953)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:740)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.delete(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:82)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:59)
+	at $Proxy4.delete(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient.delete(DFSClient.java:582)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.delete(DistributedFileSystem.java:227)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:1695)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:183)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:175)
+	at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:3702)
+2012-02-07 21:07:51,064 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2012-02-07 21:07:51,066 INFO org.apache.hadoop.mapred.JobTracker: problem cleaning system directory: hdfs://master:54310/app/hadoop/tmp/mapred/system
+org.apache.hadoop.ipc.RemoteException: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot delete /app/hadoop/tmp/mapred/system. Name node is in safe mode.
+The ratio of reported blocks 0.0000 has not reached the threshold 0.9990. Safe mode will be turned off automatically.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:1700)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:1680)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.delete(NameNode.java:517)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:508)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:959)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:955)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:953)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:740)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.delete(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:82)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:59)
+	at $Proxy4.delete(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient.delete(DFSClient.java:582)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.delete(DistributedFileSystem.java:227)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:1695)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:183)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:175)
+	at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:3702)
+2012-02-07 21:08:01,070 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2012-02-07 21:08:01,073 INFO org.apache.hadoop.mapred.JobTracker: problem cleaning system directory: hdfs://master:54310/app/hadoop/tmp/mapred/system
+org.apache.hadoop.ipc.RemoteException: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot delete /app/hadoop/tmp/mapred/system. Name node is in safe mode.
+The ratio of reported blocks 0.0000 has not reached the threshold 0.9990. Safe mode will be turned off automatically.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:1700)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:1680)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.delete(NameNode.java:517)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:508)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:959)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:955)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:953)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:740)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.delete(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:82)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:59)
+	at $Proxy4.delete(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient.delete(DFSClient.java:582)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.delete(DistributedFileSystem.java:227)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:1695)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:183)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:175)
+	at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:3702)
+2012-02-07 21:08:11,078 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2012-02-07 21:08:11,080 INFO org.apache.hadoop.mapred.JobTracker: problem cleaning system directory: hdfs://master:54310/app/hadoop/tmp/mapred/system
+org.apache.hadoop.ipc.RemoteException: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot delete /app/hadoop/tmp/mapred/system. Name node is in safe mode.
+The ratio of reported blocks 0.0000 has not reached the threshold 0.9990. Safe mode will be turned off automatically.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:1700)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:1680)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.delete(NameNode.java:517)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:508)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:959)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:955)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:953)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:740)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.delete(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:82)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:59)
+	at $Proxy4.delete(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient.delete(DFSClient.java:582)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.delete(DistributedFileSystem.java:227)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:1695)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:183)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:175)
+	at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:3702)
+2012-02-07 21:08:21,085 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2012-02-07 21:08:21,088 INFO org.apache.hadoop.mapred.JobTracker: problem cleaning system directory: hdfs://master:54310/app/hadoop/tmp/mapred/system
+org.apache.hadoop.ipc.RemoteException: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot delete /app/hadoop/tmp/mapred/system. Name node is in safe mode.
+The ratio of reported blocks 0.0000 has not reached the threshold 0.9990. Safe mode will be turned off automatically.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:1700)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:1680)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.delete(NameNode.java:517)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:508)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:959)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:955)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:953)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:740)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.delete(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:82)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:59)
+	at $Proxy4.delete(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient.delete(DFSClient.java:582)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.delete(DistributedFileSystem.java:227)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:1695)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:183)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:175)
+	at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:3702)
+2012-02-07 21:08:31,092 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2012-02-07 21:08:31,095 INFO org.apache.hadoop.mapred.JobTracker: problem cleaning system directory: hdfs://master:54310/app/hadoop/tmp/mapred/system
+org.apache.hadoop.ipc.RemoteException: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot delete /app/hadoop/tmp/mapred/system. Name node is in safe mode.
+The ratio of reported blocks 0.0000 has not reached the threshold 0.9990. Safe mode will be turned off automatically.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:1700)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:1680)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.delete(NameNode.java:517)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:508)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:959)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:955)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:953)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:740)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.delete(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:82)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:59)
+	at $Proxy4.delete(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient.delete(DFSClient.java:582)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.delete(DistributedFileSystem.java:227)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:1695)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:183)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:175)
+	at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:3702)
+2012-02-07 21:08:41,100 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2012-02-07 21:08:41,102 INFO org.apache.hadoop.mapred.JobTracker: problem cleaning system directory: hdfs://master:54310/app/hadoop/tmp/mapred/system
+org.apache.hadoop.ipc.RemoteException: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot delete /app/hadoop/tmp/mapred/system. Name node is in safe mode.
+The ratio of reported blocks 0.0000 has not reached the threshold 0.9990. Safe mode will be turned off automatically.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:1700)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:1680)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.delete(NameNode.java:517)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:508)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:959)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:955)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:953)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:740)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.delete(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:82)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:59)
+	at $Proxy4.delete(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient.delete(DFSClient.java:582)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.delete(DistributedFileSystem.java:227)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:1695)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:183)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:175)
+	at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:3702)
+2012-02-07 21:08:51,107 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2012-02-07 21:08:51,110 INFO org.apache.hadoop.mapred.JobTracker: problem cleaning system directory: hdfs://master:54310/app/hadoop/tmp/mapred/system
+org.apache.hadoop.ipc.RemoteException: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot delete /app/hadoop/tmp/mapred/system. Name node is in safe mode.
+The ratio of reported blocks 0.0000 has not reached the threshold 0.9990. Safe mode will be turned off automatically.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:1700)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:1680)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.delete(NameNode.java:517)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:508)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:959)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:955)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:953)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:740)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.delete(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:82)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:59)
+	at $Proxy4.delete(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient.delete(DFSClient.java:582)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.delete(DistributedFileSystem.java:227)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:1695)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:183)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:175)
+	at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:3702)
+2012-02-07 21:09:01,114 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2012-02-07 21:09:01,117 INFO org.apache.hadoop.mapred.JobTracker: problem cleaning system directory: hdfs://master:54310/app/hadoop/tmp/mapred/system
+org.apache.hadoop.ipc.RemoteException: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot delete /app/hadoop/tmp/mapred/system. Name node is in safe mode.
+The ratio of reported blocks 0.0000 has not reached the threshold 0.9990. Safe mode will be turned off automatically.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:1700)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:1680)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.delete(NameNode.java:517)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:508)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:959)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:955)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:953)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:740)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.delete(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:82)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:59)
+	at $Proxy4.delete(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient.delete(DFSClient.java:582)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.delete(DistributedFileSystem.java:227)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:1695)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:183)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:175)
+	at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:3702)
+2012-02-07 21:09:11,124 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2012-02-07 21:09:11,126 INFO org.apache.hadoop.mapred.JobTracker: problem cleaning system directory: hdfs://master:54310/app/hadoop/tmp/mapred/system
+org.apache.hadoop.ipc.RemoteException: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot delete /app/hadoop/tmp/mapred/system. Name node is in safe mode.
+The ratio of reported blocks 0.0000 has not reached the threshold 0.9990. Safe mode will be turned off automatically.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:1700)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:1680)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.delete(NameNode.java:517)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:508)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:959)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:955)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:953)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:740)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.delete(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:82)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:59)
+	at $Proxy4.delete(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient.delete(DFSClient.java:582)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.delete(DistributedFileSystem.java:227)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:1695)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:183)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:175)
+	at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:3702)
+2012-02-07 21:09:21,132 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2012-02-07 21:09:21,135 INFO org.apache.hadoop.mapred.JobTracker: problem cleaning system directory: hdfs://master:54310/app/hadoop/tmp/mapred/system
+org.apache.hadoop.ipc.RemoteException: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot delete /app/hadoop/tmp/mapred/system. Name node is in safe mode.
+The ratio of reported blocks 0.0000 has not reached the threshold 0.9990. Safe mode will be turned off automatically.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:1700)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:1680)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.delete(NameNode.java:517)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:508)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:959)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:955)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:953)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:740)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.delete(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:82)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:59)
+	at $Proxy4.delete(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient.delete(DFSClient.java:582)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.delete(DistributedFileSystem.java:227)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:1695)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:183)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:175)
+	at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:3702)
+2012-02-07 21:09:31,141 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2012-02-07 21:09:31,146 INFO org.apache.hadoop.mapred.JobTracker: problem cleaning system directory: hdfs://master:54310/app/hadoop/tmp/mapred/system
+org.apache.hadoop.ipc.RemoteException: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot delete /app/hadoop/tmp/mapred/system. Name node is in safe mode.
+The ratio of reported blocks 0.0000 has not reached the threshold 0.9990. Safe mode will be turned off automatically.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:1700)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:1680)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.delete(NameNode.java:517)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:508)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:959)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:955)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:953)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:740)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.delete(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:82)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:59)
+	at $Proxy4.delete(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient.delete(DFSClient.java:582)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.delete(DistributedFileSystem.java:227)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:1695)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:183)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:175)
+	at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:3702)
+2012-02-07 21:09:41,150 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2012-02-07 21:09:41,152 INFO org.apache.hadoop.mapred.JobTracker: problem cleaning system directory: hdfs://master:54310/app/hadoop/tmp/mapred/system
+org.apache.hadoop.ipc.RemoteException: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot delete /app/hadoop/tmp/mapred/system. Name node is in safe mode.
+The ratio of reported blocks 0.0000 has not reached the threshold 0.9990. Safe mode will be turned off automatically.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:1700)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:1680)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.delete(NameNode.java:517)
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:508)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:959)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:955)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:953)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:740)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.delete(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:82)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:59)
+	at $Proxy4.delete(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient.delete(DFSClient.java:582)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.delete(DistributedFileSystem.java:227)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:1695)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:183)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:175)
+	at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:3702)
+2012-02-07 21:09:51,157 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2012-02-07 21:09:51,160 INFO org.apache.hadoop.mapred.JobTracker: problem cleaning system directory: hdfs://master:54310/app/hadoop/tmp/mapred/system
+org.apache.hadoop.ipc.RemoteException: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot delete /app/hadoop/tmp/mapred/system. Name node is in safe mode.
+The ratio of reported blocks 0.0000 has not reached the threshold 0.9990. Safe mode will be turned off automatically.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:1700)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:1680)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.delete(NameNode.java:517)
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:508)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:959)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:955)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:953)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:740)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.delete(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:82)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:59)
+	at $Proxy4.delete(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient.delete(DFSClient.java:582)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.delete(DistributedFileSystem.java:227)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:1695)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:183)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:175)
+	at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:3702)
+2012-02-07 21:10:01,164 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2012-02-07 21:10:01,167 INFO org.apache.hadoop.mapred.JobTracker: problem cleaning system directory: hdfs://master:54310/app/hadoop/tmp/mapred/system
+org.apache.hadoop.ipc.RemoteException: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot delete /app/hadoop/tmp/mapred/system. Name node is in safe mode.
+The ratio of reported blocks 0.0000 has not reached the threshold 0.9990. Safe mode will be turned off automatically.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:1700)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:1680)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.delete(NameNode.java:517)
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:508)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:959)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:955)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:953)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:740)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.delete(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:82)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:59)
+	at $Proxy4.delete(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient.delete(DFSClient.java:582)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.delete(DistributedFileSystem.java:227)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:1695)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:183)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:175)
+	at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:3702)
+2012-02-07 21:10:11,171 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2012-02-07 21:10:11,174 INFO org.apache.hadoop.mapred.JobTracker: problem cleaning system directory: hdfs://master:54310/app/hadoop/tmp/mapred/system
+org.apache.hadoop.ipc.RemoteException: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot delete /app/hadoop/tmp/mapred/system. Name node is in safe mode.
+The ratio of reported blocks 0.0000 has not reached the threshold 0.9990. Safe mode will be turned off automatically.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:1700)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:1680)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.delete(NameNode.java:517)
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:508)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:959)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:955)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:953)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:740)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.delete(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:82)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:59)
+	at $Proxy4.delete(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient.delete(DFSClient.java:582)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.delete(DistributedFileSystem.java:227)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:1695)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:183)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:175)
+	at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:3702)
+2012-02-07 21:10:21,178 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2012-02-07 21:10:21,181 INFO org.apache.hadoop.mapred.JobTracker: problem cleaning system directory: hdfs://master:54310/app/hadoop/tmp/mapred/system
+org.apache.hadoop.ipc.RemoteException: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot delete /app/hadoop/tmp/mapred/system. Name node is in safe mode.
+The ratio of reported blocks 0.0000 has not reached the threshold 0.9990. Safe mode will be turned off automatically.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:1700)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:1680)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.delete(NameNode.java:517)
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:508)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:959)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:955)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:953)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:740)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.delete(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:82)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:59)
+	at $Proxy4.delete(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient.delete(DFSClient.java:582)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.delete(DistributedFileSystem.java:227)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:1695)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:183)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:175)
+	at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:3702)
+2012-02-07 21:10:31,185 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2012-02-07 21:10:31,187 INFO org.apache.hadoop.mapred.JobTracker: problem cleaning system directory: hdfs://master:54310/app/hadoop/tmp/mapred/system
+org.apache.hadoop.ipc.RemoteException: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot delete /app/hadoop/tmp/mapred/system. Name node is in safe mode.
+The ratio of reported blocks 0.0000 has not reached the threshold 0.9990. Safe mode will be turned off automatically.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:1700)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:1680)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.delete(NameNode.java:517)
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:508)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:959)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:955)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:953)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:740)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.delete(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:82)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:59)
+	at $Proxy4.delete(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient.delete(DFSClient.java:582)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.delete(DistributedFileSystem.java:227)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:1695)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:183)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:175)
+	at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:3702)
+2012-02-07 21:10:41,191 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2012-02-07 21:10:41,194 INFO org.apache.hadoop.mapred.JobTracker: problem cleaning system directory: hdfs://master:54310/app/hadoop/tmp/mapred/system
+org.apache.hadoop.ipc.RemoteException: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot delete /app/hadoop/tmp/mapred/system. Name node is in safe mode.
+The ratio of reported blocks 0.0000 has not reached the threshold 0.9990. Safe mode will be turned off automatically.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:1700)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:1680)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.delete(NameNode.java:517)
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:508)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:959)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:955)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:953)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:740)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.delete(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:82)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:59)
+	at $Proxy4.delete(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient.delete(DFSClient.java:582)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.delete(DistributedFileSystem.java:227)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:1695)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:183)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:175)
+	at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:3702)
+2012-02-07 21:10:51,198 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2012-02-07 21:10:51,201 INFO org.apache.hadoop.mapred.JobTracker: problem cleaning system directory: hdfs://master:54310/app/hadoop/tmp/mapred/system
+org.apache.hadoop.ipc.RemoteException: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot delete /app/hadoop/tmp/mapred/system. Name node is in safe mode.
+The ratio of reported blocks 0.0000 has not reached the threshold 0.9990. Safe mode will be turned off automatically.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:1700)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:1680)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.delete(NameNode.java:517)
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:508)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:959)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:955)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:953)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:740)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.delete(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:82)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:59)
+	at $Proxy4.delete(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient.delete(DFSClient.java:582)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.delete(DistributedFileSystem.java:227)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:1695)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:183)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:175)
+	at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:3702)
+2012-02-07 21:11:01,205 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2012-02-07 21:11:01,209 INFO org.apache.hadoop.mapred.JobTracker: problem cleaning system directory: hdfs://master:54310/app/hadoop/tmp/mapred/system
+org.apache.hadoop.ipc.RemoteException: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot delete /app/hadoop/tmp/mapred/system. Name node is in safe mode.
+The ratio of reported blocks 0.0000 has not reached the threshold 0.9990. Safe mode will be turned off automatically.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:1700)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:1680)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.delete(NameNode.java:517)
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:508)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:959)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:955)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:953)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:740)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.delete(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:82)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:59)
+	at $Proxy4.delete(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient.delete(DFSClient.java:582)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.delete(DistributedFileSystem.java:227)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:1695)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:183)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:175)
+	at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:3702)
+2012-02-07 21:11:11,213 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2012-02-07 21:11:11,216 INFO org.apache.hadoop.mapred.JobTracker: problem cleaning system directory: hdfs://master:54310/app/hadoop/tmp/mapred/system
+org.apache.hadoop.ipc.RemoteException: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot delete /app/hadoop/tmp/mapred/system. Name node is in safe mode.
+The ratio of reported blocks 0.0000 has not reached the threshold 0.9990. Safe mode will be turned off automatically.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:1700)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:1680)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.delete(NameNode.java:517)
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:508)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:959)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:955)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:953)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:740)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.delete(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:82)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:59)
+	at $Proxy4.delete(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient.delete(DFSClient.java:582)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.delete(DistributedFileSystem.java:227)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:1695)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:183)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:175)
+	at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:3702)
+2012-02-07 21:11:21,221 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2012-02-07 21:11:21,229 INFO org.apache.hadoop.mapred.JobTracker: problem cleaning system directory: hdfs://master:54310/app/hadoop/tmp/mapred/system
+org.apache.hadoop.ipc.RemoteException: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot delete /app/hadoop/tmp/mapred/system. Name node is in safe mode.
+The ratio of reported blocks 0.0000 has not reached the threshold 0.9990. Safe mode will be turned off automatically.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:1700)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:1680)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.delete(NameNode.java:517)
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:508)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:959)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:955)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:953)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:740)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.delete(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:82)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:59)
+	at $Proxy4.delete(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient.delete(DFSClient.java:582)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.delete(DistributedFileSystem.java:227)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:1695)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:183)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:175)
+	at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:3702)
+2012-02-07 21:11:28,503 INFO org.apache.hadoop.mapred.JobTracker: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down JobTracker at aparna-magicworld/127.0.1.1
+************************************************************/
+2012-02-07 21:13:37,614 INFO org.apache.hadoop.mapred.JobTracker: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting JobTracker
+STARTUP_MSG:   host = aparna-magicworld/127.0.1.1
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.2
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-0.20 -r 911707; compiled by 'chrisdo' on Fri Feb 19 08:07:34 UTC 2010
+************************************************************/
+2012-02-07 21:13:37,734 INFO org.apache.hadoop.mapred.JobTracker: Scheduler configured with (memSizeForMapSlotOnJT, memSizeForReduceSlotOnJT, limitMaxMemForMapTasks, limitMaxMemForReduceTasks) (-1, -1, -1, -1)
+2012-02-07 21:13:37,796 INFO org.apache.hadoop.ipc.metrics.RpcMetrics: Initializing RPC Metrics with hostName=JobTracker, port=54311
+2012-02-07 21:13:42,885 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2012-02-07 21:13:43,018 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50030
+2012-02-07 21:13:43,019 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50030 webServer.getConnectors()[0].getLocalPort() returned 50030
+2012-02-07 21:13:43,019 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50030
+2012-02-07 21:13:43,020 INFO org.mortbay.log: jetty-6.1.14
+2012-02-07 21:13:46,956 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50030
+2012-02-07 21:13:46,958 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2012-02-07 21:13:46,959 INFO org.apache.hadoop.mapred.JobTracker: JobTracker up at: 54311
+2012-02-07 21:13:46,959 INFO org.apache.hadoop.mapred.JobTracker: JobTracker webserver: 50030
+2012-02-07 21:13:47,158 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2012-02-07 21:13:47,331 INFO org.apache.hadoop.mapred.CompletedJobStatusStore: Completed job store is inactive
+2012-02-07 21:13:47,624 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2012-02-07 21:13:47,629 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 54311: starting
+2012-02-07 21:13:47,639 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 54311: starting
+2012-02-07 21:13:47,643 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 54311: starting
+2012-02-07 21:13:47,645 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 54311: starting
+2012-02-07 21:13:47,645 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 54311: starting
+2012-02-07 21:13:47,663 INFO org.apache.hadoop.ipc.Server: IPC Server handler 4 on 54311: starting
+2012-02-07 21:13:47,723 INFO org.apache.hadoop.ipc.Server: IPC Server handler 9 on 54311: starting
+2012-02-07 21:13:47,724 INFO org.apache.hadoop.mapred.JobTracker: Starting RUNNING
+2012-02-07 21:13:47,723 INFO org.apache.hadoop.ipc.Server: IPC Server handler 5 on 54311: starting
+2012-02-07 21:13:47,724 INFO org.apache.hadoop.ipc.Server: IPC Server handler 6 on 54311: starting
+2012-02-07 21:13:47,724 INFO org.apache.hadoop.ipc.Server: IPC Server handler 7 on 54311: starting
+2012-02-07 21:13:47,724 INFO org.apache.hadoop.ipc.Server: IPC Server handler 8 on 54311: starting
+2012-02-07 21:13:53,776 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /default-rack/aparna-magicworld
+2012-02-07 21:14:40,397 INFO org.apache.hadoop.mapred.JobTracker: Initializing job_201202072113_0001
+2012-02-07 21:14:40,402 INFO org.apache.hadoop.mapred.JobInProgress: Initializing job_201202072113_0001
+2012-02-07 21:14:40,696 INFO org.apache.hadoop.mapred.JobInProgress: Input size for job job_201202072113_0001 = 5617403. Number of splits = 4
+2012-02-07 21:14:40,696 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201202072113_0001_m_000000 has split on node:/default-rack/aparna-magicworld
+2012-02-07 21:14:40,696 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201202072113_0001_m_000001 has split on node:/default-rack/aparna-magicworld
+2012-02-07 21:14:40,696 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201202072113_0001_m_000002 has split on node:/default-rack/aparna-magicworld
+2012-02-07 21:14:40,696 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201202072113_0001_m_000003 has split on node:/default-rack/aparna-magicworld
+2012-02-07 21:14:41,855 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201202072113_0001_m_000005_0' to tip task_201202072113_0001_m_000005, for tracker 'tracker_aparna-magicworld:localhost/127.0.0.1:55906'
+2012-02-07 21:14:44,916 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201202072113_0001_m_000005_0' has completed task_201202072113_0001_m_000005 successfully.
+2012-02-07 21:14:44,923 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201202072113_0001_m_000000_0' to tip task_201202072113_0001_m_000000, for tracker 'tracker_aparna-magicworld:localhost/127.0.0.1:55906'
+2012-02-07 21:14:44,928 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201202072113_0001_m_000000
+2012-02-07 21:14:44,929 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201202072113_0001_m_000001_0' to tip task_201202072113_0001_m_000001, for tracker 'tracker_aparna-magicworld:localhost/127.0.0.1:55906'
+2012-02-07 21:14:44,929 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201202072113_0001_m_000001
+2012-02-07 21:14:53,962 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201202072113_0001_m_000000_0' has completed task_201202072113_0001_m_000000 successfully.
+2012-02-07 21:14:53,962 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:1  completedMapsInputSize:1945887  completedMapsOutputSize:807006
+2012-02-07 21:14:53,966 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201202072113_0001_m_000001_0' has completed task_201202072113_0001_m_000001 successfully.
+2012-02-07 21:14:53,966 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:2  completedMapsInputSize:3519038  completedMapsOutputSize:1547520
+2012-02-07 21:14:53,971 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201202072113_0001_m_000002_0' to tip task_201202072113_0001_m_000002, for tracker 'tracker_aparna-magicworld:localhost/127.0.0.1:55906'
+2012-02-07 21:14:53,972 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201202072113_0001_m_000002
+2012-02-07 21:14:53,973 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201202072113_0001_m_000003_0' to tip task_201202072113_0001_m_000003, for tracker 'tracker_aparna-magicworld:localhost/127.0.0.1:55906'
+2012-02-07 21:14:53,973 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201202072113_0001_m_000003
+2012-02-07 21:14:53,983 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201202072113_0001_r_000000_0' to tip task_201202072113_0001_r_000000, for tracker 'tracker_aparna-magicworld:localhost/127.0.0.1:55906'
+2012-02-07 21:15:03,014 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201202072113_0001_m_000002_0' has completed task_201202072113_0001_m_000002 successfully.
+2012-02-07 21:15:03,014 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:3  completedMapsInputSize:4942840  completedMapsOutputSize:2014334
+2012-02-07 21:15:03,017 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201202072113_0001_m_000003_0' has completed task_201202072113_0001_m_000003 successfully.
+2012-02-07 21:15:03,018 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:4  completedMapsInputSize:5617407  completedMapsOutputSize:2281347
+2012-02-07 21:15:14,081 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /default-rack/kamal-3000-N100
+2012-02-07 21:15:15,039 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201202072113_0001_r_000000_0' has completed task_201202072113_0001_r_000000 successfully.
+2012-02-07 21:15:15,049 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201202072113_0001_m_000004_0' to tip task_201202072113_0001_m_000004, for tracker 'tracker_aparna-magicworld:localhost/127.0.0.1:55906'
+2012-02-07 21:15:18,056 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201202072113_0001_m_000004_0' has completed task_201202072113_0001_m_000004 successfully.
+2012-02-07 21:15:18,057 INFO org.apache.hadoop.mapred.JobInProgress: Job job_201202072113_0001 has completed successfully.
+2012-02-07 21:15:18,171 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201202072113_0001_m_000000_0' from 'tracker_aparna-magicworld:localhost/127.0.0.1:55906'
+2012-02-07 21:15:18,171 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201202072113_0001_m_000001_0' from 'tracker_aparna-magicworld:localhost/127.0.0.1:55906'
+2012-02-07 21:15:18,171 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201202072113_0001_m_000002_0' from 'tracker_aparna-magicworld:localhost/127.0.0.1:55906'
+2012-02-07 21:15:18,172 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201202072113_0001_m_000003_0' from 'tracker_aparna-magicworld:localhost/127.0.0.1:55906'
+2012-02-07 21:15:18,172 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201202072113_0001_m_000004_0' from 'tracker_aparna-magicworld:localhost/127.0.0.1:55906'
+2012-02-07 21:15:18,172 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201202072113_0001_m_000005_0' from 'tracker_aparna-magicworld:localhost/127.0.0.1:55906'
+2012-02-07 21:15:18,172 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201202072113_0001_r_000000_0' from 'tracker_aparna-magicworld:localhost/127.0.0.1:55906'
+2012-02-07 21:16:28,401 INFO org.apache.hadoop.mapred.JobTracker: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down JobTracker at aparna-magicworld/127.0.1.1
+************************************************************/
+2012-02-07 21:17:25,107 INFO org.apache.hadoop.mapred.JobTracker: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting JobTracker
+STARTUP_MSG:   host = aparna-magicworld/127.0.1.1
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.2
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-0.20 -r 911707; compiled by 'chrisdo' on Fri Feb 19 08:07:34 UTC 2010
+************************************************************/
+2012-02-07 21:17:25,242 INFO org.apache.hadoop.mapred.JobTracker: Scheduler configured with (memSizeForMapSlotOnJT, memSizeForReduceSlotOnJT, limitMaxMemForMapTasks, limitMaxMemForReduceTasks) (-1, -1, -1, -1)
+2012-02-07 21:17:25,300 INFO org.apache.hadoop.ipc.metrics.RpcMetrics: Initializing RPC Metrics with hostName=JobTracker, port=54311
+2012-02-07 21:17:30,390 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2012-02-07 21:17:30,524 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50030
+2012-02-07 21:17:30,525 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50030 webServer.getConnectors()[0].getLocalPort() returned 50030
+2012-02-07 21:17:30,525 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50030
+2012-02-07 21:17:30,526 INFO org.mortbay.log: jetty-6.1.14
+2012-02-07 21:17:34,002 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50030
+2012-02-07 21:17:34,004 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2012-02-07 21:17:34,005 INFO org.apache.hadoop.mapred.JobTracker: JobTracker up at: 54311
+2012-02-07 21:17:34,006 INFO org.apache.hadoop.mapred.JobTracker: JobTracker webserver: 50030
+2012-02-07 21:17:34,418 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2012-02-07 21:17:34,622 INFO org.apache.hadoop.mapred.CompletedJobStatusStore: Completed job store is inactive
+2012-02-07 21:17:34,794 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2012-02-07 21:17:34,795 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 54311: starting
+2012-02-07 21:17:34,796 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 54311: starting
+2012-02-07 21:17:34,796 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 54311: starting
+2012-02-07 21:17:34,796 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 54311: starting
+2012-02-07 21:17:34,813 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 54311: starting
+2012-02-07 21:17:34,813 INFO org.apache.hadoop.mapred.JobTracker: Starting RUNNING
+2012-02-07 21:17:34,815 INFO org.apache.hadoop.ipc.Server: IPC Server handler 7 on 54311: starting
+2012-02-07 21:17:34,815 INFO org.apache.hadoop.ipc.Server: IPC Server handler 9 on 54311: starting
+2012-02-07 21:17:34,815 INFO org.apache.hadoop.ipc.Server: IPC Server handler 6 on 54311: starting
+2012-02-07 21:17:34,815 INFO org.apache.hadoop.ipc.Server: IPC Server handler 4 on 54311: starting
+2012-02-07 21:17:34,815 INFO org.apache.hadoop.ipc.Server: IPC Server handler 8 on 54311: starting
+2012-02-07 21:17:34,815 INFO org.apache.hadoop.ipc.Server: IPC Server handler 5 on 54311: starting
+2012-02-07 21:17:40,007 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /default-rack/aparna-magicworld
+2012-02-07 21:18:07,531 INFO org.apache.hadoop.mapred.JobTracker: Initializing job_201202072117_0001
+2012-02-07 21:18:07,532 INFO org.apache.hadoop.mapred.JobInProgress: Initializing job_201202072117_0001
+2012-02-07 21:18:07,827 INFO org.apache.hadoop.mapred.JobInProgress: Input size for job job_201202072117_0001 = 5617403. Number of splits = 4
+2012-02-07 21:18:07,827 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201202072117_0001_m_000000 has split on node:/default-rack/aparna-magicworld
+2012-02-07 21:18:07,827 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201202072117_0001_m_000001 has split on node:/default-rack/aparna-magicworld
+2012-02-07 21:18:07,828 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201202072117_0001_m_000002 has split on node:/default-rack/aparna-magicworld
+2012-02-07 21:18:07,828 INFO org.apache.hadoop.mapred.JobInProgress: tip:task_201202072117_0001_m_000003 has split on node:/default-rack/aparna-magicworld
+2012-02-07 21:18:10,085 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201202072117_0001_m_000005_0' to tip task_201202072117_0001_m_000005, for tracker 'tracker_aparna-magicworld:localhost/127.0.0.1:39977'
+2012-02-07 21:18:13,168 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201202072117_0001_m_000005_0' has completed task_201202072117_0001_m_000005 successfully.
+2012-02-07 21:18:13,176 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201202072117_0001_m_000000_0' to tip task_201202072117_0001_m_000000, for tracker 'tracker_aparna-magicworld:localhost/127.0.0.1:39977'
+2012-02-07 21:18:13,179 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201202072117_0001_m_000000
+2012-02-07 21:18:13,180 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201202072117_0001_m_000001_0' to tip task_201202072117_0001_m_000001, for tracker 'tracker_aparna-magicworld:localhost/127.0.0.1:39977'
+2012-02-07 21:18:13,180 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201202072117_0001_m_000001
+2012-02-07 21:18:22,199 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201202072117_0001_m_000000_0' has completed task_201202072117_0001_m_000000 successfully.
+2012-02-07 21:18:22,200 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:1  completedMapsInputSize:1945887  completedMapsOutputSize:807006
+2012-02-07 21:18:22,203 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201202072117_0001_m_000001_0' has completed task_201202072117_0001_m_000001 successfully.
+2012-02-07 21:18:22,204 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:2  completedMapsInputSize:3519038  completedMapsOutputSize:1547520
+2012-02-07 21:18:22,208 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201202072117_0001_m_000002_0' to tip task_201202072117_0001_m_000002, for tracker 'tracker_aparna-magicworld:localhost/127.0.0.1:39977'
+2012-02-07 21:18:22,209 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201202072117_0001_m_000002
+2012-02-07 21:18:22,210 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201202072117_0001_m_000003_0' to tip task_201202072117_0001_m_000003, for tracker 'tracker_aparna-magicworld:localhost/127.0.0.1:39977'
+2012-02-07 21:18:22,210 INFO org.apache.hadoop.mapred.JobInProgress: Choosing data-local task task_201202072117_0001_m_000003
+2012-02-07 21:18:22,219 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201202072117_0001_r_000000_0' to tip task_201202072117_0001_r_000000, for tracker 'tracker_aparna-magicworld:localhost/127.0.0.1:39977'
+2012-02-07 21:18:28,249 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201202072117_0001_m_000003_0' has completed task_201202072117_0001_m_000003 successfully.
+2012-02-07 21:18:28,250 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:3  completedMapsInputSize:4193605  completedMapsOutputSize:1814533
+2012-02-07 21:18:31,283 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201202072117_0001_m_000002_0' has completed task_201202072117_0001_m_000002 successfully.
+2012-02-07 21:18:31,283 INFO org.apache.hadoop.mapred.ResourceEstimator: completedMapsUpdates:4  completedMapsInputSize:5617407  completedMapsOutputSize:2281347
+2012-02-07 21:18:43,319 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201202072117_0001_r_000000_0' has completed task_201202072117_0001_r_000000 successfully.
+2012-02-07 21:18:43,329 INFO org.apache.hadoop.mapred.JobTracker: Adding task 'attempt_201202072117_0001_m_000004_0' to tip task_201202072117_0001_m_000004, for tracker 'tracker_aparna-magicworld:localhost/127.0.0.1:39977'
+2012-02-07 21:18:46,335 INFO org.apache.hadoop.mapred.JobInProgress: Task 'attempt_201202072117_0001_m_000004_0' has completed task_201202072117_0001_m_000004 successfully.
+2012-02-07 21:18:46,336 INFO org.apache.hadoop.mapred.JobInProgress: Job job_201202072117_0001 has completed successfully.
+2012-02-07 21:18:46,394 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201202072117_0001_m_000000_0' from 'tracker_aparna-magicworld:localhost/127.0.0.1:39977'
+2012-02-07 21:18:46,394 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201202072117_0001_m_000001_0' from 'tracker_aparna-magicworld:localhost/127.0.0.1:39977'
+2012-02-07 21:18:46,394 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201202072117_0001_m_000002_0' from 'tracker_aparna-magicworld:localhost/127.0.0.1:39977'
+2012-02-07 21:18:46,395 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201202072117_0001_m_000003_0' from 'tracker_aparna-magicworld:localhost/127.0.0.1:39977'
+2012-02-07 21:18:46,395 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201202072117_0001_m_000004_0' from 'tracker_aparna-magicworld:localhost/127.0.0.1:39977'
+2012-02-07 21:18:46,395 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201202072117_0001_m_000005_0' from 'tracker_aparna-magicworld:localhost/127.0.0.1:39977'
+2012-02-07 21:18:46,395 INFO org.apache.hadoop.mapred.JobTracker: Removed completed task 'attempt_201202072117_0001_r_000000_0' from 'tracker_aparna-magicworld:localhost/127.0.0.1:39977'
+2012-02-07 21:18:48,563 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /default-rack/kamal-3000-N100
+2012-02-07 21:31:45,776 INFO org.apache.hadoop.mapred.JobTracker: Lost tracker 'tracker_kamal-3000-N100:localhost/127.0.0.1:46366'
+2012-02-07 21:31:45,776 INFO org.apache.hadoop.mapred.JobTracker: Lost tracker 'tracker_aparna-magicworld:localhost/127.0.0.1:39977'

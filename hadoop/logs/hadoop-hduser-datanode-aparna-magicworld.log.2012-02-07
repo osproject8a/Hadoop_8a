@@ -1,0 +1,1020 @@
+2012-02-07 20:08:54,897 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting DataNode
+STARTUP_MSG:   host = aparna-magicworld/127.0.1.1
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.2
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-0.20 -r 911707; compiled by 'chrisdo' on Fri Feb 19 08:07:34 UTC 2010
+************************************************************/
+2012-02-07 20:09:09,953 INFO org.apache.hadoop.hdfs.server.common.Storage: Storage directory /app/hadoop/tmp/dfs/data is not formatted.
+2012-02-07 20:09:09,953 INFO org.apache.hadoop.hdfs.server.common.Storage: Formatting ...
+2012-02-07 20:09:10,208 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Registered FSDatasetStatusMBean
+2012-02-07 20:09:10,212 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Opened info server at 50010
+2012-02-07 20:09:10,215 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Balancing bandwith is 1048576 bytes/s
+2012-02-07 20:09:15,313 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2012-02-07 20:09:15,448 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50075
+2012-02-07 20:09:15,449 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50075 webServer.getConnectors()[0].getLocalPort() returned 50075
+2012-02-07 20:09:15,449 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50075
+2012-02-07 20:09:15,449 INFO org.mortbay.log: jetty-6.1.14
+2012-02-07 20:09:25,190 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50075
+2012-02-07 20:09:25,198 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=DataNode, sessionId=null
+2012-02-07 20:09:30,303 INFO org.apache.hadoop.ipc.metrics.RpcMetrics: Initializing RPC Metrics with hostName=DataNode, port=50020
+2012-02-07 20:09:30,307 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2012-02-07 20:09:30,309 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 50020: starting
+2012-02-07 20:09:30,310 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 50020: starting
+2012-02-07 20:09:30,311 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: dnRegistration = DatanodeRegistration(aparna-magicworld:50010, storageID=, infoPort=50075, ipcPort=50020)
+2012-02-07 20:09:30,311 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 50020: starting
+2012-02-07 20:09:30,314 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 50020: starting
+2012-02-07 20:09:30,333 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: New storage id DS-838311202-127.0.1.1-50010-1328625570313 is assigned to data-node 192.168.11.19:50010
+2012-02-07 20:09:30,334 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeRegistration(192.168.11.19:50010, storageID=DS-838311202-127.0.1.1-50010-1328625570313, infoPort=50075, ipcPort=50020)In DataNode.run, data = FSDataset{dirpath='/app/hadoop/tmp/dfs/data/current'}
+2012-02-07 20:09:30,334 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: using BLOCKREPORT_INTERVAL of 3600000msec Initial delay: 0msec
+2012-02-07 20:09:30,372 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: BlockReport of 0 blocks got processed in 3 msecs
+2012-02-07 20:09:30,373 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Starting Periodic block scanner.
+2012-02-07 20:09:54,484 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving block blk_-378008111267592091_1001 src: /192.168.11.19:38846 dest: /192.168.11.19:50010
+2012-02-07 20:09:54,792 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:38846, dest: /192.168.11.19:50010, bytes: 4, op: HDFS_WRITE, cliID: DFSClient_-1862553305, srvID: DS-838311202-127.0.1.1-50010-1328625570313, blockid: blk_-378008111267592091_1001
+2012-02-07 20:09:54,797 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 1 for block blk_-378008111267592091_1001 terminating
+2012-02-07 20:11:30,725 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving block blk_6374744817579992620_1002 src: /192.168.11.19:38855 dest: /192.168.11.19:50010
+2012-02-07 20:11:32,208 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:38855, dest: /192.168.11.19:50010, bytes: 674566, op: HDFS_WRITE, cliID: DFSClient_-2118256213, srvID: DS-838311202-127.0.1.1-50010-1328625570313, blockid: blk_6374744817579992620_1002
+2012-02-07 20:11:32,212 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 1 for block blk_6374744817579992620_1002 terminating
+2012-02-07 20:11:32,277 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving block blk_-1034166346157960459_1003 src: /192.168.11.19:38857 dest: /192.168.11.19:50010
+2012-02-07 20:11:35,184 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:38857, dest: /192.168.11.19:50010, bytes: 1945886, op: HDFS_WRITE, cliID: DFSClient_-2118256213, srvID: DS-838311202-127.0.1.1-50010-1328625570313, blockid: blk_-1034166346157960459_1003
+2012-02-07 20:11:35,185 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 1 for block blk_-1034166346157960459_1003 terminating
+2012-02-07 20:11:35,224 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving block blk_-5334798537619406302_1004 src: /192.168.11.19:38859 dest: /192.168.11.19:50010
+2012-02-07 20:11:37,398 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:38859, dest: /192.168.11.19:50010, bytes: 1573150, op: HDFS_WRITE, cliID: DFSClient_-2118256213, srvID: DS-838311202-127.0.1.1-50010-1328625570313, blockid: blk_-5334798537619406302_1004
+2012-02-07 20:11:37,398 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 1 for block blk_-5334798537619406302_1004 terminating
+2012-02-07 20:11:37,447 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving block blk_-867401810170868118_1005 src: /192.168.11.19:38861 dest: /192.168.11.19:50010
+2012-02-07 20:11:39,443 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:38861, dest: /192.168.11.19:50010, bytes: 1423801, op: HDFS_WRITE, cliID: DFSClient_-2118256213, srvID: DS-838311202-127.0.1.1-50010-1328625570313, blockid: blk_-867401810170868118_1005
+2012-02-07 20:11:39,444 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 1 for block blk_-867401810170868118_1005 terminating
+2012-02-07 20:11:39,491 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving block blk_-637246259128484498_1006 src: /192.168.11.19:38863 dest: /192.168.11.19:50010
+2012-02-07 20:11:40,478 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:38863, dest: /192.168.11.19:50010, bytes: 324548, op: HDFS_WRITE, cliID: DFSClient_-2118256213, srvID: DS-838311202-127.0.1.1-50010-1328625570313, blockid: blk_-637246259128484498_1006
+2012-02-07 20:11:40,479 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 1 for block blk_-637246259128484498_1006 terminating
+2012-02-07 20:13:25,430 INFO org.apache.hadoop.hdfs.server.datanode.DataBlockScanner: Verification succeeded for blk_6374744817579992620_1002
+2012-02-07 20:13:39,420 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Deleting block blk_-637246259128484498_1006 file /app/hadoop/tmp/dfs/data/current/blk_-637246259128484498
+2012-02-07 20:13:58,855 INFO org.apache.hadoop.hdfs.server.datanode.DataBlockScanner: Verification succeeded for blk_-867401810170868118_1005
+2012-02-07 20:14:17,665 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving block blk_2996765739843017410_1007 src: /192.168.11.19:38882 dest: /192.168.11.19:50010
+2012-02-07 20:14:18,373 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:38882, dest: /192.168.11.19:50010, bytes: 142466, op: HDFS_WRITE, cliID: DFSClient_330564365, srvID: DS-838311202-127.0.1.1-50010-1328625570313, blockid: blk_2996765739843017410_1007
+2012-02-07 20:14:18,373 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 1 for block blk_2996765739843017410_1007 terminating
+2012-02-07 20:14:18,536 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving block blk_8607872559097813580_1008 src: /192.168.11.19:38884 dest: /192.168.11.19:50010
+2012-02-07 20:14:18,781 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:38884, dest: /192.168.11.19:50010, bytes: 663, op: HDFS_WRITE, cliID: DFSClient_330564365, srvID: DS-838311202-127.0.1.1-50010-1328625570313, blockid: blk_8607872559097813580_1008
+2012-02-07 20:14:18,781 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 1 for block blk_8607872559097813580_1008 terminating
+2012-02-07 20:14:18,971 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving block blk_7009523479082416168_1009 src: /192.168.11.19:38886 dest: /192.168.11.19:50010
+2012-02-07 20:14:19,499 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:38886, dest: /192.168.11.19:50010, bytes: 16770, op: HDFS_WRITE, cliID: DFSClient_330564365, srvID: DS-838311202-127.0.1.1-50010-1328625570313, blockid: blk_7009523479082416168_1009
+2012-02-07 20:14:19,500 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 1 for block blk_7009523479082416168_1009 terminating
+2012-02-07 20:14:19,582 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:50010, dest: /192.168.11.19:38889, bytes: 16902, op: HDFS_READ, cliID: DFSClient_-1862553305, srvID: DS-838311202-127.0.1.1-50010-1328625570313, blockid: blk_7009523479082416168_1009
+2012-02-07 20:14:19,656 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:50010, dest: /192.168.11.19:38890, bytes: 143582, op: HDFS_READ, cliID: DFSClient_-1862553305, srvID: DS-838311202-127.0.1.1-50010-1328625570313, blockid: blk_2996765739843017410_1007
+2012-02-07 20:14:19,927 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving block blk_8213020971821358192_1011 src: /192.168.11.19:38891 dest: /192.168.11.19:50010
+2012-02-07 20:14:20,419 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:38891, dest: /192.168.11.19:50010, bytes: 16757, op: HDFS_WRITE, cliID: DFSClient_-1862553305, srvID: DS-838311202-127.0.1.1-50010-1328625570313, blockid: blk_8213020971821358192_1011
+2012-02-07 20:14:20,419 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 1 for block blk_8213020971821358192_1011 terminating
+2012-02-07 20:14:20,453 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:50010, dest: /192.168.11.19:38893, bytes: 671, op: HDFS_READ, cliID: DFSClient_-1862553305, srvID: DS-838311202-127.0.1.1-50010-1328625570313, blockid: blk_8607872559097813580_1008
+2012-02-07 20:14:41,349 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:50010, dest: /192.168.11.19:38898, bytes: 16902, op: HDFS_READ, cliID: DFSClient_629172672, srvID: DS-838311202-127.0.1.1-50010-1328625570313, blockid: blk_7009523479082416168_1009
+2012-02-07 20:14:41,459 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:50010, dest: /192.168.11.19:38899, bytes: 143582, op: HDFS_READ, cliID: DFSClient_629172672, srvID: DS-838311202-127.0.1.1-50010-1328625570313, blockid: blk_2996765739843017410_1007
+2012-02-07 20:14:44,885 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:50010, dest: /192.168.11.19:38911, bytes: 679838, op: HDFS_READ, cliID: DFSClient_attempt_201202072009_0001_m_000003_0, srvID: DS-838311202-127.0.1.1-50010-1328625570313, blockid: blk_6374744817579992620_1002
+2012-02-07 20:14:45,428 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:50010, dest: /192.168.11.19:38912, bytes: 1434925, op: HDFS_READ, cliID: DFSClient_attempt_201202072009_0001_m_000002_0, srvID: DS-838311202-127.0.1.1-50010-1328625570313, blockid: blk_-867401810170868118_1005
+2012-02-07 20:15:25,885 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:50010, dest: /192.168.11.19:38926, bytes: 1961090, op: HDFS_READ, cliID: DFSClient_attempt_201202072009_0001_m_000000_1, srvID: DS-838311202-127.0.1.1-50010-1328625570313, blockid: blk_-1034166346157960459_1003
+2012-02-07 20:15:31,799 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:50010, dest: /192.168.11.19:38932, bytes: 1585442, op: HDFS_READ, cliID: DFSClient_attempt_201202072009_0001_m_000001_1, srvID: DS-838311202-127.0.1.1-50010-1328625570313, blockid: blk_-5334798537619406302_1004
+2012-02-07 20:15:40,392 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving block blk_2990011476316844954_1012 src: /192.168.11.19:38936 dest: /192.168.11.19:50010
+2012-02-07 20:16:40,552 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: writeBlock blk_2990011476316844954_1012 received exception java.net.SocketTimeoutException: 60000 millis timeout while waiting for channel to be ready for read. ch : java.nio.channels.SocketChannel[connected local=/192.168.11.19:34036 remote=/192.168.11.61:50010]
+2012-02-07 20:16:40,554 ERROR org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeRegistration(192.168.11.19:50010, storageID=DS-838311202-127.0.1.1-50010-1328625570313, infoPort=50075, ipcPort=50020):DataXceiver
+java.net.SocketTimeoutException: 60000 millis timeout while waiting for channel to be ready for read. ch : java.nio.channels.SocketChannel[connected local=/192.168.11.19:34036 remote=/192.168.11.61:50010]
+	at org.apache.hadoop.net.SocketIOWithTimeout.doIO(SocketIOWithTimeout.java:164)
+	at org.apache.hadoop.net.SocketInputStream.read(SocketInputStream.java:155)
+	at org.apache.hadoop.net.SocketInputStream.read(SocketInputStream.java:128)
+	at org.apache.hadoop.net.SocketInputStream.read(SocketInputStream.java:116)
+	at java.io.DataInputStream.readByte(DataInputStream.java:248)
+	at org.apache.hadoop.io.WritableUtils.readVLong(WritableUtils.java:298)
+	at org.apache.hadoop.io.WritableUtils.readVInt(WritableUtils.java:319)
+	at org.apache.hadoop.io.Text.readString(Text.java:400)
+	at org.apache.hadoop.hdfs.server.datanode.DataXceiver.writeBlock(DataXceiver.java:313)
+	at org.apache.hadoop.hdfs.server.datanode.DataXceiver.run(DataXceiver.java:103)
+	at java.lang.Thread.run(Thread.java:662)
+2012-02-07 20:16:46,561 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving block blk_-7133417079230726070_1012 src: /192.168.11.19:38942 dest: /192.168.11.19:50010
+2012-02-07 20:17:34,166 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:38942, dest: /192.168.11.19:50010, bytes: 1232700, op: HDFS_WRITE, cliID: DFSClient_attempt_201202072009_0001_r_000000_0, srvID: DS-838311202-127.0.1.1-50010-1328625570313, blockid: blk_-7133417079230726070_1012
+2012-02-07 20:17:34,167 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 1 for block blk_-7133417079230726070_1012 terminating
+2012-02-07 20:17:41,536 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving block blk_3562532964921899468_1012 src: /192.168.11.19:38956 dest: /192.168.11.19:50010
+2012-02-07 20:17:42,568 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:38956, dest: /192.168.11.19:50010, bytes: 12884, op: HDFS_WRITE, cliID: DFSClient_-1862553305, srvID: DS-838311202-127.0.1.1-50010-1328625570313, blockid: blk_3562532964921899468_1012
+2012-02-07 20:17:42,569 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 1 for block blk_3562532964921899468_1012 terminating
+2012-02-07 20:17:48,502 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Deleting block blk_2996765739843017410_1007 file /app/hadoop/tmp/dfs/data/current/blk_2996765739843017410
+2012-02-07 20:17:48,502 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Deleting block blk_7009523479082416168_1009 file /app/hadoop/tmp/dfs/data/current/blk_7009523479082416168
+2012-02-07 20:17:48,503 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Deleting block blk_8607872559097813580_1008 file /app/hadoop/tmp/dfs/data/current/blk_8607872559097813580
+2012-02-07 20:18:39,901 INFO org.apache.hadoop.hdfs.server.datanode.DataBlockScanner: Verification succeeded for blk_-378008111267592091_1001
+2012-02-07 20:24:02,150 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down DataNode at aparna-magicworld/127.0.1.1
+************************************************************/
+2012-02-07 20:26:13,043 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting DataNode
+STARTUP_MSG:   host = aparna-magicworld/127.0.1.1
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.2
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-0.20 -r 911707; compiled by 'chrisdo' on Fri Feb 19 08:07:34 UTC 2010
+************************************************************/
+2012-02-07 20:26:13,472 ERROR org.apache.hadoop.hdfs.server.datanode.DataNode: java.io.IOException: Incompatible namespaceIDs in /app/hadoop/tmp/dfs/data: namenode namespaceID = 1153288536; datanode namespaceID = 66258522
+	at org.apache.hadoop.hdfs.server.datanode.DataStorage.doTransition(DataStorage.java:233)
+	at org.apache.hadoop.hdfs.server.datanode.DataStorage.recoverTransitionRead(DataStorage.java:148)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.startDataNode(DataNode.java:298)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.<init>(DataNode.java:216)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.makeInstance(DataNode.java:1283)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.instantiateDataNode(DataNode.java:1238)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.createDataNode(DataNode.java:1246)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.main(DataNode.java:1368)
+
+2012-02-07 20:26:13,473 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down DataNode at aparna-magicworld/127.0.1.1
+************************************************************/
+2012-02-07 20:26:46,120 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting DataNode
+STARTUP_MSG:   host = aparna-magicworld/127.0.1.1
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.2
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-0.20 -r 911707; compiled by 'chrisdo' on Fri Feb 19 08:07:34 UTC 2010
+************************************************************/
+2012-02-07 20:26:46,535 ERROR org.apache.hadoop.hdfs.server.datanode.DataNode: java.io.IOException: Incompatible namespaceIDs in /app/hadoop/tmp/dfs/data: namenode namespaceID = 1153288536; datanode namespaceID = 66258522
+	at org.apache.hadoop.hdfs.server.datanode.DataStorage.doTransition(DataStorage.java:233)
+	at org.apache.hadoop.hdfs.server.datanode.DataStorage.recoverTransitionRead(DataStorage.java:148)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.startDataNode(DataNode.java:298)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.<init>(DataNode.java:216)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.makeInstance(DataNode.java:1283)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.instantiateDataNode(DataNode.java:1238)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.createDataNode(DataNode.java:1246)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.main(DataNode.java:1368)
+
+2012-02-07 20:26:46,536 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down DataNode at aparna-magicworld/127.0.1.1
+************************************************************/
+2012-02-07 20:27:50,440 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting DataNode
+STARTUP_MSG:   host = aparna-magicworld/127.0.1.1
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.2
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-0.20 -r 911707; compiled by 'chrisdo' on Fri Feb 19 08:07:34 UTC 2010
+************************************************************/
+2012-02-07 20:27:50,740 INFO org.apache.hadoop.hdfs.server.common.Storage: Storage directory /app/hadoop/tmp/dfs/data is not formatted.
+2012-02-07 20:27:50,740 INFO org.apache.hadoop.hdfs.server.common.Storage: Formatting ...
+2012-02-07 20:27:50,957 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Registered FSDatasetStatusMBean
+2012-02-07 20:27:50,961 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Opened info server at 50010
+2012-02-07 20:27:50,967 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Balancing bandwith is 1048576 bytes/s
+2012-02-07 20:27:56,051 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2012-02-07 20:27:56,134 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50075
+2012-02-07 20:27:56,135 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50075 webServer.getConnectors()[0].getLocalPort() returned 50075
+2012-02-07 20:27:56,135 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50075
+2012-02-07 20:27:56,135 INFO org.mortbay.log: jetty-6.1.14
+2012-02-07 20:27:56,537 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50075
+2012-02-07 20:27:56,546 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=DataNode, sessionId=null
+2012-02-07 20:28:01,671 INFO org.apache.hadoop.ipc.metrics.RpcMetrics: Initializing RPC Metrics with hostName=DataNode, port=50020
+2012-02-07 20:28:01,674 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2012-02-07 20:28:01,676 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 50020: starting
+2012-02-07 20:28:01,677 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 50020: starting
+2012-02-07 20:28:01,678 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 50020: starting
+2012-02-07 20:28:01,678 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: dnRegistration = DatanodeRegistration(aparna-magicworld:50010, storageID=, infoPort=50075, ipcPort=50020)
+2012-02-07 20:28:01,681 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 50020: starting
+2012-02-07 20:28:01,701 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: New storage id DS-1823750878-127.0.1.1-50010-1328626681681 is assigned to data-node 192.168.11.19:50010
+2012-02-07 20:28:01,702 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeRegistration(192.168.11.19:50010, storageID=DS-1823750878-127.0.1.1-50010-1328626681681, infoPort=50075, ipcPort=50020)In DataNode.run, data = FSDataset{dirpath='/app/hadoop/tmp/dfs/data/current'}
+2012-02-07 20:28:01,702 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: using BLOCKREPORT_INTERVAL of 3600000msec Initial delay: 0msec
+2012-02-07 20:28:01,722 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: BlockReport of 0 blocks got processed in 3 msecs
+2012-02-07 20:28:01,723 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Starting Periodic block scanner.
+2012-02-07 20:28:39,921 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving block blk_-5601635970086392789_1001 src: /192.168.11.19:38991 dest: /192.168.11.19:50010
+2012-02-07 20:28:40,025 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:38991, dest: /192.168.11.19:50010, bytes: 4, op: HDFS_WRITE, cliID: DFSClient_353665004, srvID: DS-1823750878-127.0.1.1-50010-1328626681681, blockid: blk_-5601635970086392789_1001
+2012-02-07 20:28:40,025 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 1 for block blk_-5601635970086392789_1001 terminating
+2012-02-07 20:29:56,792 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving block blk_-668126914538347364_1002 src: /192.168.11.19:38999 dest: /192.168.11.19:50010
+2012-02-07 20:29:57,213 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:38999, dest: /192.168.11.19:50010, bytes: 674566, op: HDFS_WRITE, cliID: DFSClient_1352663026, srvID: DS-1823750878-127.0.1.1-50010-1328626681681, blockid: blk_-668126914538347364_1002
+2012-02-07 20:29:57,214 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 1 for block blk_-668126914538347364_1002 terminating
+2012-02-07 20:29:57,254 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving block blk_-4119522923024314450_1003 src: /192.168.11.19:39001 dest: /192.168.11.19:50010
+2012-02-07 20:29:58,200 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:39001, dest: /192.168.11.19:50010, bytes: 1945886, op: HDFS_WRITE, cliID: DFSClient_1352663026, srvID: DS-1823750878-127.0.1.1-50010-1328626681681, blockid: blk_-4119522923024314450_1003
+2012-02-07 20:29:58,200 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 1 for block blk_-4119522923024314450_1003 terminating
+2012-02-07 20:29:58,228 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving block blk_-3089482567518776181_1004 src: /192.168.11.19:39003 dest: /192.168.11.19:50010
+2012-02-07 20:29:58,991 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:39003, dest: /192.168.11.19:50010, bytes: 1573150, op: HDFS_WRITE, cliID: DFSClient_1352663026, srvID: DS-1823750878-127.0.1.1-50010-1328626681681, blockid: blk_-3089482567518776181_1004
+2012-02-07 20:29:58,992 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 1 for block blk_-3089482567518776181_1004 terminating
+2012-02-07 20:29:59,037 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving block blk_6071821815635154010_1005 src: /192.168.11.19:39005 dest: /192.168.11.19:50010
+2012-02-07 20:29:59,739 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:39005, dest: /192.168.11.19:50010, bytes: 1423801, op: HDFS_WRITE, cliID: DFSClient_1352663026, srvID: DS-1823750878-127.0.1.1-50010-1328626681681, blockid: blk_6071821815635154010_1005
+2012-02-07 20:29:59,740 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 1 for block blk_6071821815635154010_1005 terminating
+2012-02-07 20:30:01,771 INFO org.apache.hadoop.hdfs.server.datanode.DataBlockScanner: Verification succeeded for blk_-3089482567518776181_1004
+2012-02-07 20:30:45,636 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving block blk_74706098678261980_1006 src: /192.168.11.19:39015 dest: /192.168.11.19:50010
+2012-02-07 20:30:45,847 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:39015, dest: /192.168.11.19:50010, bytes: 142466, op: HDFS_WRITE, cliID: DFSClient_-1542891885, srvID: DS-1823750878-127.0.1.1-50010-1328626681681, blockid: blk_74706098678261980_1006
+2012-02-07 20:30:45,848 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 1 for block blk_74706098678261980_1006 terminating
+2012-02-07 20:30:45,996 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving block blk_-6081471515846732063_1007 src: /192.168.11.19:39017 dest: /192.168.11.19:50010
+2012-02-07 20:30:46,018 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:39017, dest: /192.168.11.19:50010, bytes: 663, op: HDFS_WRITE, cliID: DFSClient_-1542891885, srvID: DS-1823750878-127.0.1.1-50010-1328626681681, blockid: blk_-6081471515846732063_1007
+2012-02-07 20:30:46,019 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 1 for block blk_-6081471515846732063_1007 terminating
+2012-02-07 20:30:46,105 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving block blk_2922196695957071973_1008 src: /192.168.11.19:39019 dest: /192.168.11.19:50010
+2012-02-07 20:30:46,141 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:39019, dest: /192.168.11.19:50010, bytes: 16775, op: HDFS_WRITE, cliID: DFSClient_-1542891885, srvID: DS-1823750878-127.0.1.1-50010-1328626681681, blockid: blk_2922196695957071973_1008
+2012-02-07 20:30:46,141 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 1 for block blk_2922196695957071973_1008 terminating
+2012-02-07 20:30:46,196 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:50010, dest: /192.168.11.19:39022, bytes: 16907, op: HDFS_READ, cliID: DFSClient_353665004, srvID: DS-1823750878-127.0.1.1-50010-1328626681681, blockid: blk_2922196695957071973_1008
+2012-02-07 20:30:46,294 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:50010, dest: /192.168.11.19:39023, bytes: 143582, op: HDFS_READ, cliID: DFSClient_353665004, srvID: DS-1823750878-127.0.1.1-50010-1328626681681, blockid: blk_74706098678261980_1006
+2012-02-07 20:30:46,592 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving block blk_-333795071920129192_1010 src: /192.168.11.19:39024 dest: /192.168.11.19:50010
+2012-02-07 20:30:46,639 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:39024, dest: /192.168.11.19:50010, bytes: 16762, op: HDFS_WRITE, cliID: DFSClient_353665004, srvID: DS-1823750878-127.0.1.1-50010-1328626681681, blockid: blk_-333795071920129192_1010
+2012-02-07 20:30:46,639 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 1 for block blk_-333795071920129192_1010 terminating
+2012-02-07 20:30:46,672 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:50010, dest: /192.168.11.19:39026, bytes: 671, op: HDFS_READ, cliID: DFSClient_353665004, srvID: DS-1823750878-127.0.1.1-50010-1328626681681, blockid: blk_-6081471515846732063_1007
+2012-02-07 20:31:23,789 INFO org.apache.hadoop.hdfs.server.datanode.DataBlockScanner: Verification succeeded for blk_-5601635970086392789_1001
+2012-02-07 20:32:17,201 INFO org.apache.hadoop.hdfs.server.datanode.DataBlockScanner: Verification succeeded for blk_-668126914538347364_1002
+2012-02-07 20:34:06,020 INFO org.apache.hadoop.hdfs.server.datanode.DataBlockScanner: Verification succeeded for blk_-4119522923024314450_1003
+2012-02-07 20:39:47,152 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving block blk_5454759149785558366_1011 src: /192.168.11.61:60116 dest: /192.168.11.19:50010
+2012-02-07 20:39:47,718 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.61:60116, dest: /192.168.11.19:50010, bytes: 1232700, op: HDFS_WRITE, cliID: DFSClient_attempt_201202072028_0001_r_000000_0, srvID: DS-1823750878-127.0.1.1-50010-1328626681681, blockid: blk_5454759149785558366_1011
+2012-02-07 20:39:47,718 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 0 for block blk_5454759149785558366_1011 terminating
+2012-02-07 20:39:59,023 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving block blk_3023614600104802825_1011 src: /192.168.11.19:39051 dest: /192.168.11.19:50010
+2012-02-07 20:39:59,262 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:39051, dest: /192.168.11.19:50010, bytes: 12860, op: HDFS_WRITE, cliID: DFSClient_353665004, srvID: DS-1823750878-127.0.1.1-50010-1328626681681, blockid: blk_3023614600104802825_1011
+2012-02-07 20:39:59,263 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 1 for block blk_3023614600104802825_1011 terminating
+2012-02-07 20:40:01,947 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Deleting block blk_-6081471515846732063_1007 file /app/hadoop/tmp/dfs/data/current/blk_-6081471515846732063
+2012-02-07 20:40:01,947 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Deleting block blk_74706098678261980_1006 file /app/hadoop/tmp/dfs/data/current/blk_74706098678261980
+2012-02-07 20:40:01,948 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Deleting block blk_2922196695957071973_1008 file /app/hadoop/tmp/dfs/data/current/blk_2922196695957071973
+2012-02-07 20:57:32,453 INFO org.apache.hadoop.hdfs.server.datanode.DataBlockScanner: Verification succeeded for blk_6071821815635154010_1005
+2012-02-07 21:05:43,065 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down DataNode at aparna-magicworld/127.0.1.1
+************************************************************/
+2012-02-07 21:06:40,969 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting DataNode
+STARTUP_MSG:   host = aparna-magicworld/127.0.1.1
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.2
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-0.20 -r 911707; compiled by 'chrisdo' on Fri Feb 19 08:07:34 UTC 2010
+************************************************************/
+2012-02-07 21:06:41,281 INFO org.apache.hadoop.hdfs.server.common.Storage: Storage directory /app/hadoop/tmp/dfs/data is not formatted.
+2012-02-07 21:06:41,281 INFO org.apache.hadoop.hdfs.server.common.Storage: Formatting ...
+2012-02-07 21:06:41,531 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Registered FSDatasetStatusMBean
+2012-02-07 21:06:41,534 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Opened info server at 50010
+2012-02-07 21:06:41,539 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Balancing bandwith is 1048576 bytes/s
+2012-02-07 21:06:46,615 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2012-02-07 21:06:46,698 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50075
+2012-02-07 21:06:46,698 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50075 webServer.getConnectors()[0].getLocalPort() returned 50075
+2012-02-07 21:06:46,698 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50075
+2012-02-07 21:06:46,698 INFO org.mortbay.log: jetty-6.1.14
+2012-02-07 21:06:47,171 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50075
+2012-02-07 21:06:47,194 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=DataNode, sessionId=null
+2012-02-07 21:06:52,244 INFO org.apache.hadoop.ipc.metrics.RpcMetrics: Initializing RPC Metrics with hostName=DataNode, port=50020
+2012-02-07 21:06:52,249 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2012-02-07 21:06:52,251 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 50020: starting
+2012-02-07 21:06:52,251 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 50020: starting
+2012-02-07 21:06:52,252 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 50020: starting
+2012-02-07 21:06:52,252 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: dnRegistration = DatanodeRegistration(aparna-magicworld:50010, storageID=, infoPort=50075, ipcPort=50020)
+2012-02-07 21:06:52,259 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 50020: starting
+2012-02-07 21:06:52,279 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: New storage id DS-937808925-127.0.1.1-50010-1328629012254 is assigned to data-node 192.168.11.19:50010
+2012-02-07 21:06:52,280 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeRegistration(192.168.11.19:50010, storageID=DS-937808925-127.0.1.1-50010-1328629012254, infoPort=50075, ipcPort=50020)In DataNode.run, data = FSDataset{dirpath='/app/hadoop/tmp/dfs/data/current'}
+2012-02-07 21:06:52,280 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: using BLOCKREPORT_INTERVAL of 3600000msec Initial delay: 0msec
+2012-02-07 21:06:52,305 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: BlockReport of 0 blocks got processed in 9 msecs
+2012-02-07 21:06:52,306 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Starting Periodic block scanner.
+2012-02-07 21:11:52,394 WARN org.apache.hadoop.hdfs.server.datanode.DataNode: java.io.IOException: Expecting a line not the end of stream
+	at org.apache.hadoop.fs.DF.parseExecResult(DF.java:109)
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:179)
+	at org.apache.hadoop.util.Shell.run(Shell.java:134)
+	at org.apache.hadoop.fs.DF.getCapacity(DF.java:63)
+	at org.apache.hadoop.hdfs.server.datanode.FSDataset$FSVolume.getCapacity(FSDataset.java:346)
+	at org.apache.hadoop.hdfs.server.datanode.FSDataset$FSVolumeSet.getCapacity(FSDataset.java:512)
+	at org.apache.hadoop.hdfs.server.datanode.FSDataset.getCapacity(FSDataset.java:708)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.offerService(DataNode.java:702)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.run(DataNode.java:1186)
+	at java.lang.Thread.run(Thread.java:662)
+
+2012-02-07 21:12:00,207 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down DataNode at aparna-magicworld/127.0.1.1
+************************************************************/
+2012-02-07 21:13:23,096 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting DataNode
+STARTUP_MSG:   host = aparna-magicworld/127.0.1.1
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.2
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-0.20 -r 911707; compiled by 'chrisdo' on Fri Feb 19 08:07:34 UTC 2010
+************************************************************/
+2012-02-07 21:13:23,398 INFO org.apache.hadoop.hdfs.server.common.Storage: Storage directory /app/hadoop/tmp/dfs/data is not formatted.
+2012-02-07 21:13:23,398 INFO org.apache.hadoop.hdfs.server.common.Storage: Formatting ...
+2012-02-07 21:13:23,653 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Registered FSDatasetStatusMBean
+2012-02-07 21:13:23,656 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Opened info server at 50010
+2012-02-07 21:13:23,660 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Balancing bandwith is 1048576 bytes/s
+2012-02-07 21:13:28,737 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2012-02-07 21:13:28,821 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50075
+2012-02-07 21:13:28,822 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50075 webServer.getConnectors()[0].getLocalPort() returned 50075
+2012-02-07 21:13:28,822 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50075
+2012-02-07 21:13:28,822 INFO org.mortbay.log: jetty-6.1.14
+2012-02-07 21:13:29,299 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50075
+2012-02-07 21:13:29,309 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=DataNode, sessionId=null
+2012-02-07 21:13:34,365 INFO org.apache.hadoop.ipc.metrics.RpcMetrics: Initializing RPC Metrics with hostName=DataNode, port=50020
+2012-02-07 21:13:34,369 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2012-02-07 21:13:34,371 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 50020: starting
+2012-02-07 21:13:34,372 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 50020: starting
+2012-02-07 21:13:34,373 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: dnRegistration = DatanodeRegistration(aparna-magicworld:50010, storageID=, infoPort=50075, ipcPort=50020)
+2012-02-07 21:13:34,375 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 50020: starting
+2012-02-07 21:13:34,376 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 50020: starting
+2012-02-07 21:13:34,403 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: New storage id DS-1639091092-127.0.1.1-50010-1328629414374 is assigned to data-node 192.168.11.19:50010
+2012-02-07 21:13:34,403 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeRegistration(192.168.11.19:50010, storageID=DS-1639091092-127.0.1.1-50010-1328629414374, infoPort=50075, ipcPort=50020)In DataNode.run, data = FSDataset{dirpath='/app/hadoop/tmp/dfs/data/current'}
+2012-02-07 21:13:34,404 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: using BLOCKREPORT_INTERVAL of 3600000msec Initial delay: 0msec
+2012-02-07 21:13:34,425 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: BlockReport of 0 blocks got processed in 7 msecs
+2012-02-07 21:13:34,426 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Starting Periodic block scanner.
+2012-02-07 21:13:47,547 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving block blk_-1086496618699941117_1001 src: /192.168.11.19:39124 dest: /192.168.11.19:50010
+2012-02-07 21:13:47,584 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:39124, dest: /192.168.11.19:50010, bytes: 4, op: HDFS_WRITE, cliID: DFSClient_1094688527, srvID: DS-1639091092-127.0.1.1-50010-1328629414374, blockid: blk_-1086496618699941117_1001
+2012-02-07 21:13:47,593 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 0 for block blk_-1086496618699941117_1001 terminating
+2012-02-07 21:13:55,350 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving block blk_-3786948134452912320_1002 src: /192.168.11.19:39132 dest: /192.168.11.19:50010
+2012-02-07 21:13:55,375 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:39132, dest: /192.168.11.19:50010, bytes: 674566, op: HDFS_WRITE, cliID: DFSClient_56940196, srvID: DS-1639091092-127.0.1.1-50010-1328629414374, blockid: blk_-3786948134452912320_1002
+2012-02-07 21:13:55,379 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 0 for block blk_-3786948134452912320_1002 terminating
+2012-02-07 21:13:55,406 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving block blk_2126851128519182898_1003 src: /192.168.11.19:39133 dest: /192.168.11.19:50010
+2012-02-07 21:13:55,460 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:39133, dest: /192.168.11.19:50010, bytes: 1945886, op: HDFS_WRITE, cliID: DFSClient_56940196, srvID: DS-1639091092-127.0.1.1-50010-1328629414374, blockid: blk_2126851128519182898_1003
+2012-02-07 21:13:55,461 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 0 for block blk_2126851128519182898_1003 terminating
+2012-02-07 21:13:55,493 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving block blk_-6089818335298517353_1004 src: /192.168.11.19:39134 dest: /192.168.11.19:50010
+2012-02-07 21:13:55,540 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:39134, dest: /192.168.11.19:50010, bytes: 1573150, op: HDFS_WRITE, cliID: DFSClient_56940196, srvID: DS-1639091092-127.0.1.1-50010-1328629414374, blockid: blk_-6089818335298517353_1004
+2012-02-07 21:13:55,541 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 0 for block blk_-6089818335298517353_1004 terminating
+2012-02-07 21:13:55,583 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving block blk_6381848578995192003_1005 src: /192.168.11.19:39135 dest: /192.168.11.19:50010
+2012-02-07 21:13:55,639 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:39135, dest: /192.168.11.19:50010, bytes: 1423801, op: HDFS_WRITE, cliID: DFSClient_56940196, srvID: DS-1639091092-127.0.1.1-50010-1328629414374, blockid: blk_6381848578995192003_1005
+2012-02-07 21:13:55,640 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 0 for block blk_6381848578995192003_1005 terminating
+2012-02-07 21:14:39,935 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving block blk_8803975181202496515_1006 src: /192.168.11.19:39144 dest: /192.168.11.19:50010
+2012-02-07 21:14:39,946 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:39144, dest: /192.168.11.19:50010, bytes: 142466, op: HDFS_WRITE, cliID: DFSClient_-1439940799, srvID: DS-1639091092-127.0.1.1-50010-1328629414374, blockid: blk_8803975181202496515_1006
+2012-02-07 21:14:39,946 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 0 for block blk_8803975181202496515_1006 terminating
+2012-02-07 21:14:40,116 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving block blk_6228585232086337315_1007 src: /192.168.11.19:39145 dest: /192.168.11.19:50010
+2012-02-07 21:14:40,119 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:39145, dest: /192.168.11.19:50010, bytes: 599, op: HDFS_WRITE, cliID: DFSClient_-1439940799, srvID: DS-1639091092-127.0.1.1-50010-1328629414374, blockid: blk_6228585232086337315_1007
+2012-02-07 21:14:40,120 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 0 for block blk_6228585232086337315_1007 terminating
+2012-02-07 21:14:40,201 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving block blk_-248974241431593090_1008 src: /192.168.11.19:39146 dest: /192.168.11.19:50010
+2012-02-07 21:14:40,203 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:39146, dest: /192.168.11.19:50010, bytes: 16777, op: HDFS_WRITE, cliID: DFSClient_-1439940799, srvID: DS-1639091092-127.0.1.1-50010-1328629414374, blockid: blk_-248974241431593090_1008
+2012-02-07 21:14:40,205 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 0 for block blk_-248974241431593090_1008 terminating
+2012-02-07 21:14:40,279 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:50010, dest: /192.168.11.19:39148, bytes: 16909, op: HDFS_READ, cliID: DFSClient_1094688527, srvID: DS-1639091092-127.0.1.1-50010-1328629414374, blockid: blk_-248974241431593090_1008
+2012-02-07 21:14:40,385 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:50010, dest: /192.168.11.19:39149, bytes: 143582, op: HDFS_READ, cliID: DFSClient_1094688527, srvID: DS-1639091092-127.0.1.1-50010-1328629414374, blockid: blk_8803975181202496515_1006
+2012-02-07 21:14:40,625 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving block blk_3292790474105005114_1010 src: /192.168.11.19:39150 dest: /192.168.11.19:50010
+2012-02-07 21:14:40,644 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:39150, dest: /192.168.11.19:50010, bytes: 16764, op: HDFS_WRITE, cliID: DFSClient_1094688527, srvID: DS-1639091092-127.0.1.1-50010-1328629414374, blockid: blk_3292790474105005114_1010
+2012-02-07 21:14:40,645 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 0 for block blk_3292790474105005114_1010 terminating
+2012-02-07 21:14:40,683 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:50010, dest: /192.168.11.19:39151, bytes: 607, op: HDFS_READ, cliID: DFSClient_1094688527, srvID: DS-1639091092-127.0.1.1-50010-1328629414374, blockid: blk_6228585232086337315_1007
+2012-02-07 21:14:42,036 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:50010, dest: /192.168.11.19:39153, bytes: 16909, op: HDFS_READ, cliID: DFSClient_2006568069, srvID: DS-1639091092-127.0.1.1-50010-1328629414374, blockid: blk_-248974241431593090_1008
+2012-02-07 21:14:42,137 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:50010, dest: /192.168.11.19:39154, bytes: 143582, op: HDFS_READ, cliID: DFSClient_2006568069, srvID: DS-1639091092-127.0.1.1-50010-1328629414374, blockid: blk_8803975181202496515_1006
+2012-02-07 21:14:48,947 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:50010, dest: /192.168.11.19:39171, bytes: 1585442, op: HDFS_READ, cliID: DFSClient_attempt_201202072113_0001_m_000001_0, srvID: DS-1639091092-127.0.1.1-50010-1328629414374, blockid: blk_-6089818335298517353_1004
+2012-02-07 21:14:49,081 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:50010, dest: /192.168.11.19:39169, bytes: 1961090, op: HDFS_READ, cliID: DFSClient_attempt_201202072113_0001_m_000000_0, srvID: DS-1639091092-127.0.1.1-50010-1328629414374, blockid: blk_2126851128519182898_1003
+2012-02-07 21:14:58,647 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:50010, dest: /192.168.11.19:39183, bytes: 1434925, op: HDFS_READ, cliID: DFSClient_attempt_201202072113_0001_m_000002_0, srvID: DS-1639091092-127.0.1.1-50010-1328629414374, blockid: blk_6381848578995192003_1005
+2012-02-07 21:14:58,684 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:50010, dest: /192.168.11.19:39187, bytes: 679838, op: HDFS_READ, cliID: DFSClient_attempt_201202072113_0001_m_000003_0, srvID: DS-1639091092-127.0.1.1-50010-1328629414374, blockid: blk_-3786948134452912320_1002
+2012-02-07 21:15:09,243 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving block blk_3922902535863695271_1011 src: /192.168.11.19:39192 dest: /192.168.11.19:50010
+2012-02-07 21:15:10,598 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:39192, dest: /192.168.11.19:50010, bytes: 1232700, op: HDFS_WRITE, cliID: DFSClient_attempt_201202072113_0001_r_000000_0, srvID: DS-1639091092-127.0.1.1-50010-1328629414374, blockid: blk_3922902535863695271_1011
+2012-02-07 21:15:10,599 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 0 for block blk_3922902535863695271_1011 terminating
+2012-02-07 21:15:18,066 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving block blk_4884164603305714384_1011 src: /192.168.11.19:39200 dest: /192.168.11.19:50010
+2012-02-07 21:15:18,136 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:39200, dest: /192.168.11.19:50010, bytes: 12768, op: HDFS_WRITE, cliID: DFSClient_1094688527, srvID: DS-1639091092-127.0.1.1-50010-1328629414374, blockid: blk_4884164603305714384_1011
+2012-02-07 21:15:18,137 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 1 for block blk_4884164603305714384_1011 terminating
+2012-02-07 21:15:19,447 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeRegistration(192.168.11.19:50010, storageID=DS-1639091092-127.0.1.1-50010-1328629414374, infoPort=50075, ipcPort=50020) Starting thread to transfer block blk_6228585232086337315_1007 to 192.168.11.61:50010 
+2012-02-07 21:15:19,450 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeRegistration(192.168.11.19:50010, storageID=DS-1639091092-127.0.1.1-50010-1328629414374, infoPort=50075, ipcPort=50020) Starting thread to transfer block blk_6381848578995192003_1005 to 192.168.11.61:50010 
+2012-02-07 21:15:19,452 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeRegistration(192.168.11.19:50010, storageID=DS-1639091092-127.0.1.1-50010-1328629414374, infoPort=50075, ipcPort=50020):Transmitted block blk_6228585232086337315_1007 to /192.168.11.61:50010
+2012-02-07 21:15:19,617 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeRegistration(192.168.11.19:50010, storageID=DS-1639091092-127.0.1.1-50010-1328629414374, infoPort=50075, ipcPort=50020):Transmitted block blk_6381848578995192003_1005 to /192.168.11.61:50010
+2012-02-07 21:15:22,446 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeRegistration(192.168.11.19:50010, storageID=DS-1639091092-127.0.1.1-50010-1328629414374, infoPort=50075, ipcPort=50020) Starting thread to transfer block blk_-6089818335298517353_1004 to 192.168.11.61:50010 
+2012-02-07 21:15:22,446 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeRegistration(192.168.11.19:50010, storageID=DS-1639091092-127.0.1.1-50010-1328629414374, infoPort=50075, ipcPort=50020) Starting thread to transfer block blk_-3786948134452912320_1002 to 192.168.11.61:50010 
+2012-02-07 21:15:22,448 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Deleting block blk_-248974241431593090_1008 file /app/hadoop/tmp/dfs/data/current/blk_-248974241431593090
+2012-02-07 21:15:22,448 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Deleting block blk_6228585232086337315_1007 file /app/hadoop/tmp/dfs/data/current/blk_6228585232086337315
+2012-02-07 21:15:22,450 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Deleting block blk_8803975181202496515_1006 file /app/hadoop/tmp/dfs/data/current/blk_8803975181202496515
+2012-02-07 21:15:22,573 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeRegistration(192.168.11.19:50010, storageID=DS-1639091092-127.0.1.1-50010-1328629414374, infoPort=50075, ipcPort=50020):Transmitted block blk_-3786948134452912320_1002 to /192.168.11.61:50010
+2012-02-07 21:15:22,869 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeRegistration(192.168.11.19:50010, storageID=DS-1639091092-127.0.1.1-50010-1328629414374, infoPort=50075, ipcPort=50020):Transmitted block blk_-6089818335298517353_1004 to /192.168.11.61:50010
+2012-02-07 21:15:25,447 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeRegistration(192.168.11.19:50010, storageID=DS-1639091092-127.0.1.1-50010-1328629414374, infoPort=50075, ipcPort=50020) Starting thread to transfer block blk_-1086496618699941117_1001 to 192.168.11.61:50010 
+2012-02-07 21:15:25,447 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeRegistration(192.168.11.19:50010, storageID=DS-1639091092-127.0.1.1-50010-1328629414374, infoPort=50075, ipcPort=50020) Starting thread to transfer block blk_2126851128519182898_1003 to 192.168.11.61:50010 
+2012-02-07 21:15:25,450 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeRegistration(192.168.11.19:50010, storageID=DS-1639091092-127.0.1.1-50010-1328629414374, infoPort=50075, ipcPort=50020):Transmitted block blk_-1086496618699941117_1001 to /192.168.11.61:50010
+2012-02-07 21:15:25,616 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeRegistration(192.168.11.19:50010, storageID=DS-1639091092-127.0.1.1-50010-1328629414374, infoPort=50075, ipcPort=50020):Transmitted block blk_2126851128519182898_1003 to /192.168.11.61:50010
+2012-02-07 21:15:28,448 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeRegistration(192.168.11.19:50010, storageID=DS-1639091092-127.0.1.1-50010-1328629414374, infoPort=50075, ipcPort=50020) Starting thread to transfer block blk_3292790474105005114_1010 to 192.168.11.61:50010 
+2012-02-07 21:15:28,448 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeRegistration(192.168.11.19:50010, storageID=DS-1639091092-127.0.1.1-50010-1328629414374, infoPort=50075, ipcPort=50020) Starting thread to transfer block blk_3922902535863695271_1011 to 192.168.11.61:50010 
+2012-02-07 21:15:28,452 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeRegistration(192.168.11.19:50010, storageID=DS-1639091092-127.0.1.1-50010-1328629414374, infoPort=50075, ipcPort=50020):Transmitted block blk_3292790474105005114_1010 to /192.168.11.61:50010
+2012-02-07 21:15:28,569 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeRegistration(192.168.11.19:50010, storageID=DS-1639091092-127.0.1.1-50010-1328629414374, infoPort=50075, ipcPort=50020):Transmitted block blk_3922902535863695271_1011 to /192.168.11.61:50010
+2012-02-07 21:16:33,033 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down DataNode at aparna-magicworld/127.0.1.1
+************************************************************/
+2012-02-07 21:17:17,306 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting DataNode
+STARTUP_MSG:   host = aparna-magicworld/127.0.1.1
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.2
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-0.20 -r 911707; compiled by 'chrisdo' on Fri Feb 19 08:07:34 UTC 2010
+************************************************************/
+2012-02-07 21:17:18,124 INFO org.apache.hadoop.hdfs.server.common.Storage: Storage directory /app/hadoop/tmp/dfs/data is not formatted.
+2012-02-07 21:17:18,124 INFO org.apache.hadoop.hdfs.server.common.Storage: Formatting ...
+2012-02-07 21:17:18,365 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Registered FSDatasetStatusMBean
+2012-02-07 21:17:18,368 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Opened info server at 50010
+2012-02-07 21:17:18,371 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Balancing bandwith is 1048576 bytes/s
+2012-02-07 21:17:23,457 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2012-02-07 21:17:23,541 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50075
+2012-02-07 21:17:23,541 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50075 webServer.getConnectors()[0].getLocalPort() returned 50075
+2012-02-07 21:17:23,541 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50075
+2012-02-07 21:17:23,541 INFO org.mortbay.log: jetty-6.1.14
+2012-02-07 21:17:24,048 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50075
+2012-02-07 21:17:24,056 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=DataNode, sessionId=null
+2012-02-07 21:17:29,086 INFO org.apache.hadoop.ipc.metrics.RpcMetrics: Initializing RPC Metrics with hostName=DataNode, port=50020
+2012-02-07 21:17:29,093 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2012-02-07 21:17:29,097 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 50020: starting
+2012-02-07 21:17:29,098 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 50020: starting
+2012-02-07 21:17:29,101 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: dnRegistration = DatanodeRegistration(aparna-magicworld:50010, storageID=, infoPort=50075, ipcPort=50020)
+2012-02-07 21:17:29,104 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 50020: starting
+2012-02-07 21:17:29,108 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 50020: starting
+2012-02-07 21:17:29,124 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: New storage id DS-962141888-127.0.1.1-50010-1328629649103 is assigned to data-node 192.168.11.19:50010
+2012-02-07 21:17:29,125 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeRegistration(192.168.11.19:50010, storageID=DS-962141888-127.0.1.1-50010-1328629649103, infoPort=50075, ipcPort=50020)In DataNode.run, data = FSDataset{dirpath='/app/hadoop/tmp/dfs/data/current'}
+2012-02-07 21:17:29,125 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: using BLOCKREPORT_INTERVAL of 3600000msec Initial delay: 0msec
+2012-02-07 21:17:29,147 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: BlockReport of 0 blocks got processed in 6 msecs
+2012-02-07 21:17:29,148 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Starting Periodic block scanner.
+2012-02-07 21:17:34,760 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving block blk_5161087736617860255_1001 src: /192.168.11.19:39228 dest: /192.168.11.19:50010
+2012-02-07 21:17:34,778 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:39228, dest: /192.168.11.19:50010, bytes: 4, op: HDFS_WRITE, cliID: DFSClient_651668740, srvID: DS-962141888-127.0.1.1-50010-1328629649103, blockid: blk_5161087736617860255_1001
+2012-02-07 21:17:34,781 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 0 for block blk_5161087736617860255_1001 terminating
+2012-02-07 21:17:44,367 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving block blk_-846790038786169244_1002 src: /192.168.11.19:39236 dest: /192.168.11.19:50010
+2012-02-07 21:17:44,388 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:39236, dest: /192.168.11.19:50010, bytes: 674566, op: HDFS_WRITE, cliID: DFSClient_788676794, srvID: DS-962141888-127.0.1.1-50010-1328629649103, blockid: blk_-846790038786169244_1002
+2012-02-07 21:17:44,394 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 0 for block blk_-846790038786169244_1002 terminating
+2012-02-07 21:17:44,426 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving block blk_616540922751842293_1003 src: /192.168.11.19:39237 dest: /192.168.11.19:50010
+2012-02-07 21:17:44,484 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:39237, dest: /192.168.11.19:50010, bytes: 1945886, op: HDFS_WRITE, cliID: DFSClient_788676794, srvID: DS-962141888-127.0.1.1-50010-1328629649103, blockid: blk_616540922751842293_1003
+2012-02-07 21:17:44,485 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 0 for block blk_616540922751842293_1003 terminating
+2012-02-07 21:17:44,510 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving block blk_6986993915836527408_1004 src: /192.168.11.19:39238 dest: /192.168.11.19:50010
+2012-02-07 21:17:44,567 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:39238, dest: /192.168.11.19:50010, bytes: 1573150, op: HDFS_WRITE, cliID: DFSClient_788676794, srvID: DS-962141888-127.0.1.1-50010-1328629649103, blockid: blk_6986993915836527408_1004
+2012-02-07 21:17:44,567 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 0 for block blk_6986993915836527408_1004 terminating
+2012-02-07 21:17:44,646 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving block blk_-1583270089274315330_1005 src: /192.168.11.19:39239 dest: /192.168.11.19:50010
+2012-02-07 21:17:44,709 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:39239, dest: /192.168.11.19:50010, bytes: 1423801, op: HDFS_WRITE, cliID: DFSClient_788676794, srvID: DS-962141888-127.0.1.1-50010-1328629649103, blockid: blk_-1583270089274315330_1005
+2012-02-07 21:17:44,709 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 0 for block blk_-1583270089274315330_1005 terminating
+2012-02-07 21:18:07,112 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving block blk_-855725477447245701_1006 src: /192.168.11.19:39248 dest: /192.168.11.19:50010
+2012-02-07 21:18:07,122 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:39248, dest: /192.168.11.19:50010, bytes: 142466, op: HDFS_WRITE, cliID: DFSClient_-1111242386, srvID: DS-962141888-127.0.1.1-50010-1328629649103, blockid: blk_-855725477447245701_1006
+2012-02-07 21:18:07,123 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 0 for block blk_-855725477447245701_1006 terminating
+2012-02-07 21:18:07,297 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving block blk_-1934227436871570638_1007 src: /192.168.11.19:39249 dest: /192.168.11.19:50010
+2012-02-07 21:18:07,302 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:39249, dest: /192.168.11.19:50010, bytes: 599, op: HDFS_WRITE, cliID: DFSClient_-1111242386, srvID: DS-962141888-127.0.1.1-50010-1328629649103, blockid: blk_-1934227436871570638_1007
+2012-02-07 21:18:07,302 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 0 for block blk_-1934227436871570638_1007 terminating
+2012-02-07 21:18:07,382 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving block blk_-4782499302782262994_1008 src: /192.168.11.19:39250 dest: /192.168.11.19:50010
+2012-02-07 21:18:07,385 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:39250, dest: /192.168.11.19:50010, bytes: 16778, op: HDFS_WRITE, cliID: DFSClient_-1111242386, srvID: DS-962141888-127.0.1.1-50010-1328629649103, blockid: blk_-4782499302782262994_1008
+2012-02-07 21:18:07,387 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 0 for block blk_-4782499302782262994_1008 terminating
+2012-02-07 21:18:07,449 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:50010, dest: /192.168.11.19:39252, bytes: 16910, op: HDFS_READ, cliID: DFSClient_651668740, srvID: DS-962141888-127.0.1.1-50010-1328629649103, blockid: blk_-4782499302782262994_1008
+2012-02-07 21:18:07,521 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:50010, dest: /192.168.11.19:39253, bytes: 143582, op: HDFS_READ, cliID: DFSClient_651668740, srvID: DS-962141888-127.0.1.1-50010-1328629649103, blockid: blk_-855725477447245701_1006
+2012-02-07 21:18:07,763 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving block blk_-4005871472431506821_1010 src: /192.168.11.19:39254 dest: /192.168.11.19:50010
+2012-02-07 21:18:07,789 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:39254, dest: /192.168.11.19:50010, bytes: 16765, op: HDFS_WRITE, cliID: DFSClient_651668740, srvID: DS-962141888-127.0.1.1-50010-1328629649103, blockid: blk_-4005871472431506821_1010
+2012-02-07 21:18:07,791 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 0 for block blk_-4005871472431506821_1010 terminating
+2012-02-07 21:18:07,814 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:50010, dest: /192.168.11.19:39255, bytes: 607, op: HDFS_READ, cliID: DFSClient_651668740, srvID: DS-962141888-127.0.1.1-50010-1328629649103, blockid: blk_-1934227436871570638_1007
+2012-02-07 21:18:10,271 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:50010, dest: /192.168.11.19:39257, bytes: 16910, op: HDFS_READ, cliID: DFSClient_528617333, srvID: DS-962141888-127.0.1.1-50010-1328629649103, blockid: blk_-4782499302782262994_1008
+2012-02-07 21:18:10,364 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:50010, dest: /192.168.11.19:39258, bytes: 143582, op: HDFS_READ, cliID: DFSClient_528617333, srvID: DS-962141888-127.0.1.1-50010-1328629649103, blockid: blk_-855725477447245701_1006
+2012-02-07 21:18:17,206 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:50010, dest: /192.168.11.19:39273, bytes: 1961090, op: HDFS_READ, cliID: DFSClient_attempt_201202072117_0001_m_000000_0, srvID: DS-962141888-127.0.1.1-50010-1328629649103, blockid: blk_616540922751842293_1003
+2012-02-07 21:18:17,217 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:50010, dest: /192.168.11.19:39275, bytes: 1585442, op: HDFS_READ, cliID: DFSClient_attempt_201202072117_0001_m_000001_0, srvID: DS-962141888-127.0.1.1-50010-1328629649103, blockid: blk_6986993915836527408_1004
+2012-02-07 21:18:26,150 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeRegistration(192.168.11.19:50010, storageID=DS-962141888-127.0.1.1-50010-1328629649103, infoPort=50075, ipcPort=50020) Starting thread to transfer block blk_6986993915836527408_1004 to 192.168.11.61:50010 
+2012-02-07 21:18:26,159 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeRegistration(192.168.11.19:50010, storageID=DS-962141888-127.0.1.1-50010-1328629649103, infoPort=50075, ipcPort=50020) Starting thread to transfer block blk_-4782499302782262994_1008 to 192.168.11.61:50010 
+2012-02-07 21:18:26,176 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeRegistration(192.168.11.19:50010, storageID=DS-962141888-127.0.1.1-50010-1328629649103, infoPort=50075, ipcPort=50020):Transmitted block blk_-4782499302782262994_1008 to /192.168.11.61:50010
+2012-02-07 21:18:26,360 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeRegistration(192.168.11.19:50010, storageID=DS-962141888-127.0.1.1-50010-1328629649103, infoPort=50075, ipcPort=50020):Transmitted block blk_6986993915836527408_1004 to /192.168.11.61:50010
+2012-02-07 21:18:26,380 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:50010, dest: /192.168.11.19:39288, bytes: 679838, op: HDFS_READ, cliID: DFSClient_attempt_201202072117_0001_m_000003_0, srvID: DS-962141888-127.0.1.1-50010-1328629649103, blockid: blk_-846790038786169244_1002
+2012-02-07 21:18:27,458 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:50010, dest: /192.168.11.19:39291, bytes: 1434925, op: HDFS_READ, cliID: DFSClient_attempt_201202072117_0001_m_000002_0, srvID: DS-962141888-127.0.1.1-50010-1328629649103, blockid: blk_-1583270089274315330_1005
+2012-02-07 21:18:29,160 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeRegistration(192.168.11.19:50010, storageID=DS-962141888-127.0.1.1-50010-1328629649103, infoPort=50075, ipcPort=50020) Starting thread to transfer block blk_-1934227436871570638_1007 to 192.168.11.61:50010 
+2012-02-07 21:18:29,161 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeRegistration(192.168.11.19:50010, storageID=DS-962141888-127.0.1.1-50010-1328629649103, infoPort=50075, ipcPort=50020) Starting thread to transfer block blk_-1583270089274315330_1005 to 192.168.11.61:50010 
+2012-02-07 21:18:29,162 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeRegistration(192.168.11.19:50010, storageID=DS-962141888-127.0.1.1-50010-1328629649103, infoPort=50075, ipcPort=50020):Transmitted block blk_-1934227436871570638_1007 to /192.168.11.61:50010
+2012-02-07 21:18:29,293 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeRegistration(192.168.11.19:50010, storageID=DS-962141888-127.0.1.1-50010-1328629649103, infoPort=50075, ipcPort=50020):Transmitted block blk_-1583270089274315330_1005 to /192.168.11.61:50010
+2012-02-07 21:18:32,148 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeRegistration(192.168.11.19:50010, storageID=DS-962141888-127.0.1.1-50010-1328629649103, infoPort=50075, ipcPort=50020) Starting thread to transfer block blk_616540922751842293_1003 to 192.168.11.61:50010 
+2012-02-07 21:18:32,148 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeRegistration(192.168.11.19:50010, storageID=DS-962141888-127.0.1.1-50010-1328629649103, infoPort=50075, ipcPort=50020) Starting thread to transfer block blk_5161087736617860255_1001 to 192.168.11.61:50010 
+2012-02-07 21:18:32,150 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeRegistration(192.168.11.19:50010, storageID=DS-962141888-127.0.1.1-50010-1328629649103, infoPort=50075, ipcPort=50020):Transmitted block blk_5161087736617860255_1001 to /192.168.11.61:50010
+2012-02-07 21:18:32,322 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeRegistration(192.168.11.19:50010, storageID=DS-962141888-127.0.1.1-50010-1328629649103, infoPort=50075, ipcPort=50020):Transmitted block blk_616540922751842293_1003 to /192.168.11.61:50010
+2012-02-07 21:18:35,149 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeRegistration(192.168.11.19:50010, storageID=DS-962141888-127.0.1.1-50010-1328629649103, infoPort=50075, ipcPort=50020) Starting thread to transfer block blk_-4005871472431506821_1010 to 192.168.11.61:50010 
+2012-02-07 21:18:35,149 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeRegistration(192.168.11.19:50010, storageID=DS-962141888-127.0.1.1-50010-1328629649103, infoPort=50075, ipcPort=50020) Starting thread to transfer block blk_-855725477447245701_1006 to 192.168.11.61:50010 
+2012-02-07 21:18:35,152 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeRegistration(192.168.11.19:50010, storageID=DS-962141888-127.0.1.1-50010-1328629649103, infoPort=50075, ipcPort=50020):Transmitted block blk_-4005871472431506821_1010 to /192.168.11.61:50010
+2012-02-07 21:18:35,162 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeRegistration(192.168.11.19:50010, storageID=DS-962141888-127.0.1.1-50010-1328629649103, infoPort=50075, ipcPort=50020):Transmitted block blk_-855725477447245701_1006 to /192.168.11.61:50010
+2012-02-07 21:18:37,071 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving block blk_-3829027414165954865_1011 src: /192.168.11.19:39305 dest: /192.168.11.19:50010
+2012-02-07 21:18:38,069 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:39305, dest: /192.168.11.19:50010, bytes: 1232700, op: HDFS_WRITE, cliID: DFSClient_attempt_201202072117_0001_r_000000_0, srvID: DS-962141888-127.0.1.1-50010-1328629649103, blockid: blk_-3829027414165954865_1011
+2012-02-07 21:18:38,069 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 1 for block blk_-3829027414165954865_1011 terminating
+2012-02-07 21:18:38,149 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeRegistration(192.168.11.19:50010, storageID=DS-962141888-127.0.1.1-50010-1328629649103, infoPort=50075, ipcPort=50020) Starting thread to transfer block blk_-846790038786169244_1002 to 192.168.11.61:50010 
+2012-02-07 21:18:38,207 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeRegistration(192.168.11.19:50010, storageID=DS-962141888-127.0.1.1-50010-1328629649103, infoPort=50075, ipcPort=50020):Transmitted block blk_-846790038786169244_1002 to /192.168.11.61:50010
+2012-02-07 21:18:46,352 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving block blk_8463684870837803622_1011 src: /192.168.11.19:39315 dest: /192.168.11.19:50010
+2012-02-07 21:18:46,361 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /192.168.11.19:39315, dest: /192.168.11.19:50010, bytes: 12768, op: HDFS_WRITE, cliID: DFSClient_651668740, srvID: DS-962141888-127.0.1.1-50010-1328629649103, blockid: blk_8463684870837803622_1011
+2012-02-07 21:18:46,361 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 1 for block blk_8463684870837803622_1011 terminating
+2012-02-07 21:18:50,154 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Deleting block blk_-4782499302782262994_1008 file /app/hadoop/tmp/dfs/data/current/blk_-4782499302782262994
+2012-02-07 21:18:50,154 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Deleting block blk_-1934227436871570638_1007 file /app/hadoop/tmp/dfs/data/current/blk_-1934227436871570638
+2012-02-07 21:18:50,155 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Deleting block blk_-855725477447245701_1006 file /app/hadoop/tmp/dfs/data/current/blk_-855725477447245701
+2012-02-07 21:24:11,267 INFO org.apache.hadoop.hdfs.server.datanode.DataBlockScanner: Verification succeeded for blk_5161087736617860255_1001
+2012-02-07 21:32:42,362 INFO org.apache.hadoop.hdfs.server.datanode.DataBlockScanner: Verification succeeded for blk_-3829027414165954865_1011
+2012-02-07 21:40:34,439 INFO org.apache.hadoop.hdfs.server.datanode.DataBlockScanner: Verification succeeded for blk_-4005871472431506821_1010
+2012-02-07 21:41:35,395 WARN org.apache.hadoop.hdfs.server.datanode.DataNode: java.io.IOException: Call to master/192.168.11.19:54310 failed on local exception: java.io.IOException: Connection timed out
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:775)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.sendHeartbeat(Unknown Source)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.offerService(DataNode.java:702)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.run(DataNode.java:1186)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.io.IOException: Connection timed out
+	at sun.nio.ch.FileDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:21)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:202)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:175)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:243)
+	at org.apache.hadoop.net.SocketInputStream$Reader.performIO(SocketInputStream.java:55)
+	at org.apache.hadoop.net.SocketIOWithTimeout.doIO(SocketIOWithTimeout.java:142)
+	at org.apache.hadoop.net.SocketInputStream.read(SocketInputStream.java:155)
+	at org.apache.hadoop.net.SocketInputStream.read(SocketInputStream.java:128)
+	at java.io.FilterInputStream.read(FilterInputStream.java:116)
+	at org.apache.hadoop.ipc.Client$Connection$PingInputStream.read(Client.java:276)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:218)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:237)
+	at java.io.DataInputStream.readInt(DataInputStream.java:370)
+	at org.apache.hadoop.ipc.Client$Connection.receiveResponse(Client.java:501)
+	at org.apache.hadoop.ipc.Client$Connection.run(Client.java:446)
+
+2012-02-07 21:41:56,421 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 0 time(s).
+2012-02-07 21:42:17,424 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 1 time(s).
+2012-02-07 21:42:38,430 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 2 time(s).
+2012-02-07 21:42:59,431 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 3 time(s).
+2012-02-07 21:43:20,434 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 4 time(s).
+2012-02-07 21:43:41,437 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 5 time(s).
+2012-02-07 21:44:02,441 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 6 time(s).
+2012-02-07 21:44:23,444 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 7 time(s).
+2012-02-07 21:44:44,464 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 8 time(s).
+2012-02-07 21:45:05,470 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 9 time(s).
+2012-02-07 21:45:26,490 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 10 time(s).
+2012-02-07 21:45:47,503 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 11 time(s).
+2012-02-07 21:46:08,519 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 12 time(s).
+2012-02-07 21:46:29,533 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 13 time(s).
+2012-02-07 21:46:50,548 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 14 time(s).
+2012-02-07 21:47:11,566 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 15 time(s).
+2012-02-07 21:47:32,571 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 16 time(s).
+2012-02-07 21:47:53,590 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 17 time(s).
+2012-02-07 21:48:14,610 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 18 time(s).
+2012-02-07 21:48:35,624 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 19 time(s).
+2012-02-07 21:48:56,643 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 20 time(s).
+2012-02-07 21:49:17,648 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 21 time(s).
+2012-02-07 21:49:38,651 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 22 time(s).
+2012-02-07 21:49:59,655 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 23 time(s).
+2012-02-07 21:50:20,663 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 24 time(s).
+2012-02-07 21:50:41,664 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 25 time(s).
+2012-02-07 21:51:02,670 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 26 time(s).
+2012-02-07 21:51:23,672 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 27 time(s).
+2012-02-07 21:51:44,678 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 28 time(s).
+2012-02-07 21:52:05,686 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 29 time(s).
+2012-02-07 21:52:26,707 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 30 time(s).
+2012-02-07 21:52:47,725 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 31 time(s).
+2012-02-07 21:53:08,742 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 32 time(s).
+2012-02-07 21:53:29,759 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 33 time(s).
+2012-02-07 21:53:50,779 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 34 time(s).
+2012-02-07 21:54:11,798 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 35 time(s).
+2012-02-07 21:54:32,818 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 36 time(s).
+2012-02-07 21:54:53,835 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 37 time(s).
+2012-02-07 21:55:14,854 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 38 time(s).
+2012-02-07 21:55:35,867 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 39 time(s).
+2012-02-07 21:55:56,872 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 40 time(s).
+2012-02-07 21:56:17,892 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 41 time(s).
+2012-02-07 21:56:38,913 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 42 time(s).
+2012-02-07 21:56:59,918 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 43 time(s).
+2012-02-07 21:57:20,937 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 44 time(s).
+2012-02-07 21:57:40,954 WARN org.apache.hadoop.hdfs.server.datanode.DataNode: java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.sendHeartbeat(Unknown Source)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.offerService(DataNode.java:702)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.run(DataNode.java:1186)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 5 more
+
+2012-02-07 21:58:01,979 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 0 time(s).
+2012-02-07 21:58:22,982 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 1 time(s).
+2012-02-07 21:58:44,002 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 2 time(s).
+2012-02-07 21:59:05,018 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 3 time(s).
+2012-02-07 21:59:26,021 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 4 time(s).
+2012-02-07 21:59:47,042 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 5 time(s).
+2012-02-07 22:00:08,062 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 6 time(s).
+2012-02-07 22:00:29,081 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 7 time(s).
+2012-02-07 22:00:50,097 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 8 time(s).
+2012-02-07 22:01:11,116 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 9 time(s).
+2012-02-07 22:01:32,133 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 10 time(s).
+2012-02-07 22:01:53,152 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 11 time(s).
+2012-02-07 22:02:14,154 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 12 time(s).
+2012-02-07 22:02:35,162 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 13 time(s).
+2012-02-07 22:02:56,181 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 14 time(s).
+2012-02-07 22:03:17,200 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 15 time(s).
+2012-02-07 22:03:38,218 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 16 time(s).
+2012-02-07 22:03:59,226 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 17 time(s).
+2012-02-07 22:04:20,246 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 18 time(s).
+2012-02-07 22:04:41,266 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 19 time(s).
+2012-02-07 22:05:02,286 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 20 time(s).
+2012-02-07 22:05:23,303 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 21 time(s).
+2012-02-07 22:05:44,322 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 22 time(s).
+2012-02-07 22:06:05,342 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 23 time(s).
+2012-02-07 22:06:26,362 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 24 time(s).
+2012-02-07 22:06:47,382 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 25 time(s).
+2012-02-07 22:07:08,402 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 26 time(s).
+2012-02-07 22:07:29,417 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 27 time(s).
+2012-02-07 22:07:50,433 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 28 time(s).
+2012-02-07 22:08:11,444 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 29 time(s).
+2012-02-07 22:08:32,462 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 30 time(s).
+2012-02-07 22:08:53,477 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 31 time(s).
+2012-02-07 22:09:14,494 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 32 time(s).
+2012-02-07 22:09:35,514 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 33 time(s).
+2012-02-07 22:09:56,534 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 34 time(s).
+2012-02-07 22:10:17,554 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 35 time(s).
+2012-02-07 22:10:38,574 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 36 time(s).
+2012-02-07 22:10:59,593 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 37 time(s).
+2012-02-07 22:11:20,600 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 38 time(s).
+2012-02-07 22:11:41,620 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 39 time(s).
+2012-02-07 22:12:02,637 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 40 time(s).
+2012-02-07 22:12:23,653 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 41 time(s).
+2012-02-07 22:12:44,673 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 42 time(s).
+2012-02-07 22:13:05,691 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 43 time(s).
+2012-02-07 22:13:26,710 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 44 time(s).
+2012-02-07 22:13:46,724 WARN org.apache.hadoop.hdfs.server.datanode.DataNode: java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.sendHeartbeat(Unknown Source)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.offerService(DataNode.java:702)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.run(DataNode.java:1186)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 5 more
+
+2012-02-07 22:14:07,742 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 0 time(s).
+2012-02-07 22:14:28,761 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 1 time(s).
+2012-02-07 22:14:49,770 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 2 time(s).
+2012-02-07 22:15:10,790 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 3 time(s).
+2012-02-07 22:15:31,811 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 4 time(s).
+2012-02-07 22:15:52,826 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 5 time(s).
+2012-02-07 22:16:13,846 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 6 time(s).
+2012-02-07 22:16:34,852 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 7 time(s).
+2012-02-07 22:16:55,871 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 8 time(s).
+2012-02-07 22:17:16,889 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 9 time(s).
+2012-02-07 22:17:37,906 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 10 time(s).
+2012-02-07 22:17:58,926 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 11 time(s).
+2012-02-07 22:18:19,946 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 12 time(s).
+2012-02-07 22:18:40,966 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 13 time(s).
+2012-02-07 22:19:01,986 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 14 time(s).
+2012-02-07 22:19:23,006 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 15 time(s).
+2012-02-07 22:19:44,021 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 16 time(s).
+2012-02-07 22:20:05,038 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 17 time(s).
+2012-02-07 22:20:26,056 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 18 time(s).
+2012-02-07 22:20:47,068 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 19 time(s).
+2012-02-07 22:20:57,802 INFO org.apache.hadoop.hdfs.server.datanode.DataBlockScanner: Verification succeeded for blk_8463684870837803622_1011
+2012-02-07 22:21:08,073 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 20 time(s).
+2012-02-07 22:21:29,090 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 21 time(s).
+2012-02-07 22:21:50,111 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 22 time(s).
+2012-02-07 22:22:11,131 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 23 time(s).
+2012-02-07 22:22:32,150 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 24 time(s).
+2012-02-07 22:22:53,167 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 25 time(s).
+2012-02-07 22:23:14,186 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 26 time(s).
+2012-02-07 22:23:35,206 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 27 time(s).
+2012-02-07 22:23:56,225 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 28 time(s).
+2012-02-07 22:24:17,232 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 29 time(s).
+2012-02-07 22:24:38,241 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 30 time(s).
+2012-02-07 22:24:59,260 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 31 time(s).
+2012-02-07 22:25:20,280 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 32 time(s).
+2012-02-07 22:25:41,301 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 33 time(s).
+2012-02-07 22:26:02,320 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 34 time(s).
+2012-02-07 22:26:23,336 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 35 time(s).
+2012-02-07 22:26:44,355 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 36 time(s).
+2012-02-07 22:27:05,374 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 37 time(s).
+2012-02-07 22:27:26,392 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 38 time(s).
+2012-02-07 22:27:47,412 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 39 time(s).
+2012-02-07 22:28:08,430 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 40 time(s).
+2012-02-07 22:28:29,450 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 41 time(s).
+2012-02-07 22:28:50,470 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 42 time(s).
+2012-02-07 22:29:11,491 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 43 time(s).
+2012-02-07 22:29:32,546 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 44 time(s).
+2012-02-07 22:29:52,565 WARN org.apache.hadoop.hdfs.server.datanode.DataNode: java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.sendHeartbeat(Unknown Source)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.offerService(DataNode.java:702)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.run(DataNode.java:1186)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 5 more
+
+2012-02-07 22:30:13,589 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 0 time(s).
+2012-02-07 22:30:34,610 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 1 time(s).
+2012-02-07 22:30:55,627 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 2 time(s).
+2012-02-07 22:31:16,643 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 3 time(s).
+2012-02-07 22:31:37,660 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 4 time(s).
+2012-02-07 22:31:58,678 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 5 time(s).
+2012-02-07 22:32:19,697 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 6 time(s).
+2012-02-07 22:32:40,715 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 7 time(s).
+2012-02-07 22:33:01,734 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 8 time(s).
+2012-02-07 22:33:22,754 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 9 time(s).
+2012-02-07 22:33:43,774 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 10 time(s).
+2012-02-07 22:34:04,780 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 11 time(s).
+2012-02-07 22:34:25,798 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 12 time(s).
+2012-02-07 22:34:46,818 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 13 time(s).
+2012-02-07 22:35:07,838 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 14 time(s).
+2012-02-07 22:35:28,858 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 15 time(s).
+2012-02-07 22:35:49,878 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 16 time(s).
+2012-02-07 22:36:10,898 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 17 time(s).
+2012-02-07 22:36:31,911 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 18 time(s).
+2012-02-07 22:36:52,930 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 19 time(s).
+2012-02-07 22:37:13,945 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 20 time(s).
+2012-02-07 22:37:34,964 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 21 time(s).
+2012-02-07 22:37:55,982 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 22 time(s).
+2012-02-07 22:38:17,002 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 23 time(s).
+2012-02-07 22:38:38,009 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 24 time(s).
+2012-02-07 22:38:59,025 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 25 time(s).
+2012-02-07 22:39:20,046 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 26 time(s).
+2012-02-07 22:39:41,066 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 27 time(s).
+2012-02-07 22:40:02,083 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 28 time(s).
+2012-02-07 22:40:23,103 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 29 time(s).
+2012-02-07 22:40:44,122 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 30 time(s).
+2012-02-07 22:41:05,142 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 31 time(s).
+2012-02-07 22:41:26,162 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 32 time(s).
+2012-02-07 22:41:47,182 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 33 time(s).
+2012-02-07 22:42:08,202 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 34 time(s).
+2012-02-07 22:42:29,222 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 35 time(s).
+2012-02-07 22:42:50,242 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 36 time(s).
+2012-02-07 22:43:11,262 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 37 time(s).
+2012-02-07 22:43:32,274 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 38 time(s).
+2012-02-07 22:43:53,286 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 39 time(s).
+2012-02-07 22:44:14,306 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 40 time(s).
+2012-02-07 22:44:35,323 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 41 time(s).
+2012-02-07 22:44:56,343 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 42 time(s).
+2012-02-07 22:45:17,363 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 43 time(s).
+2012-02-07 22:45:38,383 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 44 time(s).
+2012-02-07 22:45:58,402 WARN org.apache.hadoop.hdfs.server.datanode.DataNode: java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.sendHeartbeat(Unknown Source)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.offerService(DataNode.java:702)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.run(DataNode.java:1186)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 5 more
+
+2012-02-07 22:46:19,431 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 0 time(s).
+2012-02-07 22:46:40,445 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 1 time(s).
+2012-02-07 22:47:01,462 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 2 time(s).
+2012-02-07 22:47:22,482 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 3 time(s).
+2012-02-07 22:47:43,502 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 4 time(s).
+2012-02-07 22:48:04,520 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 5 time(s).
+2012-02-07 22:48:25,534 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 6 time(s).
+2012-02-07 22:48:46,554 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 7 time(s).
+2012-02-07 22:49:07,574 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 8 time(s).
+2012-02-07 22:49:28,585 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 9 time(s).
+2012-02-07 22:49:49,603 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 10 time(s).
+2012-02-07 22:50:10,622 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 11 time(s).
+2012-02-07 22:50:31,639 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 12 time(s).
+2012-02-07 22:50:52,654 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 13 time(s).
+2012-02-07 22:51:13,674 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 14 time(s).
+2012-02-07 22:51:34,686 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 15 time(s).
+2012-02-07 22:51:55,706 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 16 time(s).
+2012-02-07 22:52:16,726 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 17 time(s).
+2012-02-07 22:52:37,746 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 18 time(s).
+2012-02-07 22:52:58,766 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 19 time(s).
+2012-02-07 22:53:19,782 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 20 time(s).
+2012-02-07 22:53:40,802 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 21 time(s).
+2012-02-07 22:54:01,822 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 22 time(s).
+2012-02-07 22:54:22,842 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 23 time(s).
+2012-02-07 22:54:43,849 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 24 time(s).
+2012-02-07 22:55:04,867 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 25 time(s).
+2012-02-07 22:55:25,886 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 26 time(s).
+2012-02-07 22:55:46,900 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 27 time(s).
+2012-02-07 22:56:07,915 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 28 time(s).
+2012-02-07 22:56:28,934 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 29 time(s).
+2012-02-07 22:56:49,947 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 30 time(s).
+2012-02-07 22:57:10,967 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 31 time(s).
+2012-02-07 22:57:31,986 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 32 time(s).
+2012-02-07 22:57:53,006 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 33 time(s).
+2012-02-07 22:58:14,011 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 34 time(s).
+2012-02-07 22:58:35,029 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 35 time(s).
+2012-02-07 22:58:56,047 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 36 time(s).
+2012-02-07 22:59:17,066 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 37 time(s).
+2012-02-07 22:59:38,080 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 38 time(s).
+2012-02-07 22:59:59,100 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 39 time(s).
+2012-02-07 23:00:20,118 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 40 time(s).
+2012-02-07 23:00:41,132 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 41 time(s).
+2012-02-07 23:01:02,150 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 42 time(s).
+2012-02-07 23:01:23,166 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 43 time(s).
+2012-02-07 23:01:44,180 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 44 time(s).
+2012-02-07 23:02:04,198 WARN org.apache.hadoop.hdfs.server.datanode.DataNode: java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.sendHeartbeat(Unknown Source)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.offerService(DataNode.java:702)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.run(DataNode.java:1186)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 5 more
+
+2012-02-07 23:02:25,228 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 0 time(s).
+2012-02-07 23:02:46,246 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 1 time(s).
+2012-02-07 23:03:07,262 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 2 time(s).
+2012-02-07 23:03:28,280 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 3 time(s).
+2012-02-07 23:03:49,299 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 4 time(s).
+2012-02-07 23:04:10,314 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 5 time(s).
+2012-02-07 23:04:31,327 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 6 time(s).
+2012-02-07 23:04:52,347 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 7 time(s).
+2012-02-07 23:05:13,364 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 8 time(s).
+2012-02-07 23:05:34,382 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 9 time(s).
+2012-02-07 23:05:55,402 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 10 time(s).
+2012-02-07 23:06:16,423 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 11 time(s).
+2012-02-07 23:06:37,442 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 12 time(s).
+2012-02-07 23:06:58,450 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 13 time(s).
+2012-02-07 23:07:19,470 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 14 time(s).
+2012-02-07 23:07:40,489 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 15 time(s).
+2012-02-07 23:08:01,494 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 16 time(s).
+2012-02-07 23:08:22,513 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 17 time(s).
+2012-02-07 23:08:43,532 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 18 time(s).
+2012-02-07 23:09:04,553 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 19 time(s).
+2012-02-07 23:09:25,570 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 20 time(s).
+2012-02-07 23:09:46,587 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 21 time(s).
+2012-02-07 23:10:07,606 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 22 time(s).
+2012-02-07 23:10:28,624 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 23 time(s).
+2012-02-07 23:10:49,637 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 24 time(s).
+2012-02-07 23:11:10,656 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 25 time(s).
+2012-02-07 23:11:31,677 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 26 time(s).
+2012-02-07 23:11:52,694 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 27 time(s).
+2012-02-07 23:12:13,714 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 28 time(s).
+2012-02-07 23:12:34,734 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 29 time(s).
+2012-02-07 23:12:55,754 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 30 time(s).
+2012-02-07 23:13:16,764 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 31 time(s).
+2012-02-07 23:13:37,782 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 32 time(s).
+2012-02-07 23:13:58,795 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 33 time(s).
+2012-02-07 23:14:19,814 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 34 time(s).
+2012-02-07 23:14:40,834 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 35 time(s).
+2012-02-07 23:15:01,841 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 36 time(s).
+2012-02-07 23:15:22,854 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 37 time(s).
+2012-02-07 23:15:43,868 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 38 time(s).
+2012-02-07 23:16:04,889 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 39 time(s).
+2012-02-07 23:16:25,907 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 40 time(s).
+2012-02-07 23:16:46,915 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 41 time(s).
+2012-02-07 23:17:07,934 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 42 time(s).
+2012-02-07 23:17:28,954 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 43 time(s).
+2012-02-07 23:17:49,974 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 44 time(s).
+2012-02-07 23:18:09,985 WARN org.apache.hadoop.hdfs.server.datanode.DataNode: java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.sendHeartbeat(Unknown Source)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.offerService(DataNode.java:702)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.run(DataNode.java:1186)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 5 more
+
+2012-02-07 23:18:31,016 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 0 time(s).
+2012-02-07 23:18:52,036 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 1 time(s).
+2012-02-07 23:19:13,054 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 2 time(s).
+2012-02-07 23:19:34,074 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 3 time(s).
+2012-02-07 23:19:55,094 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 4 time(s).
+2012-02-07 23:20:16,114 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 5 time(s).
+2012-02-07 23:20:37,118 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 6 time(s).
+2012-02-07 23:20:58,136 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 7 time(s).
+2012-02-07 23:21:19,154 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 8 time(s).
+2012-02-07 23:21:40,174 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 9 time(s).
+2012-02-07 23:22:01,192 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 10 time(s).
+2012-02-07 23:22:22,211 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 11 time(s).
+2012-02-07 23:22:43,226 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 12 time(s).
+2012-02-07 23:23:04,244 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 13 time(s).
+2012-02-07 23:23:25,262 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 14 time(s).
+2012-02-07 23:23:46,282 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 15 time(s).
+2012-02-07 23:24:07,302 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 16 time(s).
+2012-02-07 23:24:28,322 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 17 time(s).
+2012-02-07 23:24:49,342 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 18 time(s).
+2012-02-07 23:25:10,362 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 19 time(s).
+2012-02-07 23:25:31,382 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 20 time(s).
+2012-02-07 23:25:52,402 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 21 time(s).
+2012-02-07 23:26:13,422 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 22 time(s).
+2012-02-07 23:26:34,442 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 23 time(s).
+2012-02-07 23:26:55,462 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 24 time(s).
+2012-02-07 23:27:16,482 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 25 time(s).
+2012-02-07 23:27:37,502 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 26 time(s).
+2012-02-07 23:27:58,506 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 27 time(s).
+2012-02-07 23:28:19,521 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 28 time(s).
+2012-02-07 23:28:40,541 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 29 time(s).
+2012-02-07 23:29:01,550 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 30 time(s).
+2012-02-07 23:29:22,569 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 31 time(s).
+2012-02-07 23:29:43,590 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 32 time(s).
+2012-02-07 23:30:04,610 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 33 time(s).
+2012-02-07 23:30:25,630 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 34 time(s).
+2012-02-07 23:30:46,650 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 35 time(s).
+2012-02-07 23:31:07,670 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 36 time(s).
+2012-02-07 23:31:28,690 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 37 time(s).
+2012-02-07 23:31:49,709 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 38 time(s).
+2012-02-07 23:32:10,730 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 39 time(s).
+2012-02-07 23:32:31,750 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 40 time(s).
+2012-02-07 23:32:52,770 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 41 time(s).
+2012-02-07 23:33:13,790 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 42 time(s).
+2012-02-07 23:33:34,810 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 43 time(s).
+2012-02-07 23:33:55,830 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 44 time(s).
+2012-02-07 23:34:15,850 WARN org.apache.hadoop.hdfs.server.datanode.DataNode: java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.sendHeartbeat(Unknown Source)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.offerService(DataNode.java:702)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.run(DataNode.java:1186)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 5 more
+
+2012-02-07 23:34:36,870 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 0 time(s).
+2012-02-07 23:34:57,890 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 1 time(s).
+2012-02-07 23:35:18,910 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 2 time(s).
+2012-02-07 23:35:39,930 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 3 time(s).
+2012-02-07 23:36:00,950 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 4 time(s).
+2012-02-07 23:36:21,970 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 5 time(s).
+2012-02-07 23:36:42,990 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 6 time(s).
+2012-02-07 23:37:04,010 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 7 time(s).
+2012-02-07 23:37:25,030 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 8 time(s).
+2012-02-07 23:37:46,050 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 9 time(s).
+2012-02-07 23:38:07,070 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 10 time(s).
+2012-02-07 23:38:28,089 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 11 time(s).
+2012-02-07 23:38:49,106 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 12 time(s).
+2012-02-07 23:39:10,126 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 13 time(s).
+2012-02-07 23:39:31,146 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 14 time(s).
+2012-02-07 23:39:52,166 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 15 time(s).
+2012-02-07 23:40:13,186 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 16 time(s).
+2012-02-07 23:40:34,202 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 17 time(s).
+2012-02-07 23:40:55,222 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 18 time(s).
+2012-02-07 23:41:16,241 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 19 time(s).
+2012-02-07 23:41:37,260 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 20 time(s).
+2012-02-07 23:41:58,274 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 21 time(s).
+2012-02-07 23:42:19,294 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 22 time(s).
+2012-02-07 23:42:40,314 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 23 time(s).
+2012-02-07 23:43:01,334 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 24 time(s).
+2012-02-07 23:43:22,354 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 25 time(s).
+2012-02-07 23:43:43,374 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 26 time(s).
+2012-02-07 23:44:04,393 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 27 time(s).
+2012-02-07 23:44:25,414 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 28 time(s).
+2012-02-07 23:44:46,434 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 29 time(s).
+2012-02-07 23:45:07,454 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 30 time(s).
+2012-02-07 23:45:28,474 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 31 time(s).
+2012-02-07 23:45:49,493 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 32 time(s).
+2012-02-07 23:46:10,514 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 33 time(s).
+2012-02-07 23:46:31,534 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 34 time(s).
+2012-02-07 23:46:52,554 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 35 time(s).
+2012-02-07 23:47:13,574 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 36 time(s).
+2012-02-07 23:47:34,593 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 37 time(s).
+2012-02-07 23:47:55,613 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 38 time(s).
+2012-02-07 23:48:16,634 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 39 time(s).
+2012-02-07 23:48:37,654 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 40 time(s).
+2012-02-07 23:48:58,673 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 41 time(s).
+2012-02-07 23:49:19,678 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 42 time(s).
+2012-02-07 23:49:40,693 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 43 time(s).
+2012-02-07 23:50:01,713 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 44 time(s).
+2012-02-07 23:50:21,719 WARN org.apache.hadoop.hdfs.server.datanode.DataNode: java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.sendHeartbeat(Unknown Source)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.offerService(DataNode.java:702)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.run(DataNode.java:1186)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 5 more
+
+2012-02-07 23:50:42,753 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 0 time(s).
+2012-02-07 23:51:03,774 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 1 time(s).
+2012-02-07 23:51:24,784 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 2 time(s).
+2012-02-07 23:51:45,789 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 3 time(s).
+2012-02-07 23:52:06,798 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 4 time(s).
+2012-02-07 23:52:27,802 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 5 time(s).
+2012-02-07 23:52:48,812 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 6 time(s).
+2012-02-07 23:53:09,831 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 7 time(s).
+2012-02-07 23:53:30,850 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 8 time(s).
+2012-02-07 23:53:51,864 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 9 time(s).
+2012-02-07 23:54:12,870 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 10 time(s).
+2012-02-07 23:54:33,872 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 11 time(s).
+2012-02-07 23:54:54,891 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 12 time(s).
+2012-02-07 23:55:15,912 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 13 time(s).
+2012-02-07 23:55:36,914 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 14 time(s).
+2012-02-07 23:55:57,918 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 15 time(s).
+2012-02-07 23:56:18,924 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 16 time(s).
+2012-02-07 23:56:39,933 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 17 time(s).
+2012-02-07 23:57:00,954 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 18 time(s).
+2012-02-07 23:57:21,970 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 19 time(s).
+2012-02-07 23:57:42,974 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 20 time(s).
+2012-02-07 23:58:03,987 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 21 time(s).
+2012-02-07 23:58:24,990 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 22 time(s).
+2012-02-07 23:58:45,993 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 23 time(s).
+2012-02-07 23:59:07,008 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 24 time(s).
+2012-02-07 23:59:28,010 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 25 time(s).
+2012-02-07 23:59:49,029 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 26 time(s).

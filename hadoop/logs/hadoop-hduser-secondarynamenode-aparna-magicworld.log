@@ -1,0 +1,1500 @@
+2012-02-08 00:00:06,730 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 16 time(s).
+2012-02-08 00:00:27,751 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 17 time(s).
+2012-02-08 00:00:48,770 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 18 time(s).
+2012-02-08 00:01:09,790 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 19 time(s).
+2012-02-08 00:01:30,810 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 20 time(s).
+2012-02-08 00:01:51,830 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 21 time(s).
+2012-02-08 00:02:12,850 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 22 time(s).
+2012-02-08 00:02:33,870 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 23 time(s).
+2012-02-08 00:02:54,890 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 24 time(s).
+2012-02-08 00:03:15,910 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 25 time(s).
+2012-02-08 00:03:36,930 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 26 time(s).
+2012-02-08 00:03:57,950 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 27 time(s).
+2012-02-08 00:04:18,966 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 28 time(s).
+2012-02-08 00:04:39,974 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 29 time(s).
+2012-02-08 00:05:00,977 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 30 time(s).
+2012-02-08 00:05:21,994 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 31 time(s).
+2012-02-08 00:05:43,010 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 32 time(s).
+2012-02-08 00:06:04,030 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 33 time(s).
+2012-02-08 00:06:25,038 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 34 time(s).
+2012-02-08 00:06:46,058 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 35 time(s).
+2012-02-08 00:07:07,074 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 36 time(s).
+2012-02-08 00:07:28,094 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 37 time(s).
+2012-02-08 00:07:49,114 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 38 time(s).
+2012-02-08 00:08:10,134 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 39 time(s).
+2012-02-08 00:08:31,153 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 40 time(s).
+2012-02-08 00:08:52,170 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 41 time(s).
+2012-02-08 00:09:13,190 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 42 time(s).
+2012-02-08 00:09:34,210 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 43 time(s).
+2012-02-08 00:09:55,230 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 44 time(s).
+2012-02-08 00:10:15,250 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Exception in doCheckpoint: 
+2012-02-08 00:10:15,250 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more
+
+2012-02-08 00:15:36,270 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 0 time(s).
+2012-02-08 00:15:57,290 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 1 time(s).
+2012-02-08 00:16:18,310 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 2 time(s).
+2012-02-08 00:16:39,318 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 3 time(s).
+2012-02-08 00:17:00,334 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 4 time(s).
+2012-02-08 00:17:21,354 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 5 time(s).
+2012-02-08 00:17:42,374 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 6 time(s).
+2012-02-08 00:18:03,394 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 7 time(s).
+2012-02-08 00:18:24,414 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 8 time(s).
+2012-02-08 00:18:45,434 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 9 time(s).
+2012-02-08 00:19:06,454 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 10 time(s).
+2012-02-08 00:19:27,474 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 11 time(s).
+2012-02-08 00:19:48,494 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 12 time(s).
+2012-02-08 00:20:09,514 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 13 time(s).
+2012-02-08 00:20:30,522 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 14 time(s).
+2012-02-08 00:20:51,534 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 15 time(s).
+2012-02-08 00:21:12,554 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 16 time(s).
+2012-02-08 00:21:33,574 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 17 time(s).
+2012-02-08 00:21:54,594 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 18 time(s).
+2012-02-08 00:22:15,614 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 19 time(s).
+2012-02-08 00:22:36,634 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 20 time(s).
+2012-02-08 00:22:57,654 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 21 time(s).
+2012-02-08 00:23:18,674 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 22 time(s).
+2012-02-08 00:23:39,694 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 23 time(s).
+2012-02-08 00:24:00,714 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 24 time(s).
+2012-02-08 00:24:21,734 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 25 time(s).
+2012-02-08 00:24:42,754 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 26 time(s).
+2012-02-08 00:25:03,774 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 27 time(s).
+2012-02-08 00:25:24,794 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 28 time(s).
+2012-02-08 00:25:45,814 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 29 time(s).
+2012-02-08 00:26:06,834 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 30 time(s).
+2012-02-08 00:26:27,854 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 31 time(s).
+2012-02-08 00:26:48,872 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 32 time(s).
+2012-02-08 00:27:09,890 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 33 time(s).
+2012-02-08 00:27:30,910 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 34 time(s).
+2012-02-08 00:27:51,930 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 35 time(s).
+2012-02-08 00:28:12,950 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 36 time(s).
+2012-02-08 00:28:33,970 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 37 time(s).
+2012-02-08 00:28:54,990 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 38 time(s).
+2012-02-08 00:29:16,010 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 39 time(s).
+2012-02-08 00:29:37,030 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 40 time(s).
+2012-02-08 00:29:58,050 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 41 time(s).
+2012-02-08 00:30:19,070 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 42 time(s).
+2012-02-08 00:30:40,090 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 43 time(s).
+2012-02-08 00:31:01,110 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 44 time(s).
+2012-02-08 00:31:21,130 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Exception in doCheckpoint: 
+2012-02-08 00:31:21,130 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more
+
+2012-02-08 00:36:42,150 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 0 time(s).
+2012-02-08 00:37:03,170 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 1 time(s).
+2012-02-08 00:37:24,190 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 2 time(s).
+2012-02-08 00:37:45,210 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 3 time(s).
+2012-02-08 00:38:06,230 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 4 time(s).
+2012-02-08 00:38:27,250 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 5 time(s).
+2012-02-08 00:38:48,270 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 6 time(s).
+2012-02-08 00:39:09,290 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 7 time(s).
+2012-02-08 00:39:30,310 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 8 time(s).
+2012-02-08 00:39:51,330 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 9 time(s).
+2012-02-08 00:40:12,350 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 10 time(s).
+2012-02-08 00:40:33,370 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 11 time(s).
+2012-02-08 00:40:54,390 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 12 time(s).
+2012-02-08 00:41:15,410 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 13 time(s).
+2012-02-08 00:41:36,430 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 14 time(s).
+2012-02-08 00:41:57,450 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 15 time(s).
+2012-02-08 00:42:18,470 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 16 time(s).
+2012-02-08 00:42:39,490 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 17 time(s).
+2012-02-08 00:43:00,510 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 18 time(s).
+2012-02-08 00:43:21,530 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 19 time(s).
+2012-02-08 00:43:42,550 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 20 time(s).
+2012-02-08 00:44:03,570 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 21 time(s).
+2012-02-08 00:44:24,590 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 22 time(s).
+2012-02-08 00:44:45,610 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 23 time(s).
+2012-02-08 00:45:06,630 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 24 time(s).
+2012-02-08 00:45:27,650 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 25 time(s).
+2012-02-08 00:45:48,670 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 26 time(s).
+2012-02-08 00:46:09,690 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 27 time(s).
+2012-02-08 00:46:30,710 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 28 time(s).
+2012-02-08 00:46:51,730 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 29 time(s).
+2012-02-08 00:47:12,750 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 30 time(s).
+2012-02-08 00:47:33,770 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 31 time(s).
+2012-02-08 00:47:54,790 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 32 time(s).
+2012-02-08 00:48:15,810 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 33 time(s).
+2012-02-08 00:48:36,830 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 34 time(s).
+2012-02-08 00:48:57,850 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 35 time(s).
+2012-02-08 00:49:18,870 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 36 time(s).
+2012-02-08 00:49:39,890 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 37 time(s).
+2012-02-08 00:50:00,910 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 38 time(s).
+2012-02-08 00:50:21,930 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 39 time(s).
+2012-02-08 00:50:42,950 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 40 time(s).
+2012-02-08 00:51:03,970 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 41 time(s).
+2012-02-08 00:51:24,986 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 42 time(s).
+2012-02-08 00:51:46,002 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 43 time(s).
+2012-02-08 00:52:07,018 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 44 time(s).
+2012-02-08 00:52:27,033 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Exception in doCheckpoint: 
+2012-02-08 00:52:27,034 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more
+
+2012-02-08 00:57:48,054 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 0 time(s).
+2012-02-08 00:58:09,074 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 1 time(s).
+2012-02-08 00:58:30,094 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 2 time(s).
+2012-02-08 00:58:51,114 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 3 time(s).
+2012-02-08 00:59:12,134 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 4 time(s).
+2012-02-08 00:59:33,154 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 5 time(s).
+2012-02-08 00:59:54,174 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 6 time(s).
+2012-02-08 01:00:15,194 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 7 time(s).
+2012-02-08 01:00:36,214 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 8 time(s).
+2012-02-08 01:00:57,234 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 9 time(s).
+2012-02-08 01:01:18,254 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 10 time(s).
+2012-02-08 01:01:39,274 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 11 time(s).
+2012-02-08 01:02:00,294 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 12 time(s).
+2012-02-08 01:02:21,314 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 13 time(s).
+2012-02-08 01:02:42,334 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 14 time(s).
+2012-02-08 01:03:03,354 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 15 time(s).
+2012-02-08 01:03:24,374 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 16 time(s).
+2012-02-08 01:03:45,394 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 17 time(s).
+2012-02-08 01:04:06,414 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 18 time(s).
+2012-02-08 01:04:27,434 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 19 time(s).
+2012-02-08 01:04:48,454 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 20 time(s).
+2012-02-08 01:05:09,474 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 21 time(s).
+2012-02-08 01:05:30,494 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 22 time(s).
+2012-02-08 01:05:51,514 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 23 time(s).
+2012-02-08 01:06:12,534 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 24 time(s).
+2012-02-08 01:06:33,554 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 25 time(s).
+2012-02-08 01:06:54,574 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 26 time(s).
+2012-02-08 01:07:15,594 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 27 time(s).
+2012-02-08 01:07:36,614 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 28 time(s).
+2012-02-08 01:07:57,634 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 29 time(s).
+2012-02-08 01:08:18,654 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 30 time(s).
+2012-02-08 01:08:39,674 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 31 time(s).
+2012-02-08 01:09:00,694 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 32 time(s).
+2012-02-08 01:09:21,714 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 33 time(s).
+2012-02-08 01:09:42,734 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 34 time(s).
+2012-02-08 01:10:03,754 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 35 time(s).
+2012-02-08 01:10:24,774 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 36 time(s).
+2012-02-08 01:10:45,794 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 37 time(s).
+2012-02-08 01:11:06,814 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 38 time(s).
+2012-02-08 01:11:27,834 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 39 time(s).
+2012-02-08 01:11:48,843 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 40 time(s).
+2012-02-08 01:12:09,864 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 41 time(s).
+2012-02-08 01:12:30,878 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 42 time(s).
+2012-02-08 01:12:51,895 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 43 time(s).
+2012-02-08 01:13:12,914 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 44 time(s).
+2012-02-08 01:13:32,934 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Exception in doCheckpoint: 
+2012-02-08 01:13:32,934 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more
+
+2012-02-08 01:18:53,954 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 0 time(s).
+2012-02-08 01:19:14,974 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 1 time(s).
+2012-02-08 01:19:35,994 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 2 time(s).
+2012-02-08 01:19:57,009 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 3 time(s).
+2012-02-08 01:20:18,016 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 4 time(s).
+2012-02-08 01:20:39,034 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 5 time(s).
+2012-02-08 01:21:00,054 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 6 time(s).
+2012-02-08 01:21:21,074 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 7 time(s).
+2012-02-08 01:21:42,091 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 8 time(s).
+2012-02-08 01:22:03,099 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 9 time(s).
+2012-02-08 01:22:24,119 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 10 time(s).
+2012-02-08 01:22:45,138 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 11 time(s).
+2012-02-08 01:23:06,158 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 12 time(s).
+2012-02-08 01:23:27,178 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 13 time(s).
+2012-02-08 01:23:48,198 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 14 time(s).
+2012-02-08 01:24:09,215 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 15 time(s).
+2012-02-08 01:24:30,234 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 16 time(s).
+2012-02-08 01:24:51,254 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 17 time(s).
+2012-02-08 01:25:12,274 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 18 time(s).
+2012-02-08 01:25:33,294 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 19 time(s).
+2012-02-08 01:25:54,314 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 20 time(s).
+2012-02-08 01:26:15,334 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 21 time(s).
+2012-02-08 01:26:36,354 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 22 time(s).
+2012-02-08 01:26:57,366 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 23 time(s).
+2012-02-08 01:27:18,371 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 24 time(s).
+2012-02-08 01:27:39,379 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 25 time(s).
+2012-02-08 01:28:00,383 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 26 time(s).
+2012-02-08 01:28:21,391 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 27 time(s).
+2012-02-08 01:28:42,398 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 28 time(s).
+2012-02-08 01:29:03,418 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 29 time(s).
+2012-02-08 01:29:24,438 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 30 time(s).
+2012-02-08 01:29:45,457 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 31 time(s).
+2012-02-08 01:30:06,478 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 32 time(s).
+2012-02-08 01:30:27,498 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 33 time(s).
+2012-02-08 01:30:48,518 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 34 time(s).
+2012-02-08 01:31:09,538 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 35 time(s).
+2012-02-08 01:31:30,558 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 36 time(s).
+2012-02-08 01:31:51,578 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 37 time(s).
+2012-02-08 01:32:12,598 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 38 time(s).
+2012-02-08 01:32:33,618 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 39 time(s).
+2012-02-08 01:32:54,638 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 40 time(s).
+2012-02-08 01:33:15,644 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 41 time(s).
+2012-02-08 01:33:36,665 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 42 time(s).
+2012-02-08 01:33:57,682 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 43 time(s).
+2012-02-08 01:34:18,702 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 44 time(s).
+2012-02-08 01:34:38,714 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Exception in doCheckpoint: 
+2012-02-08 01:34:38,715 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more
+
+2012-02-08 01:39:59,726 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 0 time(s).
+2012-02-08 01:40:20,733 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 1 time(s).
+2012-02-08 01:40:41,749 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 2 time(s).
+2012-02-08 01:41:02,769 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 3 time(s).
+2012-02-08 01:41:23,773 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 4 time(s).
+2012-02-08 01:41:44,778 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 5 time(s).
+2012-02-08 01:42:05,783 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 6 time(s).
+2012-02-08 01:42:26,789 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 7 time(s).
+2012-02-08 01:42:47,796 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 8 time(s).
+2012-02-08 01:43:08,800 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 9 time(s).
+2012-02-08 01:43:29,818 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 10 time(s).
+2012-02-08 01:43:50,839 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 11 time(s).
+2012-02-08 01:44:11,844 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 12 time(s).
+2012-02-08 01:44:32,863 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 13 time(s).
+2012-02-08 01:44:53,884 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 14 time(s).
+2012-02-08 01:45:14,890 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 15 time(s).
+2012-02-08 01:45:35,894 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 16 time(s).
+2012-02-08 01:45:56,901 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 17 time(s).
+2012-02-08 01:46:17,909 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 18 time(s).
+2012-02-08 01:46:38,917 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 19 time(s).
+2012-02-08 01:46:59,928 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 20 time(s).
+2012-02-08 01:47:20,943 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 21 time(s).
+2012-02-08 01:47:41,955 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 22 time(s).
+2012-02-08 01:48:02,973 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 23 time(s).
+2012-02-08 01:48:23,977 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 24 time(s).
+2012-02-08 01:48:44,983 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 25 time(s).
+2012-02-08 01:49:05,989 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 26 time(s).
+2012-02-08 01:49:27,005 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 27 time(s).
+2012-02-08 01:49:48,024 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 28 time(s).
+2012-02-08 01:50:09,030 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 29 time(s).
+2012-02-08 01:50:30,047 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 30 time(s).
+2012-02-08 01:50:51,065 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 31 time(s).
+2012-02-08 01:51:12,068 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 32 time(s).
+2012-02-08 01:51:33,081 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 33 time(s).
+2012-02-08 01:51:54,098 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 34 time(s).
+2012-02-08 01:52:15,103 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 35 time(s).
+2012-02-08 01:52:36,110 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 36 time(s).
+2012-02-08 01:52:57,110 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 37 time(s).
+2012-02-08 01:53:18,129 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 38 time(s).
+2012-02-08 01:53:39,150 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 39 time(s).
+2012-02-08 01:54:00,162 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 40 time(s).
+2012-02-08 01:54:21,164 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 41 time(s).
+2012-02-08 01:54:42,180 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 42 time(s).
+2012-02-08 01:55:03,194 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 43 time(s).
+2012-02-08 01:55:24,198 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 44 time(s).
+2012-02-08 01:55:44,209 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Exception in doCheckpoint: 
+2012-02-08 01:55:44,209 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more
+
+2012-02-08 02:01:05,230 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 0 time(s).
+2012-02-08 02:01:26,242 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 1 time(s).
+2012-02-08 02:01:47,260 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 2 time(s).
+2012-02-08 02:02:08,266 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 3 time(s).
+2012-02-08 02:02:29,282 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 4 time(s).
+2012-02-08 02:02:50,297 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 5 time(s).
+2012-02-08 02:03:11,315 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 6 time(s).
+2012-02-08 02:03:32,330 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 7 time(s).
+2012-02-08 02:03:53,350 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 8 time(s).
+2012-02-08 02:04:14,368 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 9 time(s).
+2012-02-08 02:04:35,386 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 10 time(s).
+2012-02-08 02:04:56,399 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 11 time(s).
+2012-02-08 02:05:17,404 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 12 time(s).
+2012-02-08 02:05:38,408 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 13 time(s).
+2012-02-08 02:05:59,426 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 14 time(s).
+2012-02-08 02:06:20,428 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 15 time(s).
+2012-02-08 02:06:41,444 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 16 time(s).
+2012-02-08 02:07:02,446 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 17 time(s).
+2012-02-08 02:07:23,449 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 18 time(s).
+2012-02-08 02:07:44,455 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 19 time(s).
+2012-02-08 02:08:05,458 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 20 time(s).
+2012-02-08 02:08:26,460 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 21 time(s).
+2012-02-08 02:08:47,462 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 22 time(s).
+2012-02-08 02:09:08,474 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 23 time(s).
+2012-02-08 02:09:29,494 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 24 time(s).
+2012-02-08 02:09:50,514 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 25 time(s).
+2012-02-08 02:10:11,535 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 26 time(s).
+2012-02-08 02:10:32,556 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 27 time(s).
+2012-02-08 02:10:53,564 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 28 time(s).
+2012-02-08 02:11:14,572 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 29 time(s).
+2012-02-08 02:11:35,582 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 30 time(s).
+2012-02-08 02:11:56,593 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 31 time(s).
+2012-02-08 02:12:17,602 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 32 time(s).
+2012-02-08 02:12:38,622 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 33 time(s).
+2012-02-08 02:12:59,642 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 34 time(s).
+2012-02-08 02:13:20,662 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 35 time(s).
+2012-02-08 02:13:41,682 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 36 time(s).
+2012-02-08 02:14:02,699 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 37 time(s).
+2012-02-08 02:14:23,720 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 38 time(s).
+2012-02-08 02:14:44,738 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 39 time(s).
+2012-02-08 02:15:05,758 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 40 time(s).
+2012-02-08 02:15:26,778 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 41 time(s).
+2012-02-08 02:15:47,798 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 42 time(s).
+2012-02-08 02:16:08,818 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 43 time(s).
+2012-02-08 02:16:29,838 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 44 time(s).
+2012-02-08 02:16:49,858 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Exception in doCheckpoint: 
+2012-02-08 02:16:49,858 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more
+
+2012-02-08 02:22:10,878 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 0 time(s).
+2012-02-08 02:22:31,898 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 1 time(s).
+2012-02-08 02:22:52,918 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 2 time(s).
+2012-02-08 02:23:13,938 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 3 time(s).
+2012-02-08 02:23:34,958 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 4 time(s).
+2012-02-08 02:23:55,978 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 5 time(s).
+2012-02-08 02:24:16,998 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 6 time(s).
+2012-02-08 02:24:38,018 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 7 time(s).
+2012-02-08 02:24:59,039 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 8 time(s).
+2012-02-08 02:25:20,058 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 9 time(s).
+2012-02-08 02:25:41,078 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 10 time(s).
+2012-02-08 02:26:02,098 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 11 time(s).
+2012-02-08 02:26:23,118 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 12 time(s).
+2012-02-08 02:26:44,138 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 13 time(s).
+2012-02-08 02:27:05,158 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 14 time(s).
+2012-02-08 02:27:26,178 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 15 time(s).
+2012-02-08 02:27:47,198 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 16 time(s).
+2012-02-08 02:28:08,215 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 17 time(s).
+2012-02-08 02:28:29,219 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 18 time(s).
+2012-02-08 02:28:50,238 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 19 time(s).
+2012-02-08 02:29:11,258 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 20 time(s).
+2012-02-08 02:29:32,278 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 21 time(s).
+2012-02-08 02:29:53,298 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 22 time(s).
+2012-02-08 02:30:14,318 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 23 time(s).
+2012-02-08 02:30:35,338 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 24 time(s).
+2012-02-08 02:30:56,358 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 25 time(s).
+2012-02-08 02:31:17,378 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 26 time(s).
+2012-02-08 02:31:38,398 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 27 time(s).
+2012-02-08 02:31:59,418 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 28 time(s).
+2012-02-08 02:32:20,438 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 29 time(s).
+2012-02-08 02:32:41,458 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 30 time(s).
+2012-02-08 02:33:02,478 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 31 time(s).
+2012-02-08 02:33:23,484 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 32 time(s).
+2012-02-08 02:33:44,503 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 33 time(s).
+2012-02-08 02:34:05,522 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 34 time(s).
+2012-02-08 02:34:26,542 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 35 time(s).
+2012-02-08 02:34:47,562 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 36 time(s).
+2012-02-08 02:35:08,582 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 37 time(s).
+2012-02-08 02:35:29,602 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 38 time(s).
+2012-02-08 02:35:50,622 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 39 time(s).
+2012-02-08 02:36:11,642 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 40 time(s).
+2012-02-08 02:36:32,662 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 41 time(s).
+2012-02-08 02:36:53,682 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 42 time(s).
+2012-02-08 02:37:14,702 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 43 time(s).
+2012-02-08 02:37:35,722 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 44 time(s).
+2012-02-08 02:37:55,742 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Exception in doCheckpoint: 
+2012-02-08 02:37:55,742 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more
+
+2012-02-08 02:43:16,762 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 0 time(s).
+2012-02-08 02:43:37,782 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 1 time(s).
+2012-02-08 02:43:58,802 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 2 time(s).
+2012-02-08 02:44:19,822 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 3 time(s).
+2012-02-08 02:44:40,842 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 4 time(s).
+2012-02-08 02:45:01,862 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 5 time(s).
+2012-02-08 02:45:22,882 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 6 time(s).
+2012-02-08 02:45:43,902 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 7 time(s).
+2012-02-08 02:46:04,922 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 8 time(s).
+2012-02-08 02:46:25,931 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 9 time(s).
+2012-02-08 02:46:46,952 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 10 time(s).
+2012-02-08 02:47:07,964 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 11 time(s).
+2012-02-08 02:47:28,974 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 12 time(s).
+2012-02-08 02:47:49,991 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 13 time(s).
+2012-02-08 02:48:11,008 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 14 time(s).
+2012-02-08 02:48:32,015 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 15 time(s).
+2012-02-08 02:48:53,028 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 16 time(s).
+2012-02-08 02:49:14,046 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 17 time(s).
+2012-02-08 02:49:35,060 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 18 time(s).
+2012-02-08 02:49:56,072 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 19 time(s).
+2012-02-08 02:50:17,091 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 20 time(s).
+2012-02-08 02:50:38,094 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 21 time(s).
+2012-02-08 02:50:59,097 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 22 time(s).
+2012-02-08 02:51:20,099 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 23 time(s).
+2012-02-08 02:51:41,105 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 24 time(s).
+2012-02-08 02:52:02,119 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 25 time(s).
+2012-02-08 02:52:23,126 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 26 time(s).
+2012-02-08 02:52:44,146 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 27 time(s).
+2012-02-08 02:53:05,157 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 28 time(s).
+2012-02-08 02:53:26,162 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 29 time(s).
+2012-02-08 02:53:47,165 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 30 time(s).
+2012-02-08 02:54:08,173 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 31 time(s).
+2012-02-08 02:54:29,187 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 32 time(s).
+2012-02-08 02:54:50,195 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 33 time(s).
+2012-02-08 02:55:11,214 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 34 time(s).
+2012-02-08 02:55:32,218 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 35 time(s).
+2012-02-08 02:55:53,220 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 36 time(s).
+2012-02-08 02:56:14,222 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 37 time(s).
+2012-02-08 02:56:35,229 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 38 time(s).
+2012-02-08 02:56:56,249 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 39 time(s).
+2012-02-08 02:57:17,260 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 40 time(s).
+2012-02-08 02:57:38,278 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 41 time(s).
+2012-02-08 02:57:59,299 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 42 time(s).
+2012-02-08 02:58:20,307 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 43 time(s).
+2012-02-08 02:58:41,325 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 44 time(s).
+2012-02-08 02:59:01,339 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Exception in doCheckpoint: 
+2012-02-08 02:59:01,339 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more
+
+2012-02-08 03:04:22,359 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 0 time(s).
+2012-02-08 03:04:43,379 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 1 time(s).
+2012-02-08 03:05:04,395 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 2 time(s).
+2012-02-08 03:05:25,406 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 3 time(s).
+2012-02-08 03:05:46,412 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 4 time(s).
+2012-02-08 03:06:07,421 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 5 time(s).
+2012-02-08 03:06:28,431 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 6 time(s).
+2012-02-08 03:06:49,439 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 7 time(s).
+2012-02-08 03:07:10,455 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 8 time(s).
+2012-02-08 03:07:31,467 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 9 time(s).
+2012-02-08 03:07:52,488 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 10 time(s).
+2012-02-08 03:08:13,500 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 11 time(s).
+2012-02-08 03:08:34,521 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 12 time(s).
+2012-02-08 03:08:55,541 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 13 time(s).
+2012-02-08 03:09:16,561 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 14 time(s).
+2012-02-08 03:09:37,578 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 15 time(s).
+2012-02-08 03:09:58,599 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 16 time(s).
+2012-02-08 03:10:19,612 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 17 time(s).
+2012-02-08 03:10:40,625 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 18 time(s).
+2012-02-08 03:11:01,641 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 19 time(s).
+2012-02-08 03:11:22,661 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 20 time(s).
+2012-02-08 03:11:43,678 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 21 time(s).
+2012-02-08 03:12:04,690 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 22 time(s).
+2012-02-08 03:12:25,705 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 23 time(s).
+2012-02-08 03:12:46,726 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 24 time(s).
+2012-02-08 03:13:07,744 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 25 time(s).
+2012-02-08 03:13:28,762 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 26 time(s).
+2012-02-08 03:13:49,782 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 27 time(s).
+2012-02-08 03:14:10,802 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 28 time(s).
+2012-02-08 03:14:31,822 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 29 time(s).
+2012-02-08 03:14:52,842 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 30 time(s).
+2012-02-08 03:15:13,862 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 31 time(s).
+2012-02-08 03:15:34,882 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 32 time(s).
+2012-02-08 03:15:55,902 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 33 time(s).
+2012-02-08 03:16:16,922 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 34 time(s).
+2012-02-08 03:16:37,942 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 35 time(s).
+2012-02-08 03:16:58,962 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 36 time(s).
+2012-02-08 03:17:19,982 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 37 time(s).
+2012-02-08 03:17:41,002 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 38 time(s).
+2012-02-08 03:18:02,022 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 39 time(s).
+2012-02-08 03:18:23,042 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 40 time(s).
+2012-02-08 03:18:44,062 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 41 time(s).
+2012-02-08 03:19:05,082 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 42 time(s).
+2012-02-08 03:19:26,102 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 43 time(s).
+2012-02-08 03:19:47,122 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 44 time(s).
+2012-02-08 03:20:07,142 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Exception in doCheckpoint: 
+2012-02-08 03:20:07,142 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more
+
+2012-02-08 03:25:28,162 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 0 time(s).
+2012-02-08 03:25:49,182 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 1 time(s).
+2012-02-08 03:26:10,202 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 2 time(s).
+2012-02-08 03:26:31,222 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 3 time(s).
+2012-02-08 03:26:52,242 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 4 time(s).
+2012-02-08 03:27:13,262 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 5 time(s).
+2012-02-08 03:27:34,282 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 6 time(s).
+2012-02-08 03:27:55,302 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 7 time(s).
+2012-02-08 03:28:16,322 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 8 time(s).
+2012-02-08 03:28:37,342 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 9 time(s).
+2012-02-08 03:28:58,362 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 10 time(s).
+2012-02-08 03:29:19,382 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 11 time(s).
+2012-02-08 03:29:40,402 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 12 time(s).
+2012-02-08 03:30:01,422 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 13 time(s).
+2012-02-08 03:30:22,428 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 14 time(s).
+2012-02-08 03:30:43,446 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 15 time(s).
+2012-02-08 03:31:04,466 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 16 time(s).
+2012-02-08 03:31:25,486 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 17 time(s).
+2012-02-08 03:31:46,502 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 18 time(s).
+2012-02-08 03:32:07,522 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 19 time(s).
+2012-02-08 03:32:28,542 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 20 time(s).
+2012-02-08 03:32:49,562 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 21 time(s).
+2012-02-08 03:33:10,582 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 22 time(s).
+2012-02-08 03:33:31,602 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 23 time(s).
+2012-02-08 03:33:52,622 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 24 time(s).
+2012-02-08 03:34:13,642 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 25 time(s).
+2012-02-08 03:34:34,662 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 26 time(s).
+2012-02-08 03:34:55,682 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 27 time(s).
+2012-02-08 03:35:16,702 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 28 time(s).
+2012-02-08 03:35:37,722 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 29 time(s).
+2012-02-08 03:35:58,742 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 30 time(s).
+2012-02-08 03:36:19,762 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 31 time(s).
+2012-02-08 03:36:40,782 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 32 time(s).
+2012-02-08 03:37:01,802 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 33 time(s).
+2012-02-08 03:37:22,822 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 34 time(s).
+2012-02-08 03:37:43,842 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 35 time(s).
+2012-02-08 03:38:04,862 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 36 time(s).
+2012-02-08 03:38:25,882 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 37 time(s).
+2012-02-08 03:38:46,902 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 38 time(s).
+2012-02-08 03:39:07,922 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 39 time(s).
+2012-02-08 03:39:28,942 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 40 time(s).
+2012-02-08 03:39:49,962 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 41 time(s).
+2012-02-08 03:40:10,982 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 42 time(s).
+2012-02-08 03:40:32,002 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 43 time(s).
+2012-02-08 03:40:53,022 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 44 time(s).
+2012-02-08 03:41:13,042 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Exception in doCheckpoint: 
+2012-02-08 03:41:13,042 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more
+
+2012-02-08 03:46:34,062 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 0 time(s).
+2012-02-08 03:46:55,080 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 1 time(s).
+2012-02-08 03:47:16,097 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 2 time(s).
+2012-02-08 03:47:37,116 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 3 time(s).
+2012-02-08 03:47:58,120 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 4 time(s).
+2012-02-08 03:48:19,121 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 5 time(s).
+2012-02-08 03:48:40,123 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 6 time(s).
+2012-02-08 03:49:01,135 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 7 time(s).
+2012-02-08 03:49:22,154 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 8 time(s).
+2012-02-08 03:49:43,163 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 9 time(s).
+2012-02-08 03:50:04,177 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 10 time(s).
+2012-02-08 03:50:25,197 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 11 time(s).
+2012-02-08 03:50:46,218 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 12 time(s).
+2012-02-08 03:51:07,230 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 13 time(s).
+2012-02-08 03:51:28,240 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 14 time(s).
+2012-02-08 03:51:49,259 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 15 time(s).
+2012-02-08 03:52:10,265 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 16 time(s).
+2012-02-08 03:52:31,286 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 17 time(s).
+2012-02-08 03:52:52,306 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 18 time(s).
+2012-02-08 03:53:13,326 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 19 time(s).
+2012-02-08 03:53:34,346 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 20 time(s).
+2012-02-08 03:53:55,366 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 21 time(s).
+2012-02-08 03:54:16,386 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 22 time(s).
+2012-02-08 03:54:37,406 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 23 time(s).
+2012-02-08 03:54:58,426 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 24 time(s).
+2012-02-08 03:55:19,446 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 25 time(s).
+2012-02-08 03:55:40,466 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 26 time(s).
+2012-02-08 03:56:01,481 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 27 time(s).
+2012-02-08 03:56:22,493 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 28 time(s).
+2012-02-08 03:56:43,514 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 29 time(s).
+2012-02-08 03:57:04,534 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 30 time(s).
+2012-02-08 03:57:25,553 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 31 time(s).
+2012-02-08 03:57:46,574 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 32 time(s).
+2012-02-08 03:58:07,594 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 33 time(s).
+2012-02-08 03:58:28,614 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 34 time(s).
+2012-02-08 03:58:49,634 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 35 time(s).
+2012-02-08 03:59:10,654 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 36 time(s).
+2012-02-08 03:59:31,674 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 37 time(s).
+2012-02-08 03:59:52,694 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 38 time(s).
+2012-02-08 04:00:13,714 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 39 time(s).
+2012-02-08 04:00:34,732 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 40 time(s).
+2012-02-08 04:00:55,750 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 41 time(s).
+2012-02-08 04:01:16,770 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 42 time(s).
+2012-02-08 04:01:37,790 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 43 time(s).
+2012-02-08 04:01:58,810 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 44 time(s).
+2012-02-08 04:02:18,830 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Exception in doCheckpoint: 
+2012-02-08 04:02:18,830 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more
+
+2012-02-08 04:07:39,834 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 0 time(s).
+2012-02-08 04:08:00,854 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 1 time(s).
+2012-02-08 04:08:21,874 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 2 time(s).
+2012-02-08 04:08:42,892 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 3 time(s).
+2012-02-08 04:09:03,899 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 4 time(s).
+2012-02-08 04:09:24,920 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 5 time(s).
+2012-02-08 04:09:45,922 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 6 time(s).
+2012-02-08 04:10:06,926 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 7 time(s).
+2012-02-08 04:10:27,931 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 8 time(s).
+2012-02-08 04:10:48,950 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 9 time(s).
+2012-02-08 04:11:09,960 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 10 time(s).
+2012-02-08 04:11:30,980 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 11 time(s).
+2012-02-08 04:11:52,001 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 12 time(s).
+2012-02-08 04:12:13,014 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 13 time(s).
+2012-02-08 04:12:34,028 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 14 time(s).
+2012-02-08 04:12:55,043 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 15 time(s).
+2012-02-08 04:13:16,054 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 16 time(s).
+2012-02-08 04:13:37,074 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 17 time(s).
+2012-02-08 04:13:58,094 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 18 time(s).
+2012-02-08 04:14:19,114 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 19 time(s).
+2012-02-08 04:14:40,134 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 20 time(s).
+2012-02-08 04:15:01,145 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 21 time(s).
+2012-02-08 04:15:22,154 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 22 time(s).
+2012-02-08 04:15:43,171 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 23 time(s).
+2012-02-08 04:16:04,190 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 24 time(s).
+2012-02-08 04:16:25,209 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 25 time(s).
+2012-02-08 04:16:46,215 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 26 time(s).
+2012-02-08 04:17:07,226 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 27 time(s).
+2012-02-08 04:17:28,238 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 28 time(s).
+2012-02-08 04:17:49,256 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 29 time(s).
+2012-02-08 04:18:10,277 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 30 time(s).
+2012-02-08 04:18:31,291 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 31 time(s).
+2012-02-08 04:18:52,294 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 32 time(s).
+2012-02-08 04:19:13,314 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 33 time(s).
+2012-02-08 04:19:34,330 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 34 time(s).
+2012-02-08 04:19:55,344 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 35 time(s).
+2012-02-08 04:20:16,365 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 36 time(s).
+2012-02-08 04:20:37,375 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 37 time(s).
+2012-02-08 04:20:58,378 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 38 time(s).
+2012-02-08 04:21:19,394 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 39 time(s).
+2012-02-08 04:21:40,414 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 40 time(s).
+2012-02-08 04:22:01,433 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 41 time(s).
+2012-02-08 04:22:22,436 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 42 time(s).
+2012-02-08 04:22:43,457 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 43 time(s).
+2012-02-08 04:23:04,476 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 44 time(s).
+2012-02-08 04:23:24,494 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Exception in doCheckpoint: 
+2012-02-08 04:23:24,494 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more
+
+2012-02-08 04:28:45,514 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 0 time(s).
+2012-02-08 04:29:06,534 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 1 time(s).
+2012-02-08 04:29:27,551 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 2 time(s).
+2012-02-08 04:29:48,570 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 3 time(s).
+2012-02-08 04:30:09,590 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 4 time(s).
+2012-02-08 04:30:30,610 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 5 time(s).
+2012-02-08 04:30:51,631 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 6 time(s).
+2012-02-08 04:31:12,650 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 7 time(s).
+2012-02-08 04:31:33,670 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 8 time(s).
+2012-02-08 04:31:54,690 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 9 time(s).
+2012-02-08 04:32:15,694 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 10 time(s).
+2012-02-08 04:32:36,714 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 11 time(s).
+2012-02-08 04:32:57,722 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 12 time(s).
+2012-02-08 04:33:18,738 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 13 time(s).
+2012-02-08 04:33:39,739 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 14 time(s).
+2012-02-08 04:34:00,753 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 15 time(s).
+2012-02-08 04:34:21,767 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 16 time(s).
+2012-02-08 04:34:42,787 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 17 time(s).
+2012-02-08 04:35:03,798 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 18 time(s).
+2012-02-08 04:35:24,818 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 19 time(s).
+2012-02-08 04:35:45,832 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 20 time(s).
+2012-02-08 04:36:06,853 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 21 time(s).
+2012-02-08 04:36:27,872 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 22 time(s).
+2012-02-08 04:36:48,890 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 23 time(s).
+2012-02-08 04:37:09,902 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 24 time(s).
+2012-02-08 04:37:30,904 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 25 time(s).
+2012-02-08 04:37:51,922 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 26 time(s).
+2012-02-08 04:38:12,933 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 27 time(s).
+2012-02-08 04:38:33,942 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 28 time(s).
+2012-02-08 04:38:54,963 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 29 time(s).
+2012-02-08 04:39:15,969 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 30 time(s).
+2012-02-08 04:39:36,990 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 31 time(s).
+2012-02-08 04:39:58,008 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 32 time(s).
+2012-02-08 04:40:19,029 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 33 time(s).
+2012-02-08 04:40:40,047 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 34 time(s).
+2012-02-08 04:41:01,052 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 35 time(s).
+2012-02-08 04:41:22,063 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 36 time(s).
+2012-02-08 04:41:43,083 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 37 time(s).
+2012-02-08 04:42:04,097 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 38 time(s).
+2012-02-08 04:42:25,117 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 39 time(s).
+2012-02-08 04:42:46,138 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 40 time(s).
+2012-02-08 04:43:07,158 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 41 time(s).
+2012-02-08 04:43:28,162 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 42 time(s).
+2012-02-08 04:43:49,181 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 43 time(s).
+2012-02-08 04:44:10,186 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 44 time(s).
+2012-02-08 04:44:30,191 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Exception in doCheckpoint: 
+2012-02-08 04:44:30,192 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more
+
+2012-02-08 04:49:51,205 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 0 time(s).
+2012-02-08 04:50:12,222 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 1 time(s).
+2012-02-08 04:50:33,243 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 2 time(s).
+2012-02-08 04:50:54,262 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 3 time(s).
+2012-02-08 04:51:15,280 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 4 time(s).
+2012-02-08 04:51:36,294 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 5 time(s).
+2012-02-08 04:51:57,314 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 6 time(s).
+2012-02-08 04:52:18,334 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 7 time(s).
+2012-02-08 04:52:39,343 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 8 time(s).
+2012-02-08 04:53:00,358 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 9 time(s).
+2012-02-08 04:53:21,374 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 10 time(s).
+2012-02-08 04:53:42,394 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 11 time(s).
+2012-02-08 04:54:03,398 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 12 time(s).
+2012-02-08 04:54:24,407 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 13 time(s).
+2012-02-08 04:54:45,426 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 14 time(s).
+2012-02-08 04:55:06,438 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 15 time(s).
+2012-02-08 04:55:27,448 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 16 time(s).
+2012-02-08 04:55:48,465 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 17 time(s).
+2012-02-08 04:56:09,479 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 18 time(s).
+2012-02-08 04:56:30,494 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 19 time(s).
+2012-02-08 04:56:51,513 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 20 time(s).
+2012-02-08 04:57:12,533 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 21 time(s).
+2012-02-08 04:57:33,554 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 22 time(s).
+2012-02-08 04:57:54,558 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 23 time(s).
+2012-02-08 04:58:15,577 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 24 time(s).
+2012-02-08 04:58:36,594 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 25 time(s).
+2012-02-08 04:58:57,609 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 26 time(s).
+2012-02-08 04:59:18,630 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 27 time(s).
+2012-02-08 04:59:39,650 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 28 time(s).
+2012-02-08 05:00:00,665 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 29 time(s).
+2012-02-08 05:00:21,686 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 30 time(s).
+2012-02-08 05:00:42,703 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 31 time(s).
+2012-02-08 05:01:03,719 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 32 time(s).
+2012-02-08 05:01:24,722 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 33 time(s).
+2012-02-08 05:01:45,737 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 34 time(s).
+2012-02-08 05:02:06,740 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 35 time(s).
+2012-02-08 05:02:27,761 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 36 time(s).
+2012-02-08 05:02:48,778 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 37 time(s).
+2012-02-08 05:03:09,785 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 38 time(s).
+2012-02-08 05:03:30,805 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 39 time(s).
+2012-02-08 05:03:51,810 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 40 time(s).
+2012-02-08 05:04:12,830 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 41 time(s).
+2012-02-08 05:04:33,851 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 42 time(s).
+2012-02-08 05:04:54,870 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 43 time(s).
+2012-02-08 05:05:15,890 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 44 time(s).
+2012-02-08 05:05:35,901 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Exception in doCheckpoint: 
+2012-02-08 05:05:35,902 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more
+
+2012-02-08 05:10:56,914 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 0 time(s).
+2012-02-08 05:11:17,934 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 1 time(s).
+2012-02-08 05:11:38,952 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 2 time(s).
+2012-02-08 05:11:59,954 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 3 time(s).
+2012-02-08 05:12:20,958 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 4 time(s).
+2012-02-08 05:12:41,965 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 5 time(s).
+2012-02-08 05:13:02,986 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 6 time(s).
+2012-02-08 05:13:24,006 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 7 time(s).
+2012-02-08 05:13:45,018 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 8 time(s).
+2012-02-08 05:14:06,030 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 9 time(s).
+2012-02-08 05:14:27,051 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 10 time(s).
+2012-02-08 05:14:48,070 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 11 time(s).
+2012-02-08 05:15:09,090 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 12 time(s).
+2012-02-08 05:15:30,109 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 13 time(s).
+2012-02-08 05:15:51,126 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 14 time(s).
+2012-02-08 05:16:12,147 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 15 time(s).
+2012-02-08 05:16:33,150 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 16 time(s).
+2012-02-08 05:16:54,171 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 17 time(s).
+2012-02-08 05:17:15,178 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 18 time(s).
+2012-02-08 05:17:36,187 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 19 time(s).
+2012-02-08 05:17:57,205 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 20 time(s).
+2012-02-08 05:18:18,218 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 21 time(s).
+2012-02-08 05:18:39,233 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 22 time(s).
+2012-02-08 05:19:00,254 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 23 time(s).
+2012-02-08 05:19:21,259 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 24 time(s).
+2012-02-08 05:19:42,262 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 25 time(s).
+2012-02-08 05:20:03,266 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 26 time(s).
+2012-02-08 05:20:24,286 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 27 time(s).
+2012-02-08 05:20:45,294 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 28 time(s).
+2012-02-08 05:21:06,313 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 29 time(s).
+2012-02-08 05:21:27,319 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 30 time(s).
+2012-02-08 05:21:48,334 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 31 time(s).
+2012-02-08 05:22:09,338 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 32 time(s).
+2012-02-08 05:22:30,358 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 33 time(s).
+2012-02-08 05:22:51,379 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 34 time(s).
+2012-02-08 05:23:12,398 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 35 time(s).
+2012-02-08 05:23:33,414 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 36 time(s).
+2012-02-08 05:23:54,434 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 37 time(s).
+2012-02-08 05:24:15,453 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 38 time(s).
+2012-02-08 05:24:36,470 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 39 time(s).
+2012-02-08 05:24:57,490 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 40 time(s).
+2012-02-08 05:25:18,510 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 41 time(s).
+2012-02-08 05:25:39,530 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 42 time(s).
+2012-02-08 05:26:00,533 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 43 time(s).
+2012-02-08 05:26:21,554 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 44 time(s).
+2012-02-08 05:26:41,572 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Exception in doCheckpoint: 
+2012-02-08 05:26:41,572 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more
+
+2012-02-08 05:32:02,588 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 0 time(s).
+2012-02-08 05:32:23,608 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 1 time(s).
+2012-02-08 05:32:44,625 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 2 time(s).
+2012-02-08 05:33:05,644 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 3 time(s).
+2012-02-08 05:33:26,655 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 4 time(s).
+2012-02-08 05:33:47,658 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 5 time(s).
+2012-02-08 05:34:08,665 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 6 time(s).
+2012-02-08 05:34:29,675 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 7 time(s).
+2012-02-08 05:34:50,694 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 8 time(s).
+2012-02-08 05:35:11,714 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 9 time(s).
+2012-02-08 05:35:32,734 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 10 time(s).
+2012-02-08 05:35:53,738 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 11 time(s).
+2012-02-08 05:36:14,746 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 12 time(s).
+2012-02-08 05:36:35,767 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 13 time(s).
+2012-02-08 05:36:56,770 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 14 time(s).
+2012-02-08 05:37:17,778 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 15 time(s).
+2012-02-08 05:37:38,798 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 16 time(s).
+2012-02-08 05:37:59,818 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 17 time(s).
+2012-02-08 05:38:20,839 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 18 time(s).
+2012-02-08 05:38:41,850 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 19 time(s).
+2012-02-08 05:39:02,862 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 20 time(s).
+2012-02-08 05:39:23,878 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 21 time(s).
+2012-02-08 05:39:44,898 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 22 time(s).
+2012-02-08 05:40:05,903 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 23 time(s).
+2012-02-08 05:40:26,922 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 24 time(s).
+2012-02-08 05:40:47,942 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 25 time(s).
+2012-02-08 05:41:08,957 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 26 time(s).
+2012-02-08 05:41:29,968 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 27 time(s).
+2012-02-08 05:41:50,985 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 28 time(s).
+2012-02-08 05:42:11,990 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 29 time(s).
+2012-02-08 05:42:33,003 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 30 time(s).
+2012-02-08 05:42:54,006 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 31 time(s).
+2012-02-08 05:43:15,024 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 32 time(s).
+2012-02-08 05:43:36,044 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 33 time(s).
+2012-02-08 05:43:57,059 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 34 time(s).
+2012-02-08 05:44:18,065 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 35 time(s).
+2012-02-08 05:44:39,086 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 36 time(s).
+2012-02-08 05:45:00,104 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 37 time(s).
+2012-02-08 05:45:21,123 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 38 time(s).
+2012-02-08 05:45:42,125 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 39 time(s).
+2012-02-08 05:46:03,130 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 40 time(s).
+2012-02-08 05:46:24,147 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 41 time(s).
+2012-02-08 05:46:45,168 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 42 time(s).
+2012-02-08 05:47:06,181 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 43 time(s).
+2012-02-08 05:47:27,186 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 44 time(s).
+2012-02-08 05:47:47,206 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Exception in doCheckpoint: 
+2012-02-08 05:47:47,207 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more
+
+2012-02-08 05:53:08,218 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 0 time(s).
+2012-02-08 05:53:29,232 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 1 time(s).
+2012-02-08 05:53:50,241 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 2 time(s).
+2012-02-08 05:54:11,257 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 3 time(s).
+2012-02-08 05:54:32,272 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 4 time(s).
+2012-02-08 05:54:53,293 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 5 time(s).
+2012-02-08 05:55:14,306 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 6 time(s).
+2012-02-08 05:55:35,309 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 7 time(s).
+2012-02-08 05:55:56,317 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 8 time(s).
+2012-02-08 05:56:17,337 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 9 time(s).
+2012-02-08 05:56:38,358 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 10 time(s).
+2012-02-08 05:56:59,378 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 11 time(s).
+2012-02-08 05:57:20,398 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 12 time(s).
+2012-02-08 05:57:41,406 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 13 time(s).
+2012-02-08 05:58:02,410 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 14 time(s).
+2012-02-08 05:58:23,425 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 15 time(s).
+2012-02-08 05:58:44,445 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 16 time(s).
+2012-02-08 05:59:05,455 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 17 time(s).
+2012-02-08 05:59:26,474 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 18 time(s).
+2012-02-08 05:59:47,494 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 19 time(s).
+2012-02-08 06:00:08,511 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 20 time(s).
+2012-02-08 06:00:29,515 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 21 time(s).
+2012-02-08 06:00:50,535 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 22 time(s).
+2012-02-08 06:01:11,539 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 23 time(s).
+2012-02-08 06:01:32,542 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 24 time(s).
+2012-02-08 06:01:53,544 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 25 time(s).
+2012-02-08 06:02:14,547 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 26 time(s).
+2012-02-08 06:02:35,567 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 27 time(s).
+2012-02-08 06:02:56,588 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 28 time(s).
+2012-02-08 06:03:17,607 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 29 time(s).
+2012-02-08 06:03:38,620 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 30 time(s).
+2012-02-08 06:03:59,632 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 31 time(s).
+2012-02-08 06:04:20,653 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 32 time(s).
+2012-02-08 06:04:41,665 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 33 time(s).
+2012-02-08 06:05:02,682 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 34 time(s).
+2012-02-08 06:05:23,701 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 35 time(s).
+2012-02-08 06:05:44,720 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 36 time(s).
+2012-02-08 06:06:05,722 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 37 time(s).
+2012-02-08 06:06:26,738 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 38 time(s).
+2012-02-08 06:06:47,756 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 39 time(s).
+2012-02-08 06:07:08,762 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 40 time(s).
+2012-02-08 06:07:29,778 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 41 time(s).
+2012-02-08 06:07:50,798 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 42 time(s).
+2012-02-08 06:08:11,818 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 43 time(s).
+2012-02-08 06:08:32,838 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 44 time(s).
+2012-02-08 06:08:52,858 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Exception in doCheckpoint: 
+2012-02-08 06:08:52,859 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more
+
+2012-02-08 06:14:13,878 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 0 time(s).
+2012-02-08 06:14:34,898 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 1 time(s).
+2012-02-08 06:14:55,918 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 2 time(s).
+2012-02-08 06:15:16,938 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 3 time(s).
+2012-02-08 06:15:37,955 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 4 time(s).
+2012-02-08 06:15:58,976 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 5 time(s).
+2012-02-08 06:16:19,996 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 6 time(s).
+2012-02-08 06:16:41,014 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 7 time(s).
+2012-02-08 06:17:02,034 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 8 time(s).
+2012-02-08 06:17:23,054 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 9 time(s).
+2012-02-08 06:17:44,072 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 10 time(s).
+2012-02-08 06:18:05,093 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 11 time(s).
+2012-02-08 06:18:26,096 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 12 time(s).
+2012-02-08 06:18:47,098 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 13 time(s).
+2012-02-08 06:19:08,109 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 14 time(s).
+2012-02-08 06:19:29,113 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 15 time(s).
+2012-02-08 06:19:50,131 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 16 time(s).
+2012-02-08 06:20:11,140 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 17 time(s).
+2012-02-08 06:20:32,157 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 18 time(s).
+2012-02-08 06:20:53,174 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 19 time(s).
+2012-02-08 06:21:14,192 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 20 time(s).
+2012-02-08 06:21:35,198 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 21 time(s).
+2012-02-08 06:21:56,218 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 22 time(s).
+2012-02-08 06:22:17,234 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 23 time(s).
+2012-02-08 06:22:38,254 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 24 time(s).
+2012-02-08 06:22:59,259 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 25 time(s).
+2012-02-08 06:23:20,278 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 26 time(s).
+2012-02-08 06:23:41,298 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 27 time(s).
+2012-02-08 06:24:02,317 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 28 time(s).
+2012-02-08 06:24:23,318 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 29 time(s).
+2012-02-08 06:24:44,330 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 30 time(s).
+2012-02-08 06:25:05,351 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 31 time(s).
+2012-02-08 06:25:26,355 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 32 time(s).
+2012-02-08 06:25:47,374 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 33 time(s).
+2012-02-08 06:26:08,394 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 34 time(s).
+2012-02-08 06:26:29,414 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 35 time(s).
+2012-02-08 06:26:50,434 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 36 time(s).
+2012-02-08 06:27:11,454 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 37 time(s).
+2012-02-08 06:27:32,474 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 38 time(s).
+2012-02-08 06:27:53,494 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 39 time(s).
+2012-02-08 06:28:14,514 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 40 time(s).
+2012-02-08 06:28:35,526 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 41 time(s).
+2012-02-08 06:28:56,542 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 42 time(s).
+2012-02-08 06:29:17,563 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 43 time(s).
+2012-02-08 06:29:38,578 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 44 time(s).
+2012-02-08 06:29:58,590 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Exception in doCheckpoint: 
+2012-02-08 06:29:58,591 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more
+
+2012-02-08 06:35:19,600 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 0 time(s).
+2012-02-08 06:35:40,602 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 1 time(s).
+2012-02-08 06:36:01,620 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 2 time(s).
+2012-02-08 06:36:22,641 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 3 time(s).
+2012-02-08 06:36:43,661 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 4 time(s).
+2012-02-08 06:37:04,682 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 5 time(s).
+2012-02-08 06:37:25,698 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 6 time(s).
+2012-02-08 06:37:46,718 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 7 time(s).
+2012-02-08 06:38:07,725 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 8 time(s).
+2012-02-08 06:38:28,738 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 9 time(s).
+2012-02-08 06:38:49,742 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 10 time(s).
+2012-02-08 06:39:10,750 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 11 time(s).
+2012-02-08 06:39:31,755 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 12 time(s).
+2012-02-08 06:39:52,774 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 13 time(s).
+2012-02-08 06:40:13,777 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 14 time(s).
+2012-02-08 06:40:34,788 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 15 time(s).
+2012-02-08 06:40:55,808 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 16 time(s).
+2012-02-08 06:41:16,824 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 17 time(s).
+2012-02-08 06:41:37,827 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 18 time(s).
+2012-02-08 06:41:58,837 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 19 time(s).
+2012-02-08 06:42:19,846 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 20 time(s).
+2012-02-08 06:42:40,855 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 21 time(s).
+2012-02-08 06:43:01,876 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 22 time(s).
+2012-02-08 06:43:22,888 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 23 time(s).
+2012-02-08 06:43:43,902 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 24 time(s).
+2012-02-08 06:44:04,904 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 25 time(s).
+2012-02-08 06:44:25,924 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 26 time(s).
+2012-02-08 06:44:46,944 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 27 time(s).
+2012-02-08 06:45:07,963 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 28 time(s).
+2012-02-08 06:45:28,984 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 29 time(s).
+2012-02-08 06:45:49,997 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 30 time(s).
+2012-02-08 06:46:11,016 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 31 time(s).
+2012-02-08 06:46:32,035 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 32 time(s).
+2012-02-08 06:46:53,054 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 33 time(s).
+2012-02-08 06:47:14,074 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 34 time(s).
+2012-02-08 06:47:35,088 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 35 time(s).
+2012-02-08 06:47:56,100 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 36 time(s).
+2012-02-08 06:48:17,102 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 37 time(s).
+2012-02-08 06:48:38,111 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 38 time(s).
+2012-02-08 06:48:59,114 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 39 time(s).
+2012-02-08 06:49:20,117 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 40 time(s).
+2012-02-08 06:49:41,133 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 41 time(s).
+2012-02-08 06:50:02,151 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 42 time(s).
+2012-02-08 06:50:23,172 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 43 time(s).
+2012-02-08 06:50:44,184 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 44 time(s).
+2012-02-08 06:51:04,205 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Exception in doCheckpoint: 
+2012-02-08 06:51:04,205 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more
+
+2012-02-08 06:56:25,225 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 0 time(s).
+2012-02-08 06:56:46,246 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 1 time(s).
+2012-02-08 06:57:07,267 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 2 time(s).
+2012-02-08 06:57:28,280 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 3 time(s).
+2012-02-08 06:57:49,297 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 4 time(s).
+2012-02-08 06:58:10,310 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 5 time(s).
+2012-02-08 06:58:31,326 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 6 time(s).
+2012-02-08 06:58:52,333 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 7 time(s).
+2012-02-08 06:59:13,347 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 8 time(s).
+2012-02-08 06:59:34,363 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 9 time(s).
+2012-02-08 06:59:55,377 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 10 time(s).
+2012-02-08 07:00:16,383 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 11 time(s).
+2012-02-08 07:00:37,392 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 12 time(s).
+2012-02-08 07:00:58,395 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 13 time(s).
+2012-02-08 07:01:19,404 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 14 time(s).
+2012-02-08 07:01:40,425 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 15 time(s).
+2012-02-08 07:02:01,428 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 16 time(s).
+2012-02-08 07:02:22,449 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 17 time(s).
+2012-02-08 07:02:43,469 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 18 time(s).
+2012-02-08 07:03:04,487 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 19 time(s).
+2012-02-08 07:03:25,505 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 20 time(s).
+2012-02-08 07:03:46,521 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 21 time(s).
+2012-02-08 07:04:07,530 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 22 time(s).
+2012-02-08 07:04:28,546 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 23 time(s).
+2012-02-08 07:04:49,561 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 24 time(s).
+2012-02-08 07:05:10,579 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 25 time(s).
+2012-02-08 07:05:31,587 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 26 time(s).
+2012-02-08 07:05:52,603 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 27 time(s).
+2012-02-08 07:06:13,606 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 28 time(s).
+2012-02-08 07:06:34,608 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 29 time(s).
+2012-02-08 07:06:55,618 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 30 time(s).
+2012-02-08 07:07:16,631 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 31 time(s).
+2012-02-08 07:07:37,651 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 32 time(s).
+2012-02-08 07:07:58,665 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 33 time(s).
+2012-02-08 07:08:19,673 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 34 time(s).
+2012-02-08 07:08:40,679 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 35 time(s).
+2012-02-08 07:09:01,684 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 36 time(s).
+2012-02-08 07:09:22,689 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 37 time(s).
+2012-02-08 07:09:43,693 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 38 time(s).
+2012-02-08 07:10:04,701 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 39 time(s).
+2012-02-08 07:10:25,722 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 40 time(s).
+2012-02-08 07:10:46,737 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 41 time(s).
+2012-02-08 07:11:07,757 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 42 time(s).
+2012-02-08 07:11:28,774 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 43 time(s).
+2012-02-08 07:11:49,787 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 44 time(s).
+2012-02-08 07:12:09,802 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Exception in doCheckpoint: 
+2012-02-08 07:12:09,803 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more
+
+2012-02-08 07:17:30,819 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 0 time(s).
+2012-02-08 07:17:51,835 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 1 time(s).
+2012-02-08 07:18:12,855 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 2 time(s).
+2012-02-08 07:18:33,873 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 3 time(s).
+2012-02-08 07:18:54,894 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 4 time(s).
+2012-02-08 07:19:15,912 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 5 time(s).
+2012-02-08 07:19:36,925 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 6 time(s).
+2012-02-08 07:19:57,936 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 7 time(s).
+2012-02-08 07:20:18,944 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 8 time(s).
+2012-02-08 07:20:39,961 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 9 time(s).
+2012-02-08 07:21:00,965 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 10 time(s).
+2012-02-08 07:21:21,975 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 11 time(s).
+2012-02-08 07:21:42,994 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 12 time(s).
+2012-02-08 07:22:04,014 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 13 time(s).
+2012-02-08 07:22:25,031 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 14 time(s).
+2012-02-08 07:22:46,033 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 15 time(s).
+2012-02-08 07:23:07,037 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 16 time(s).
+2012-02-08 07:23:28,039 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 17 time(s).
+2012-02-08 07:23:49,060 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 18 time(s).
+2012-02-08 07:24:10,079 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 19 time(s).
+2012-02-08 07:24:31,094 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 20 time(s).
+2012-02-08 07:24:52,098 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 21 time(s).
+2012-02-08 07:25:13,118 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 22 time(s).
+2012-02-08 07:25:34,122 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 23 time(s).
+2012-02-08 07:25:55,136 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 24 time(s).
+2012-02-08 07:26:16,148 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 25 time(s).
+2012-02-08 07:26:37,168 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 26 time(s).
+2012-02-08 07:26:58,170 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 27 time(s).
+2012-02-08 07:27:19,190 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 28 time(s).
+2012-02-08 07:27:40,203 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 29 time(s).
+2012-02-08 07:28:01,211 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 30 time(s).
+2012-02-08 07:28:22,225 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 31 time(s).
+2012-02-08 07:28:43,246 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 32 time(s).
+2012-02-08 07:29:04,254 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 33 time(s).
+2012-02-08 07:29:25,264 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 34 time(s).
+2012-02-08 07:29:46,282 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 35 time(s).
+2012-02-08 07:30:07,302 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 36 time(s).
+2012-02-08 07:30:28,320 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 37 time(s).
+2012-02-08 07:30:49,324 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 38 time(s).
+2012-02-08 07:31:10,329 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 39 time(s).
+2012-02-08 07:31:31,336 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 40 time(s).
+2012-02-08 07:31:52,338 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 41 time(s).
+2012-02-08 07:32:13,347 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 42 time(s).
+2012-02-08 07:32:34,352 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 43 time(s).
+2012-02-08 07:32:55,357 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 44 time(s).
+2012-02-08 07:33:15,367 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Exception in doCheckpoint: 
+2012-02-08 07:33:15,367 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more
+
+2012-02-08 07:38:36,370 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 0 time(s).
+2012-02-08 07:38:57,377 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 1 time(s).
+2012-02-08 07:39:18,384 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 2 time(s).
+2012-02-08 07:39:39,392 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 3 time(s).
+2012-02-08 07:40:00,401 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 4 time(s).
+2012-02-08 07:40:21,417 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 5 time(s).
+2012-02-08 07:40:42,437 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 6 time(s).
+2012-02-08 07:41:03,446 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 7 time(s).
+2012-02-08 07:41:24,465 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 8 time(s).
+2012-02-08 07:41:45,476 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 9 time(s).
+2012-02-08 07:42:06,496 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 10 time(s).
+2012-02-08 07:42:27,503 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 11 time(s).
+2012-02-08 07:42:48,509 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 12 time(s).
+2012-02-08 07:43:09,527 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 13 time(s).
+2012-02-08 07:43:30,542 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 14 time(s).
+2012-02-08 07:43:51,561 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 15 time(s).
+2012-02-08 07:44:12,578 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 16 time(s).
+2012-02-08 07:44:33,597 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 17 time(s).
+2012-02-08 07:44:54,618 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 18 time(s).
+2012-02-08 07:45:15,637 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 19 time(s).
+2012-02-08 07:45:36,648 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 20 time(s).
+2012-02-08 07:45:57,662 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 21 time(s).
+2012-02-08 07:46:18,682 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 22 time(s).
+2012-02-08 07:46:39,698 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 23 time(s).
+2012-02-08 07:47:00,718 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 24 time(s).
+2012-02-08 07:47:21,738 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 25 time(s).
+2012-02-08 07:47:42,756 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 26 time(s).
+2012-02-08 07:48:03,762 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 27 time(s).
+2012-02-08 07:48:24,776 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 28 time(s).
+2012-02-08 07:48:45,797 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 29 time(s).
+2012-02-08 07:49:06,813 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 30 time(s).
+2012-02-08 07:49:27,827 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 31 time(s).
+2012-02-08 07:49:48,841 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 32 time(s).
+2012-02-08 07:50:09,843 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 33 time(s).
+2012-02-08 07:50:30,862 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 34 time(s).
+2012-02-08 07:50:51,868 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 35 time(s).
+2012-02-08 07:51:12,888 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 36 time(s).
+2012-02-08 07:51:33,902 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 37 time(s).
+2012-02-08 07:51:54,906 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 38 time(s).
+2012-02-08 07:52:15,922 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 39 time(s).
+2012-02-08 07:52:36,942 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 40 time(s).
+2012-02-08 07:52:57,962 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 41 time(s).
+2012-02-08 07:53:18,966 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 42 time(s).
+2012-02-08 07:53:39,979 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 43 time(s).
+2012-02-08 07:54:01,000 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 44 time(s).
+2012-02-08 07:54:21,018 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Exception in doCheckpoint: 
+2012-02-08 07:54:21,018 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more
+
+2012-02-08 07:59:42,025 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 0 time(s).
+2012-02-08 08:00:03,045 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 1 time(s).
+2012-02-08 08:00:24,060 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 2 time(s).
+2012-02-08 08:00:45,078 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 3 time(s).
+2012-02-08 08:01:06,098 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 4 time(s).
+2012-02-08 08:01:27,118 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 5 time(s).
+2012-02-08 08:01:48,138 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 6 time(s).
+2012-02-08 08:02:09,143 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 7 time(s).
+2012-02-08 08:02:30,162 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 8 time(s).
+2012-02-08 08:02:51,168 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 9 time(s).
+2012-02-08 08:03:12,179 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 10 time(s).
+2012-02-08 08:03:33,198 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 11 time(s).
+2012-02-08 08:03:54,215 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 12 time(s).
+2012-02-08 08:04:15,233 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 13 time(s).
+2012-02-08 08:04:36,242 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 14 time(s).
+2012-02-08 08:04:57,262 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 15 time(s).
+2012-02-08 08:05:18,278 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 16 time(s).
+2012-02-08 08:05:39,298 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 17 time(s).
+2012-02-08 08:06:00,318 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 18 time(s).
+2012-02-08 08:06:21,338 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 19 time(s).
+2012-02-08 08:06:42,358 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 20 time(s).
+2012-02-08 08:07:03,371 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 21 time(s).
+2012-02-08 08:07:24,391 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 22 time(s).
+2012-02-08 08:07:45,409 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 23 time(s).
+2012-02-08 08:08:06,426 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 24 time(s).
+2012-02-08 08:08:27,442 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 25 time(s).
+2012-02-08 08:08:48,460 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 26 time(s).
+2012-02-08 08:09:09,480 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 27 time(s).
+2012-02-08 08:09:30,495 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 28 time(s).
+2012-02-08 08:09:51,514 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 29 time(s).
+2012-02-08 08:10:12,530 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 30 time(s).
+2012-02-08 08:10:33,546 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 31 time(s).
+2012-02-08 08:10:54,555 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 32 time(s).
+2012-02-08 08:11:15,569 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 33 time(s).
+2012-02-08 08:11:36,590 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 34 time(s).
+2012-02-08 08:11:57,610 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 35 time(s).
+2012-02-08 08:12:18,626 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 36 time(s).
+2012-02-08 08:12:39,646 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 37 time(s).
+2012-02-08 08:13:00,666 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 38 time(s).
+2012-02-08 08:13:21,686 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 39 time(s).
+2012-02-08 08:13:42,706 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 40 time(s).
+2012-02-08 08:14:03,724 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 41 time(s).
+2012-02-08 08:14:24,740 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 42 time(s).
+2012-02-08 08:14:45,742 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 43 time(s).
+2012-02-08 08:15:06,751 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 44 time(s).
+2012-02-08 08:15:26,752 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Exception in doCheckpoint: 
+2012-02-08 08:15:26,752 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more
+
+2012-02-08 08:20:47,769 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 0 time(s).
+2012-02-08 08:21:08,782 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 1 time(s).
+2012-02-08 08:21:29,791 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 2 time(s).
+2012-02-08 08:21:50,812 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 3 time(s).
+2012-02-08 08:22:11,832 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 4 time(s).
+2012-02-08 08:22:32,846 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 5 time(s).
+2012-02-08 08:22:53,855 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 6 time(s).
+2012-02-08 08:23:14,861 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 7 time(s).
+2012-02-08 08:23:35,871 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 8 time(s).
+2012-02-08 08:23:56,892 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 9 time(s).
+2012-02-08 08:24:17,912 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 10 time(s).
+2012-02-08 08:24:38,932 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 11 time(s).
+2012-02-08 08:24:59,940 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 12 time(s).
+2012-02-08 08:25:20,949 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 13 time(s).
+2012-02-08 08:25:41,959 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 14 time(s).
+2012-02-08 08:26:02,978 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 15 time(s).
+2012-02-08 08:26:23,991 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 16 time(s).
+2012-02-08 08:26:44,993 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 17 time(s).
+2012-02-08 08:27:06,000 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 18 time(s).
+2012-02-08 08:27:27,011 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 19 time(s).
+2012-02-08 08:27:48,025 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 20 time(s).
+2012-02-08 08:28:09,046 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 21 time(s).
+2012-02-08 08:28:30,061 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 22 time(s).
+2012-02-08 08:28:51,082 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54310. Already tried 23 time(s).
+2012-02-08 08:29:06,058 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down SecondaryNameNode at aparna-magicworld/127.0.1.1
+************************************************************/

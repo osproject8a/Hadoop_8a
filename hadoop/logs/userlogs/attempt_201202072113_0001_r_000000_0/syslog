@@ -1,0 +1,46 @@
+2012-02-07 21:14:56,402 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=SHUFFLE, sessionId=
+2012-02-07 21:14:57,186 INFO org.apache.hadoop.mapred.ReduceTask: ShuffleRamManager: MemoryLimit=130514944, MaxSingleShuffleLimit=32628736
+2012-02-07 21:14:57,287 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201202072113_0001_r_000000_0 Thread started: Thread for merging on-disk files
+2012-02-07 21:14:57,288 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201202072113_0001_r_000000_0 Thread waiting: Thread for merging on-disk files
+2012-02-07 21:14:57,299 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201202072113_0001_r_000000_0 Thread started: Thread for merging in memory files
+2012-02-07 21:14:57,300 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201202072113_0001_r_000000_0 Need another 4 map output(s) where 0 is already in progress
+2012-02-07 21:14:57,300 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201202072113_0001_r_000000_0 Scheduled 0 outputs (0 slow hosts and0 dup hosts)
+2012-02-07 21:14:57,300 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201202072113_0001_r_000000_0 Thread started: Thread for polling Map Completion Events
+2012-02-07 21:14:57,320 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201202072113_0001_r_000000_0: Got 2 new map-outputs
+2012-02-07 21:15:02,301 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201202072113_0001_r_000000_0 Scheduled 1 outputs (0 slow hosts and0 dup hosts)
+2012-02-07 21:15:02,499 INFO org.apache.hadoop.mapred.ReduceTask: header: attempt_201202072113_0001_m_000000_0, compressed len: 807006, decompressed len: 807002
+2012-02-07 21:15:02,499 INFO org.apache.hadoop.mapred.ReduceTask: Shuffling 807002 bytes (807006 raw bytes) into RAM from attempt_201202072113_0001_m_000000_0
+2012-02-07 21:15:02,522 INFO org.apache.hadoop.mapred.ReduceTask: Read 807002 bytes from map-output for attempt_201202072113_0001_m_000000_0
+2012-02-07 21:15:02,524 INFO org.apache.hadoop.mapred.ReduceTask: Rec #1 from attempt_201202072113_0001_m_000000_0 -> (2, 4) from aparna-magicworld
+2012-02-07 21:15:02,532 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201202072113_0001_r_000000_0 Scheduled 1 outputs (0 slow hosts and0 dup hosts)
+2012-02-07 21:15:02,538 INFO org.apache.hadoop.mapred.ReduceTask: header: attempt_201202072113_0001_m_000001_0, compressed len: 740514, decompressed len: 740510
+2012-02-07 21:15:02,538 INFO org.apache.hadoop.mapred.ReduceTask: Shuffling 740510 bytes (740514 raw bytes) into RAM from attempt_201202072113_0001_m_000001_0
+2012-02-07 21:15:02,552 INFO org.apache.hadoop.mapred.ReduceTask: Read 740510 bytes from map-output for attempt_201202072113_0001_m_000001_0
+2012-02-07 21:15:02,553 INFO org.apache.hadoop.mapred.ReduceTask: Rec #1 from attempt_201202072113_0001_m_000001_0 -> (6, 4) from aparna-magicworld
+2012-02-07 21:15:04,335 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201202072113_0001_r_000000_0: Got 2 new map-outputs
+2012-02-07 21:15:07,554 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201202072113_0001_r_000000_0 Scheduled 1 outputs (0 slow hosts and0 dup hosts)
+2012-02-07 21:15:07,566 INFO org.apache.hadoop.mapred.ReduceTask: header: attempt_201202072113_0001_m_000002_0, compressed len: 466814, decompressed len: 466810
+2012-02-07 21:15:07,566 INFO org.apache.hadoop.mapred.ReduceTask: Shuffling 466810 bytes (466814 raw bytes) into RAM from attempt_201202072113_0001_m_000002_0
+2012-02-07 21:15:07,585 INFO org.apache.hadoop.mapred.ReduceTask: Read 466810 bytes from map-output for attempt_201202072113_0001_m_000002_0
+2012-02-07 21:15:07,585 INFO org.apache.hadoop.mapred.ReduceTask: Rec #1 from attempt_201202072113_0001_m_000002_0 -> (10, 4) from aparna-magicworld
+2012-02-07 21:15:07,587 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201202072113_0001_r_000000_0 Scheduled 1 outputs (0 slow hosts and0 dup hosts)
+2012-02-07 21:15:07,614 INFO org.apache.hadoop.mapred.ReduceTask: header: attempt_201202072113_0001_m_000003_0, compressed len: 267013, decompressed len: 267009
+2012-02-07 21:15:07,614 INFO org.apache.hadoop.mapred.ReduceTask: Shuffling 267009 bytes (267013 raw bytes) into RAM from attempt_201202072113_0001_m_000003_0
+2012-02-07 21:15:07,623 INFO org.apache.hadoop.mapred.ReduceTask: Read 267009 bytes from map-output for attempt_201202072113_0001_m_000003_0
+2012-02-07 21:15:07,624 INFO org.apache.hadoop.mapred.ReduceTask: Rec #1 from attempt_201202072113_0001_m_000003_0 -> (3, 4) from aparna-magicworld
+2012-02-07 21:15:08,342 INFO org.apache.hadoop.mapred.ReduceTask: GetMapEventsThread exiting
+2012-02-07 21:15:08,342 INFO org.apache.hadoop.mapred.ReduceTask: getMapsEventsThread joined.
+2012-02-07 21:15:08,342 INFO org.apache.hadoop.mapred.ReduceTask: Closed ram manager
+2012-02-07 21:15:08,343 INFO org.apache.hadoop.mapred.ReduceTask: Interleaved on-disk merge complete: 0 files left.
+2012-02-07 21:15:08,343 INFO org.apache.hadoop.mapred.ReduceTask: In-memory merge complete: 4 files left.
+2012-02-07 21:15:08,376 INFO org.apache.hadoop.mapred.Merger: Merging 4 sorted segments
+2012-02-07 21:15:08,377 INFO org.apache.hadoop.mapred.Merger: Down to the last merge-pass, with 4 segments left of total size: 2281331 bytes
+2012-02-07 21:15:08,944 INFO org.apache.hadoop.mapred.ReduceTask: Merged 4 segments, 2281331 bytes to disk to satisfy reduce memory limit
+2012-02-07 21:15:08,945 INFO org.apache.hadoop.mapred.ReduceTask: Merging 1 files, 2281329 bytes from disk
+2012-02-07 21:15:08,946 INFO org.apache.hadoop.mapred.ReduceTask: Merging 0 segments, 0 bytes from memory into reduce
+2012-02-07 21:15:08,946 INFO org.apache.hadoop.mapred.Merger: Merging 1 sorted segments
+2012-02-07 21:15:08,950 INFO org.apache.hadoop.mapred.Merger: Down to the last merge-pass, with 1 segments left of total size: 2281325 bytes
+2012-02-07 21:15:10,617 INFO org.apache.hadoop.mapred.TaskRunner: Task:attempt_201202072113_0001_r_000000_0 is done. And is in the process of commiting
+2012-02-07 21:15:12,631 INFO org.apache.hadoop.mapred.TaskRunner: Task attempt_201202072113_0001_r_000000_0 is allowed to commit now
+2012-02-07 21:15:12,684 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: Saved output of task 'attempt_201202072113_0001_r_000000_0' to /user/hduser/guten-newtry-output
+2012-02-07 21:15:12,692 INFO org.apache.hadoop.mapred.TaskRunner: Task 'attempt_201202072113_0001_r_000000_0' done.

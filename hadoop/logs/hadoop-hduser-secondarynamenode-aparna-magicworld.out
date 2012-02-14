@@ -1,0 +1,465 @@
+java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more
+java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more
+java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more
+java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more
+java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more
+java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more
+java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more
+java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more
+java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more
+java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more
+java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more
+java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more
+java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more
+java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more
+java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more
+java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more
+java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more
+java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more
+java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more
+java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more
+java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more
+java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more
+java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more
+java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more
+java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more
+java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more
+java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more
+java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more
+java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more
+java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more
+java.net.SocketTimeoutException: Call to master/192.168.11.19:54310 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at $Proxy4.getEditLogSize(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:222)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54310]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 4 more

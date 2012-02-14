@@ -1,0 +1,1059 @@
+2012-02-07 20:09:48,920 INFO org.apache.hadoop.mapred.TaskTracker: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting TaskTracker
+STARTUP_MSG:   host = aparna-magicworld/127.0.1.1
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.2
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-0.20 -r 911707; compiled by 'chrisdo' on Fri Feb 19 08:07:34 UTC 2010
+************************************************************/
+2012-02-07 20:09:54,274 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2012-02-07 20:09:54,462 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50060
+2012-02-07 20:09:54,474 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50060 webServer.getConnectors()[0].getLocalPort() returned 50060
+2012-02-07 20:09:54,474 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50060
+2012-02-07 20:09:54,474 INFO org.mortbay.log: jetty-6.1.14
+2012-02-07 20:10:04,486 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50060
+2012-02-07 20:10:04,497 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=TaskTracker, sessionId=
+2012-02-07 20:10:04,514 INFO org.apache.hadoop.ipc.metrics.RpcMetrics: Initializing RPC Metrics with hostName=TaskTracker, port=57158
+2012-02-07 20:10:04,594 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2012-02-07 20:10:04,596 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 57158: starting
+2012-02-07 20:10:04,596 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 57158: starting
+2012-02-07 20:10:04,597 INFO org.apache.hadoop.mapred.TaskTracker: TaskTracker up at: localhost/127.0.0.1:57158
+2012-02-07 20:10:04,597 INFO org.apache.hadoop.mapred.TaskTracker: Starting tracker tracker_aparna-magicworld:localhost/127.0.0.1:57158
+2012-02-07 20:10:04,598 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 57158: starting
+2012-02-07 20:10:04,596 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 57158: starting
+2012-02-07 20:10:04,603 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 57158: starting
+2012-02-07 20:10:04,669 INFO org.apache.hadoop.mapred.TaskTracker: Starting thread: Map-events fetcher for all reduce tasks on tracker_aparna-magicworld:localhost/127.0.0.1:57158
+2012-02-07 20:10:04,671 INFO org.apache.hadoop.mapred.TaskTracker:  Using MemoryCalculatorPlugin : org.apache.hadoop.util.LinuxMemoryCalculatorPlugin@3afb99
+2012-02-07 20:10:04,676 WARN org.apache.hadoop.mapred.TaskTracker: TaskTracker's totalMemoryAllottedForTasks is -1. TaskMemoryManager is disabled.
+2012-02-07 20:10:04,678 INFO org.apache.hadoop.mapred.IndexCache: IndexCache created with max memory = 10485760
+2012-02-07 20:14:41,232 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201202072009_0001_m_000002_0 task's state:UNASSIGNED
+2012-02-07 20:14:41,236 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201202072009_0001_m_000003_0 task's state:UNASSIGNED
+2012-02-07 20:14:41,236 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201202072009_0001_m_000002_0
+2012-02-07 20:14:41,236 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201202072009_0001_m_000002_0
+2012-02-07 20:14:41,600 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201202072009_0001_m_000003_0
+2012-02-07 20:14:41,601 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 1 and trying to launch attempt_201202072009_0001_m_000003_0
+2012-02-07 20:14:41,733 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201202072009_0001_m_1837110083
+2012-02-07 20:14:41,735 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201202072009_0001_m_1837110083 spawned.
+2012-02-07 20:14:41,740 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201202072009_0001_m_293581355
+2012-02-07 20:14:41,740 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201202072009_0001_m_293581355 spawned.
+2012-02-07 20:14:42,645 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201202072009_0001_m_1837110083 given task: attempt_201202072009_0001_m_000003_0
+2012-02-07 20:14:42,645 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201202072009_0001_m_293581355 given task: attempt_201202072009_0001_m_000002_0
+2012-02-07 20:14:46,313 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202072009_0001_m_000003_0 1.0% 
+2012-02-07 20:14:46,315 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201202072009_0001_m_000003_0 is done.
+2012-02-07 20:14:46,316 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201202072009_0001_m_000003_0  was 0
+2012-02-07 20:14:46,319 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 1
+2012-02-07 20:14:46,374 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201202072009_0001_m_1837110083 exited. Number of tasks it ran: 1
+2012-02-07 20:14:47,055 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202072009_0001_m_000002_0 1.0% 
+2012-02-07 20:14:47,057 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201202072009_0001_m_000002_0 is done.
+2012-02-07 20:14:47,057 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201202072009_0001_m_000002_0  was 0
+2012-02-07 20:14:47,058 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2012-02-07 20:14:47,190 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201202072009_0001_m_293581355 exited. Number of tasks it ran: 1
+2012-02-07 20:14:47,276 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201202072009_0001_r_000000_0 task's state:UNASSIGNED
+2012-02-07 20:14:47,277 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201202072009_0001_r_000000_0
+2012-02-07 20:14:47,277 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201202072009_0001_r_000000_0
+2012-02-07 20:14:47,307 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201202072009_0001_r_1837110083
+2012-02-07 20:14:47,308 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201202072009_0001_r_1837110083 spawned.
+2012-02-07 20:14:47,962 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201202072009_0001_r_1837110083 given task: attempt_201202072009_0001_r_000000_0
+2012-02-07 20:14:53,584 INFO org.apache.hadoop.mapred.TaskTracker: Sent out 466814 bytes for reduce: 0 from map: attempt_201202072009_0001_m_000002_0 given 466814/466810
+2012-02-07 20:14:53,585 INFO org.apache.hadoop.mapred.TaskTracker.clienttrace: src: 127.0.1.1:50060, dest: 127.0.0.1:55480, bytes: 466814, op: MAPRED_SHUFFLE, cliID: attempt_201202072009_0001_m_000002_0
+2012-02-07 20:14:53,606 INFO org.apache.hadoop.mapred.TaskTracker: Sent out 267013 bytes for reduce: 0 from map: attempt_201202072009_0001_m_000003_0 given 267013/267009
+2012-02-07 20:14:53,607 INFO org.apache.hadoop.mapred.TaskTracker.clienttrace: src: 127.0.1.1:50060, dest: 127.0.0.1:55480, bytes: 267013, op: MAPRED_SHUFFLE, cliID: attempt_201202072009_0001_m_000003_0
+2012-02-07 20:14:54,325 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202072009_0001_r_000000_0 0.16666667% reduce > copy (2 of 4 at 0.12 MB/s) > 
+2012-02-07 20:14:57,328 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202072009_0001_r_000000_0 0.16666667% reduce > copy (2 of 4 at 0.12 MB/s) > 
+2012-02-07 20:15:03,333 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202072009_0001_r_000000_0 0.16666667% reduce > copy (2 of 4 at 0.12 MB/s) > 
+2012-02-07 20:15:09,337 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202072009_0001_r_000000_0 0.16666667% reduce > copy (2 of 4 at 0.12 MB/s) > 
+2012-02-07 20:15:12,340 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202072009_0001_r_000000_0 0.16666667% reduce > copy (2 of 4 at 0.12 MB/s) > 
+2012-02-07 20:15:18,344 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202072009_0001_r_000000_0 0.16666667% reduce > copy (2 of 4 at 0.12 MB/s) > 
+2012-02-07 20:15:23,326 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201202072009_0001_m_000000_1 task's state:UNASSIGNED
+2012-02-07 20:15:23,326 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201202072009_0001_m_000000_1
+2012-02-07 20:15:23,327 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201202072009_0001_m_000000_1
+2012-02-07 20:15:23,390 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201202072009_0001_m_888943284
+2012-02-07 20:15:23,398 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201202072009_0001_m_888943284 spawned.
+2012-02-07 20:15:24,026 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201202072009_0001_m_888943284 given task: attempt_201202072009_0001_m_000000_1
+2012-02-07 20:15:24,348 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202072009_0001_r_000000_0 0.16666667% reduce > copy (2 of 4 at 0.12 MB/s) > 
+2012-02-07 20:15:27,352 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202072009_0001_r_000000_0 0.16666667% reduce > copy (2 of 4 at 0.12 MB/s) > 
+2012-02-07 20:15:27,578 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202072009_0001_m_000000_1 1.0% 
+2012-02-07 20:15:27,583 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201202072009_0001_m_000000_1 is done.
+2012-02-07 20:15:27,583 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201202072009_0001_m_000000_1  was 0
+2012-02-07 20:15:27,584 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2012-02-07 20:15:27,627 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201202072009_0001_m_888943284 exited. Number of tasks it ran: 1
+2012-02-07 20:15:29,341 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201202072009_0001_m_000001_1 task's state:UNASSIGNED
+2012-02-07 20:15:29,341 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201202072009_0001_m_000001_1
+2012-02-07 20:15:29,341 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201202072009_0001_m_000001_1
+2012-02-07 20:15:29,379 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201202072009_0001_m_974293360
+2012-02-07 20:15:29,380 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201202072009_0001_m_974293360 spawned.
+2012-02-07 20:15:29,979 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201202072009_0001_m_974293360 given task: attempt_201202072009_0001_m_000001_1
+2012-02-07 20:15:33,356 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202072009_0001_r_000000_0 0.16666667% reduce > copy (2 of 4 at 0.12 MB/s) > 
+2012-02-07 20:15:33,522 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202072009_0001_m_000001_1 1.0% 
+2012-02-07 20:15:33,528 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201202072009_0001_m_000001_1 is done.
+2012-02-07 20:15:33,528 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201202072009_0001_m_000001_1  was 0
+2012-02-07 20:15:33,529 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2012-02-07 20:15:33,638 INFO org.apache.hadoop.mapred.TaskTracker: Sent out 807006 bytes for reduce: 0 from map: attempt_201202072009_0001_m_000000_1 given 807006/807002
+2012-02-07 20:15:33,638 INFO org.apache.hadoop.mapred.TaskTracker.clienttrace: src: 127.0.1.1:50060, dest: 127.0.0.1:55496, bytes: 807006, op: MAPRED_SHUFFLE, cliID: attempt_201202072009_0001_m_000000_1
+2012-02-07 20:15:33,655 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201202072009_0001_m_974293360 exited. Number of tasks it ran: 1
+2012-02-07 20:15:38,678 INFO org.apache.hadoop.mapred.TaskTracker: Sent out 740514 bytes for reduce: 0 from map: attempt_201202072009_0001_m_000001_1 given 740514/740510
+2012-02-07 20:15:38,678 INFO org.apache.hadoop.mapred.TaskTracker.clienttrace: src: 127.0.1.1:50060, dest: 127.0.0.1:55497, bytes: 740514, op: MAPRED_SHUFFLE, cliID: attempt_201202072009_0001_m_000001_1
+2012-02-07 20:15:39,360 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202072009_0001_r_000000_0 0.25% reduce > copy (3 of 4 at 0.03 MB/s) > 
+2012-02-07 20:15:39,482 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202072009_0001_r_000000_0 0.25% reduce > copy (3 of 4 at 0.03 MB/s) > 
+2012-02-07 20:15:40,060 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202072009_0001_r_000000_0 0.25% reduce > copy (3 of 4 at 0.03 MB/s) > 
+2012-02-07 20:15:42,366 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202072009_0001_r_000000_0 0.68099093% reduce > reduce
+2012-02-07 20:15:45,370 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202072009_0001_r_000000_0 0.68099093% reduce > reduce
+2012-02-07 20:17:21,425 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202072009_0001_r_000000_0 0.90484273% reduce > reduce
+2012-02-07 20:17:24,429 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202072009_0001_r_000000_0 0.90484273% reduce > reduce
+2012-02-07 20:17:33,435 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202072009_0001_r_000000_0 1.0% reduce > reduce
+2012-02-07 20:17:34,194 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201202072009_0001_r_000000_0 is in commit-pending, task state:COMMIT_PENDING
+2012-02-07 20:17:34,194 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202072009_0001_r_000000_0 1.0% reduce > reduce
+2012-02-07 20:17:35,501 INFO org.apache.hadoop.mapred.TaskTracker: Received commit task action for attempt_201202072009_0001_r_000000_0
+2012-02-07 20:17:36,247 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202072009_0001_r_000000_0 1.0% reduce > reduce
+2012-02-07 20:17:36,249 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201202072009_0001_r_000000_0 is done.
+2012-02-07 20:17:36,249 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201202072009_0001_r_000000_0  was 0
+2012-02-07 20:17:36,251 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2012-02-07 20:17:36,376 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201202072009_0001_r_1837110083 exited. Number of tasks it ran: 1
+2012-02-07 20:17:38,520 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201202072009_0001_m_000004_0 task's state:UNASSIGNED
+2012-02-07 20:17:38,520 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201202072009_0001_m_000004_0
+2012-02-07 20:17:38,520 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201202072009_0001_m_000004_0
+2012-02-07 20:17:38,520 INFO org.apache.hadoop.mapred.TaskTracker: Received KillTaskAction for task: attempt_201202072009_0001_r_000000_0
+2012-02-07 20:17:38,520 INFO org.apache.hadoop.mapred.TaskTracker: About to purge task: attempt_201202072009_0001_r_000000_0
+2012-02-07 20:17:38,521 INFO org.apache.hadoop.mapred.TaskRunner: attempt_201202072009_0001_r_000000_0 done; removing files.
+2012-02-07 20:17:38,552 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201202072009_0001_m_378423715
+2012-02-07 20:17:38,553 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201202072009_0001_m_378423715 spawned.
+2012-02-07 20:17:39,164 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201202072009_0001_m_378423715 given task: attempt_201202072009_0001_m_000004_0
+2012-02-07 20:17:39,529 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202072009_0001_m_000004_0 0.0% 
+2012-02-07 20:17:39,685 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202072009_0001_m_000004_0 0.0% cleanup
+2012-02-07 20:17:39,687 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201202072009_0001_m_000004_0 is done.
+2012-02-07 20:17:39,687 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201202072009_0001_m_000004_0  was 0
+2012-02-07 20:17:39,688 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2012-02-07 20:17:39,836 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201202072009_0001_m_378423715 exited. Number of tasks it ran: 1
+2012-02-07 20:17:41,521 INFO org.apache.hadoop.mapred.TaskTracker: org.apache.hadoop.util.DiskChecker$DiskErrorException: Could not find taskTracker/jobcache/job_201202072009_0001/attempt_201202072009_0001_m_000004_0/output/file.out in any of the configured local directories
+2012-02-07 20:17:42,603 INFO org.apache.hadoop.mapred.TaskTracker: Received 'KillJobAction' for job: job_201202072009_0001
+2012-02-07 20:17:42,604 INFO org.apache.hadoop.mapred.TaskRunner: attempt_201202072009_0001_m_000004_0 done; removing files.
+2012-02-07 20:17:42,607 INFO org.apache.hadoop.mapred.IndexCache: Map ID attempt_201202072009_0001_m_000004_0 not found in cache
+2012-02-07 20:17:42,608 INFO org.apache.hadoop.mapred.TaskRunner: attempt_201202072009_0001_m_000000_1 done; removing files.
+2012-02-07 20:17:42,613 INFO org.apache.hadoop.mapred.TaskRunner: attempt_201202072009_0001_m_000003_0 done; removing files.
+2012-02-07 20:17:42,618 INFO org.apache.hadoop.mapred.TaskRunner: attempt_201202072009_0001_m_000002_0 done; removing files.
+2012-02-07 20:17:42,621 INFO org.apache.hadoop.mapred.TaskRunner: attempt_201202072009_0001_m_000001_1 done; removing files.
+2012-02-07 20:24:18,966 ERROR org.apache.hadoop.mapred.TaskTracker: Caught exception: java.io.IOException: Call to master/192.168.11.19:54311 failed on local exception: java.io.EOFException
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:775)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at org.apache.hadoop.mapred.$Proxy4.heartbeat(Unknown Source)
+	at org.apache.hadoop.mapred.TaskTracker.transmitHeartBeat(TaskTracker.java:1215)
+	at org.apache.hadoop.mapred.TaskTracker.offerService(TaskTracker.java:1037)
+	at org.apache.hadoop.mapred.TaskTracker.run(TaskTracker.java:1720)
+	at org.apache.hadoop.mapred.TaskTracker.main(TaskTracker.java:2833)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:375)
+	at org.apache.hadoop.ipc.Client$Connection.receiveResponse(Client.java:501)
+	at org.apache.hadoop.ipc.Client$Connection.run(Client.java:446)
+
+2012-02-07 20:24:18,966 INFO org.apache.hadoop.mapred.TaskTracker: Resending 'status' to 'master' with reponseId '283
+2012-02-07 20:24:19,067 INFO org.apache.hadoop.mapred.TaskTracker: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down TaskTracker at aparna-magicworld/127.0.1.1
+************************************************************/
+2012-02-07 21:07:07,925 INFO org.apache.hadoop.mapred.TaskTracker: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting TaskTracker
+STARTUP_MSG:   host = aparna-magicworld/127.0.1.1
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.2
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-0.20 -r 911707; compiled by 'chrisdo' on Fri Feb 19 08:07:34 UTC 2010
+************************************************************/
+2012-02-07 21:07:13,147 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2012-02-07 21:07:13,296 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50060
+2012-02-07 21:07:13,306 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50060 webServer.getConnectors()[0].getLocalPort() returned 50060
+2012-02-07 21:07:13,306 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50060
+2012-02-07 21:07:13,306 INFO org.mortbay.log: jetty-6.1.14
+2012-02-07 21:07:13,739 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50060
+2012-02-07 21:07:13,764 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=TaskTracker, sessionId=
+2012-02-07 21:07:13,800 INFO org.apache.hadoop.ipc.metrics.RpcMetrics: Initializing RPC Metrics with hostName=TaskTracker, port=43650
+2012-02-07 21:07:13,922 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 43650: starting
+2012-02-07 21:07:13,922 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2012-02-07 21:07:13,924 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 43650: starting
+2012-02-07 21:07:13,931 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 43650: starting
+2012-02-07 21:07:13,931 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 43650: starting
+2012-02-07 21:07:13,932 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 43650: starting
+2012-02-07 21:07:13,932 INFO org.apache.hadoop.mapred.TaskTracker: TaskTracker up at: localhost/127.0.0.1:43650
+2012-02-07 21:07:13,932 INFO org.apache.hadoop.mapred.TaskTracker: Starting tracker tracker_aparna-magicworld:localhost/127.0.0.1:43650
+2012-02-07 21:11:28,831 ERROR org.apache.hadoop.mapred.TaskTracker: Can not start task tracker because java.io.IOException: Call to master/192.168.11.19:54311 failed on local exception: java.io.IOException: Connection reset by peer
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:775)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at org.apache.hadoop.mapred.$Proxy4.getProtocolVersion(Unknown Source)
+	at org.apache.hadoop.ipc.RPC.getProxy(RPC.java:359)
+	at org.apache.hadoop.ipc.RPC.getProxy(RPC.java:346)
+	at org.apache.hadoop.ipc.RPC.getProxy(RPC.java:383)
+	at org.apache.hadoop.ipc.RPC.waitForProxy(RPC.java:314)
+	at org.apache.hadoop.ipc.RPC.waitForProxy(RPC.java:291)
+	at org.apache.hadoop.mapred.TaskTracker.initialize(TaskTracker.java:514)
+	at org.apache.hadoop.mapred.TaskTracker.<init>(TaskTracker.java:934)
+	at org.apache.hadoop.mapred.TaskTracker.main(TaskTracker.java:2833)
+Caused by: java.io.IOException: Connection reset by peer
+	at sun.nio.ch.FileDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:21)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:202)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:175)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:243)
+	at org.apache.hadoop.net.SocketInputStream$Reader.performIO(SocketInputStream.java:55)
+	at org.apache.hadoop.net.SocketIOWithTimeout.doIO(SocketIOWithTimeout.java:142)
+	at org.apache.hadoop.net.SocketInputStream.read(SocketInputStream.java:155)
+	at org.apache.hadoop.net.SocketInputStream.read(SocketInputStream.java:128)
+	at java.io.FilterInputStream.read(FilterInputStream.java:116)
+	at org.apache.hadoop.ipc.Client$Connection$PingInputStream.read(Client.java:276)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:218)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:237)
+	at java.io.DataInputStream.readInt(DataInputStream.java:370)
+	at org.apache.hadoop.ipc.Client$Connection.receiveResponse(Client.java:501)
+	at org.apache.hadoop.ipc.Client$Connection.run(Client.java:446)
+
+2012-02-07 21:11:28,840 INFO org.apache.hadoop.mapred.TaskTracker: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down TaskTracker at aparna-magicworld/127.0.1.1
+************************************************************/
+2012-02-07 21:13:45,000 INFO org.apache.hadoop.mapred.TaskTracker: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting TaskTracker
+STARTUP_MSG:   host = aparna-magicworld/127.0.1.1
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.2
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-0.20 -r 911707; compiled by 'chrisdo' on Fri Feb 19 08:07:34 UTC 2010
+************************************************************/
+2012-02-07 21:13:50,224 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2012-02-07 21:13:50,373 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50060
+2012-02-07 21:13:50,383 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50060 webServer.getConnectors()[0].getLocalPort() returned 50060
+2012-02-07 21:13:50,383 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50060
+2012-02-07 21:13:50,384 INFO org.mortbay.log: jetty-6.1.14
+2012-02-07 21:13:53,380 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50060
+2012-02-07 21:13:53,387 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=TaskTracker, sessionId=
+2012-02-07 21:13:53,404 INFO org.apache.hadoop.ipc.metrics.RpcMetrics: Initializing RPC Metrics with hostName=TaskTracker, port=55906
+2012-02-07 21:13:53,480 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2012-02-07 21:13:53,481 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 55906: starting
+2012-02-07 21:13:53,481 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 55906: starting
+2012-02-07 21:13:53,488 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 55906: starting
+2012-02-07 21:13:53,488 INFO org.apache.hadoop.mapred.TaskTracker: TaskTracker up at: localhost/127.0.0.1:55906
+2012-02-07 21:13:53,488 INFO org.apache.hadoop.mapred.TaskTracker: Starting tracker tracker_aparna-magicworld:localhost/127.0.0.1:55906
+2012-02-07 21:13:53,487 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 55906: starting
+2012-02-07 21:13:53,495 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 55906: starting
+2012-02-07 21:13:53,562 INFO org.apache.hadoop.mapred.TaskTracker:  Using MemoryCalculatorPlugin : org.apache.hadoop.util.LinuxMemoryCalculatorPlugin@c4d04d
+2012-02-07 21:13:53,567 WARN org.apache.hadoop.mapred.TaskTracker: TaskTracker's totalMemoryAllottedForTasks is -1. TaskMemoryManager is disabled.
+2012-02-07 21:13:53,567 INFO org.apache.hadoop.mapred.TaskTracker: Starting thread: Map-events fetcher for all reduce tasks on tracker_aparna-magicworld:localhost/127.0.0.1:55906
+2012-02-07 21:13:53,569 INFO org.apache.hadoop.mapred.IndexCache: IndexCache created with max memory = 10485760
+2012-02-07 21:14:41,912 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201202072113_0001_m_000005_0 task's state:UNASSIGNED
+2012-02-07 21:14:41,915 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201202072113_0001_m_000005_0
+2012-02-07 21:14:41,915 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201202072113_0001_m_000005_0
+2012-02-07 21:14:42,305 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201202072113_0001_m_-1075188447
+2012-02-07 21:14:42,306 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201202072113_0001_m_-1075188447 spawned.
+2012-02-07 21:14:42,984 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201202072113_0001_m_-1075188447 given task: attempt_201202072113_0001_m_000005_0
+2012-02-07 21:14:43,429 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202072113_0001_m_000005_0 0.0% setup
+2012-02-07 21:14:43,433 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201202072113_0001_m_000005_0 is done.
+2012-02-07 21:14:43,433 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201202072113_0001_m_000005_0  was 0
+2012-02-07 21:14:43,437 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2012-02-07 21:14:43,597 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201202072113_0001_m_-1075188447 exited. Number of tasks it ran: 1
+2012-02-07 21:14:44,912 INFO org.apache.hadoop.mapred.TaskTracker: org.apache.hadoop.util.DiskChecker$DiskErrorException: Could not find taskTracker/jobcache/job_201202072113_0001/attempt_201202072113_0001_m_000005_0/output/file.out in any of the configured local directories
+2012-02-07 21:14:44,931 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201202072113_0001_m_000000_0 task's state:UNASSIGNED
+2012-02-07 21:14:44,932 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201202072113_0001_m_000001_0 task's state:UNASSIGNED
+2012-02-07 21:14:44,932 INFO org.apache.hadoop.mapred.TaskTracker: Received KillTaskAction for task: attempt_201202072113_0001_m_000005_0
+2012-02-07 21:14:44,932 INFO org.apache.hadoop.mapred.TaskTracker: About to purge task: attempt_201202072113_0001_m_000005_0
+2012-02-07 21:14:44,932 INFO org.apache.hadoop.mapred.TaskRunner: attempt_201202072113_0001_m_000005_0 done; removing files.
+2012-02-07 21:14:44,935 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201202072113_0001_m_000000_0
+2012-02-07 21:14:44,935 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201202072113_0001_m_000000_0
+2012-02-07 21:14:44,934 INFO org.apache.hadoop.mapred.IndexCache: Map ID attempt_201202072113_0001_m_000005_0 not found in cache
+2012-02-07 21:14:45,005 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201202072113_0001_m_000001_0
+2012-02-07 21:14:45,006 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 1 and trying to launch attempt_201202072113_0001_m_000001_0
+2012-02-07 21:14:45,015 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201202072113_0001_m_-1004707593
+2012-02-07 21:14:45,017 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201202072113_0001_m_-1004707593 spawned.
+2012-02-07 21:14:45,072 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201202072113_0001_m_-432536982
+2012-02-07 21:14:45,073 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201202072113_0001_m_-432536982 spawned.
+2012-02-07 21:14:45,918 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201202072113_0001_m_-1004707593 given task: attempt_201202072113_0001_m_000000_0
+2012-02-07 21:14:45,946 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201202072113_0001_m_-432536982 given task: attempt_201202072113_0001_m_000001_0
+2012-02-07 21:14:51,365 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202072113_0001_m_000001_0 1.0% 
+2012-02-07 21:14:51,366 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201202072113_0001_m_000001_0 is done.
+2012-02-07 21:14:51,366 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201202072113_0001_m_000001_0  was 0
+2012-02-07 21:14:51,367 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 1
+2012-02-07 21:14:51,427 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201202072113_0001_m_-432536982 exited. Number of tasks it ran: 1
+2012-02-07 21:14:51,547 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202072113_0001_m_000000_0 1.0% 
+2012-02-07 21:14:51,549 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201202072113_0001_m_000000_0 is done.
+2012-02-07 21:14:51,549 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201202072113_0001_m_000000_0  was 0
+2012-02-07 21:14:51,549 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2012-02-07 21:14:51,694 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201202072113_0001_m_-1004707593 exited. Number of tasks it ran: 1
+2012-02-07 21:14:53,994 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201202072113_0001_m_000002_0 task's state:UNASSIGNED
+2012-02-07 21:14:53,995 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201202072113_0001_m_000003_0 task's state:UNASSIGNED
+2012-02-07 21:14:53,995 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201202072113_0001_m_000002_0
+2012-02-07 21:14:53,995 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201202072113_0001_m_000002_0
+2012-02-07 21:14:53,995 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201202072113_0001_r_000000_0 task's state:UNASSIGNED
+2012-02-07 21:14:53,996 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201202072113_0001_r_000000_0
+2012-02-07 21:14:53,996 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201202072113_0001_r_000000_0
+2012-02-07 21:14:54,060 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201202072113_0001_r_-1075188447
+2012-02-07 21:14:54,061 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201202072113_0001_r_-1075188447 spawned.
+2012-02-07 21:14:54,070 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201202072113_0001_m_000003_0
+2012-02-07 21:14:54,070 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 1 and trying to launch attempt_201202072113_0001_m_000003_0
+2012-02-07 21:14:54,091 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201202072113_0001_m_-1456793574
+2012-02-07 21:14:54,095 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201202072113_0001_m_-1456793574 spawned.
+2012-02-07 21:14:54,167 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201202072113_0001_m_389735424
+2012-02-07 21:14:54,168 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201202072113_0001_m_389735424 spawned.
+2012-02-07 21:14:55,194 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201202072113_0001_m_-1456793574 given task: attempt_201202072113_0001_m_000002_0
+2012-02-07 21:14:55,780 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201202072113_0001_r_-1075188447 given task: attempt_201202072113_0001_r_000000_0
+2012-02-07 21:14:55,889 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201202072113_0001_m_389735424 given task: attempt_201202072113_0001_m_000003_0
+2012-02-07 21:15:00,313 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202072113_0001_m_000002_0 1.0% 
+2012-02-07 21:15:00,316 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201202072113_0001_m_000002_0 is done.
+2012-02-07 21:15:00,316 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201202072113_0001_m_000002_0  was 0
+2012-02-07 21:15:00,317 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 1
+2012-02-07 21:15:00,367 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202072113_0001_m_000003_0 1.0% 
+2012-02-07 21:15:00,368 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201202072113_0001_m_000003_0 is done.
+2012-02-07 21:15:00,368 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201202072113_0001_m_000003_0  was 0
+2012-02-07 21:15:00,369 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2012-02-07 21:15:00,465 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201202072113_0001_m_-1456793574 exited. Number of tasks it ran: 1
+2012-02-07 21:15:00,497 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201202072113_0001_m_389735424 exited. Number of tasks it ran: 1
+2012-02-07 21:15:02,521 INFO org.apache.hadoop.mapred.TaskTracker: Sent out 807006 bytes for reduce: 0 from map: attempt_201202072113_0001_m_000000_0 given 807006/807002
+2012-02-07 21:15:02,521 INFO org.apache.hadoop.mapred.TaskTracker.clienttrace: src: 127.0.1.1:50060, dest: 127.0.0.1:55751, bytes: 807006, op: MAPRED_SHUFFLE, cliID: attempt_201202072113_0001_m_000000_0
+2012-02-07 21:15:02,552 INFO org.apache.hadoop.mapred.TaskTracker: Sent out 740514 bytes for reduce: 0 from map: attempt_201202072113_0001_m_000001_0 given 740514/740510
+2012-02-07 21:15:02,552 INFO org.apache.hadoop.mapred.TaskTracker.clienttrace: src: 127.0.1.1:50060, dest: 127.0.0.1:55751, bytes: 740514, op: MAPRED_SHUFFLE, cliID: attempt_201202072113_0001_m_000001_0
+2012-02-07 21:15:03,108 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202072113_0001_r_000000_0 0.16666667% reduce > copy (2 of 4 at 0.25 MB/s) > 
+2012-02-07 21:15:06,112 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202072113_0001_r_000000_0 0.16666667% reduce > copy (2 of 4 at 0.25 MB/s) > 
+2012-02-07 21:15:07,585 INFO org.apache.hadoop.mapred.TaskTracker: Sent out 466814 bytes for reduce: 0 from map: attempt_201202072113_0001_m_000002_0 given 466814/466810
+2012-02-07 21:15:07,610 INFO org.apache.hadoop.mapred.TaskTracker.clienttrace: src: 127.0.1.1:50060, dest: 127.0.0.1:55752, bytes: 466814, op: MAPRED_SHUFFLE, cliID: attempt_201202072113_0001_m_000002_0
+2012-02-07 21:15:07,624 INFO org.apache.hadoop.mapred.TaskTracker: Sent out 267013 bytes for reduce: 0 from map: attempt_201202072113_0001_m_000003_0 given 267013/267009
+2012-02-07 21:15:07,624 INFO org.apache.hadoop.mapred.TaskTracker.clienttrace: src: 127.0.1.1:50060, dest: 127.0.0.1:55753, bytes: 267013, op: MAPRED_SHUFFLE, cliID: attempt_201202072113_0001_m_000003_0
+2012-02-07 21:15:08,345 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202072113_0001_r_000000_0 0.16666667% reduce > copy (2 of 4 at 0.25 MB/s) > 
+2012-02-07 21:15:08,952 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202072113_0001_r_000000_0 0.16666667% reduce > copy (2 of 4 at 0.25 MB/s) > 
+2012-02-07 21:15:10,625 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201202072113_0001_r_000000_0 is in commit-pending, task state:COMMIT_PENDING
+2012-02-07 21:15:10,625 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202072113_0001_r_000000_0 0.16666667% reduce > copy (2 of 4 at 0.25 MB/s) > 
+2012-02-07 21:15:12,037 INFO org.apache.hadoop.mapred.TaskTracker: Received commit task action for attempt_201202072113_0001_r_000000_0
+2012-02-07 21:15:12,116 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202072113_0001_r_000000_0 1.0% reduce > reduce
+2012-02-07 21:15:12,687 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202072113_0001_r_000000_0 1.0% reduce > reduce
+2012-02-07 21:15:12,689 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201202072113_0001_r_000000_0 is done.
+2012-02-07 21:15:12,689 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201202072113_0001_r_000000_0  was 0
+2012-02-07 21:15:12,691 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2012-02-07 21:15:12,816 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201202072113_0001_r_-1075188447 exited. Number of tasks it ran: 1
+2012-02-07 21:15:15,052 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201202072113_0001_m_000004_0 task's state:UNASSIGNED
+2012-02-07 21:15:15,052 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201202072113_0001_m_000004_0
+2012-02-07 21:15:15,052 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201202072113_0001_m_000004_0
+2012-02-07 21:15:15,054 INFO org.apache.hadoop.mapred.TaskTracker: Received KillTaskAction for task: attempt_201202072113_0001_r_000000_0
+2012-02-07 21:15:15,054 INFO org.apache.hadoop.mapred.TaskTracker: About to purge task: attempt_201202072113_0001_r_000000_0
+2012-02-07 21:15:15,055 INFO org.apache.hadoop.mapred.TaskRunner: attempt_201202072113_0001_r_000000_0 done; removing files.
+2012-02-07 21:15:15,093 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201202072113_0001_m_-1363388406
+2012-02-07 21:15:15,093 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201202072113_0001_m_-1363388406 spawned.
+2012-02-07 21:15:15,734 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201202072113_0001_m_-1363388406 given task: attempt_201202072113_0001_m_000004_0
+2012-02-07 21:15:16,174 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202072113_0001_m_000004_0 0.0% 
+2012-02-07 21:15:16,224 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202072113_0001_m_000004_0 0.0% cleanup
+2012-02-07 21:15:16,226 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201202072113_0001_m_000004_0 is done.
+2012-02-07 21:15:16,226 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201202072113_0001_m_000004_0  was 0
+2012-02-07 21:15:16,226 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2012-02-07 21:15:16,298 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201202072113_0001_m_-1363388406 exited. Number of tasks it ran: 1
+2012-02-07 21:15:18,053 INFO org.apache.hadoop.mapred.TaskTracker: org.apache.hadoop.util.DiskChecker$DiskErrorException: Could not find taskTracker/jobcache/job_201202072113_0001/attempt_201202072113_0001_m_000004_0/output/file.out in any of the configured local directories
+2012-02-07 21:15:18,173 INFO org.apache.hadoop.mapred.TaskTracker: Received 'KillJobAction' for job: job_201202072113_0001
+2012-02-07 21:15:18,173 INFO org.apache.hadoop.mapred.TaskRunner: attempt_201202072113_0001_m_000003_0 done; removing files.
+2012-02-07 21:15:18,175 INFO org.apache.hadoop.mapred.TaskRunner: attempt_201202072113_0001_m_000000_0 done; removing files.
+2012-02-07 21:15:18,177 INFO org.apache.hadoop.mapred.TaskRunner: attempt_201202072113_0001_m_000001_0 done; removing files.
+2012-02-07 21:15:18,179 INFO org.apache.hadoop.mapred.TaskRunner: attempt_201202072113_0001_m_000004_0 done; removing files.
+2012-02-07 21:15:18,185 INFO org.apache.hadoop.mapred.IndexCache: Map ID attempt_201202072113_0001_m_000004_0 not found in cache
+2012-02-07 21:15:18,185 INFO org.apache.hadoop.mapred.TaskRunner: attempt_201202072113_0001_m_000002_0 done; removing files.
+2012-02-07 21:16:28,841 INFO org.apache.hadoop.mapred.TaskTracker: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down TaskTracker at aparna-magicworld/127.0.1.1
+************************************************************/
+2012-02-07 21:17:31,773 INFO org.apache.hadoop.mapred.TaskTracker: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting TaskTracker
+STARTUP_MSG:   host = aparna-magicworld/127.0.1.1
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.2
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-0.20 -r 911707; compiled by 'chrisdo' on Fri Feb 19 08:07:34 UTC 2010
+************************************************************/
+2012-02-07 21:17:36,995 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2012-02-07 21:17:37,164 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50060
+2012-02-07 21:17:37,174 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50060 webServer.getConnectors()[0].getLocalPort() returned 50060
+2012-02-07 21:17:37,174 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50060
+2012-02-07 21:17:37,174 INFO org.mortbay.log: jetty-6.1.14
+2012-02-07 21:17:39,619 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50060
+2012-02-07 21:17:39,628 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=TaskTracker, sessionId=
+2012-02-07 21:17:39,645 INFO org.apache.hadoop.ipc.metrics.RpcMetrics: Initializing RPC Metrics with hostName=TaskTracker, port=39977
+2012-02-07 21:17:39,720 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2012-02-07 21:17:39,722 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 39977: starting
+2012-02-07 21:17:39,722 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 39977: starting
+2012-02-07 21:17:39,728 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 39977: starting
+2012-02-07 21:17:39,728 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 39977: starting
+2012-02-07 21:17:39,729 INFO org.apache.hadoop.mapred.TaskTracker: TaskTracker up at: localhost/127.0.0.1:39977
+2012-02-07 21:17:39,729 INFO org.apache.hadoop.mapred.TaskTracker: Starting tracker tracker_aparna-magicworld:localhost/127.0.0.1:39977
+2012-02-07 21:17:39,729 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 39977: starting
+2012-02-07 21:17:39,816 INFO org.apache.hadoop.mapred.TaskTracker:  Using MemoryCalculatorPlugin : org.apache.hadoop.util.LinuxMemoryCalculatorPlugin@1dcc2a3
+2012-02-07 21:17:39,821 WARN org.apache.hadoop.mapred.TaskTracker: TaskTracker's totalMemoryAllottedForTasks is -1. TaskMemoryManager is disabled.
+2012-02-07 21:17:39,822 INFO org.apache.hadoop.mapred.IndexCache: IndexCache created with max memory = 10485760
+2012-02-07 21:17:39,826 INFO org.apache.hadoop.mapred.TaskTracker: Starting thread: Map-events fetcher for all reduce tasks on tracker_aparna-magicworld:localhost/127.0.0.1:39977
+2012-02-07 21:18:10,163 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201202072117_0001_m_000005_0 task's state:UNASSIGNED
+2012-02-07 21:18:10,166 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201202072117_0001_m_000005_0
+2012-02-07 21:18:10,167 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201202072117_0001_m_000005_0
+2012-02-07 21:18:10,586 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201202072117_0001_m_-2093479224
+2012-02-07 21:18:10,588 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201202072117_0001_m_-2093479224 spawned.
+2012-02-07 21:18:11,227 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201202072117_0001_m_-2093479224 given task: attempt_201202072117_0001_m_000005_0
+2012-02-07 21:18:11,684 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202072117_0001_m_000005_0 0.0% setup
+2012-02-07 21:18:11,686 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201202072117_0001_m_000005_0 is done.
+2012-02-07 21:18:11,686 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201202072117_0001_m_000005_0  was 0
+2012-02-07 21:18:11,688 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2012-02-07 21:18:11,870 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201202072117_0001_m_-2093479224 exited. Number of tasks it ran: 1
+2012-02-07 21:18:13,163 INFO org.apache.hadoop.mapred.TaskTracker: org.apache.hadoop.util.DiskChecker$DiskErrorException: Could not find taskTracker/jobcache/job_201202072117_0001/attempt_201202072117_0001_m_000005_0/output/file.out in any of the configured local directories
+2012-02-07 21:18:13,183 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201202072117_0001_m_000000_0 task's state:UNASSIGNED
+2012-02-07 21:18:13,183 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201202072117_0001_m_000001_0 task's state:UNASSIGNED
+2012-02-07 21:18:13,183 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201202072117_0001_m_000000_0
+2012-02-07 21:18:13,183 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201202072117_0001_m_000000_0
+2012-02-07 21:18:13,183 INFO org.apache.hadoop.mapred.TaskTracker: Received KillTaskAction for task: attempt_201202072117_0001_m_000005_0
+2012-02-07 21:18:13,183 INFO org.apache.hadoop.mapred.TaskTracker: About to purge task: attempt_201202072117_0001_m_000005_0
+2012-02-07 21:18:13,184 INFO org.apache.hadoop.mapred.TaskRunner: attempt_201202072117_0001_m_000005_0 done; removing files.
+2012-02-07 21:18:13,185 INFO org.apache.hadoop.mapred.IndexCache: Map ID attempt_201202072117_0001_m_000005_0 not found in cache
+2012-02-07 21:18:13,256 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201202072117_0001_m_000001_0
+2012-02-07 21:18:13,256 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 1 and trying to launch attempt_201202072117_0001_m_000001_0
+2012-02-07 21:18:13,269 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201202072117_0001_m_1370130090
+2012-02-07 21:18:13,278 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201202072117_0001_m_1370130090 spawned.
+2012-02-07 21:18:13,330 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201202072117_0001_m_-2026217963
+2012-02-07 21:18:13,330 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201202072117_0001_m_-2026217963 spawned.
+2012-02-07 21:18:14,186 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201202072117_0001_m_-2026217963 given task: attempt_201202072117_0001_m_000001_0
+2012-02-07 21:18:14,188 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201202072117_0001_m_1370130090 given task: attempt_201202072117_0001_m_000000_0
+2012-02-07 21:18:19,572 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202072117_0001_m_000001_0 1.0% 
+2012-02-07 21:18:19,585 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201202072117_0001_m_000001_0 is done.
+2012-02-07 21:18:19,585 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201202072117_0001_m_000001_0  was 0
+2012-02-07 21:18:19,586 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 1
+2012-02-07 21:18:19,653 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201202072117_0001_m_-2026217963 exited. Number of tasks it ran: 1
+2012-02-07 21:18:19,736 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202072117_0001_m_000000_0 1.0% 
+2012-02-07 21:18:19,737 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201202072117_0001_m_000000_0 is done.
+2012-02-07 21:18:19,738 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201202072117_0001_m_000000_0  was 0
+2012-02-07 21:18:19,738 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2012-02-07 21:18:19,801 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201202072117_0001_m_1370130090 exited. Number of tasks it ran: 1
+2012-02-07 21:18:22,234 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201202072117_0001_m_000002_0 task's state:UNASSIGNED
+2012-02-07 21:18:22,234 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201202072117_0001_m_000003_0 task's state:UNASSIGNED
+2012-02-07 21:18:22,234 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201202072117_0001_m_000002_0
+2012-02-07 21:18:22,234 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201202072117_0001_m_000002_0
+2012-02-07 21:18:22,235 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201202072117_0001_r_000000_0 task's state:UNASSIGNED
+2012-02-07 21:18:22,236 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201202072117_0001_r_000000_0
+2012-02-07 21:18:22,236 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201202072117_0001_r_000000_0
+2012-02-07 21:18:22,301 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201202072117_0001_m_000003_0
+2012-02-07 21:18:22,302 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 1 and trying to launch attempt_201202072117_0001_m_000003_0
+2012-02-07 21:18:22,302 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201202072117_0001_r_-2093479224
+2012-02-07 21:18:22,307 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201202072117_0001_r_-2093479224 spawned.
+2012-02-07 21:18:22,327 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201202072117_0001_m_1958940882
+2012-02-07 21:18:22,335 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201202072117_0001_m_1958940882 spawned.
+2012-02-07 21:18:22,431 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201202072117_0001_m_1786121906
+2012-02-07 21:18:22,435 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201202072117_0001_m_1786121906 spawned.
+2012-02-07 21:18:23,735 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201202072117_0001_m_1786121906 given task: attempt_201202072117_0001_m_000003_0
+2012-02-07 21:18:23,757 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201202072117_0001_r_-2093479224 given task: attempt_201202072117_0001_r_000000_0
+2012-02-07 21:18:24,116 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201202072117_0001_m_1958940882 given task: attempt_201202072117_0001_m_000002_0
+2012-02-07 21:18:28,033 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202072117_0001_m_000003_0 1.0% 
+2012-02-07 21:18:28,044 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201202072117_0001_m_000003_0 is done.
+2012-02-07 21:18:28,044 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201202072117_0001_m_000003_0  was 0
+2012-02-07 21:18:28,045 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 1
+2012-02-07 21:18:28,181 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201202072117_0001_m_1786121906 exited. Number of tasks it ran: 1
+2012-02-07 21:18:28,833 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202072117_0001_m_000002_0 1.0% 
+2012-02-07 21:18:28,835 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201202072117_0001_m_000002_0 is done.
+2012-02-07 21:18:28,835 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201202072117_0001_m_000002_0  was 0
+2012-02-07 21:18:28,836 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2012-02-07 21:18:28,874 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201202072117_0001_m_1958940882 exited. Number of tasks it ran: 1
+2012-02-07 21:18:30,339 INFO org.apache.hadoop.mapred.TaskTracker: Sent out 807006 bytes for reduce: 0 from map: attempt_201202072117_0001_m_000000_0 given 807006/807002
+2012-02-07 21:18:30,340 INFO org.apache.hadoop.mapred.TaskTracker.clienttrace: src: 127.0.1.1:50060, dest: 127.0.0.1:55859, bytes: 807006, op: MAPRED_SHUFFLE, cliID: attempt_201202072117_0001_m_000000_0
+2012-02-07 21:18:30,390 INFO org.apache.hadoop.mapred.TaskTracker: Sent out 740514 bytes for reduce: 0 from map: attempt_201202072117_0001_m_000001_0 given 740514/740510
+2012-02-07 21:18:30,391 INFO org.apache.hadoop.mapred.TaskTracker.clienttrace: src: 127.0.1.1:50060, dest: 127.0.0.1:55859, bytes: 740514, op: MAPRED_SHUFFLE, cliID: attempt_201202072117_0001_m_000001_0
+2012-02-07 21:18:30,411 INFO org.apache.hadoop.mapred.TaskTracker: Sent out 267013 bytes for reduce: 0 from map: attempt_201202072117_0001_m_000003_0 given 267013/267009
+2012-02-07 21:18:30,411 INFO org.apache.hadoop.mapred.TaskTracker.clienttrace: src: 127.0.1.1:50060, dest: 127.0.0.1:55860, bytes: 267013, op: MAPRED_SHUFFLE, cliID: attempt_201202072117_0001_m_000003_0
+2012-02-07 21:18:30,896 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202072117_0001_r_000000_0 0.25% reduce > copy (3 of 4 at 0.29 MB/s) > 
+2012-02-07 21:18:33,899 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202072117_0001_r_000000_0 0.25% reduce > copy (3 of 4 at 0.29 MB/s) > 
+2012-02-07 21:18:35,437 INFO org.apache.hadoop.mapred.TaskTracker: Sent out 466814 bytes for reduce: 0 from map: attempt_201202072117_0001_m_000002_0 given 466814/466810
+2012-02-07 21:18:35,438 INFO org.apache.hadoop.mapred.TaskTracker.clienttrace: src: 127.0.1.1:50060, dest: 127.0.0.1:55866, bytes: 466814, op: MAPRED_SHUFFLE, cliID: attempt_201202072117_0001_m_000002_0
+2012-02-07 21:18:36,155 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202072117_0001_r_000000_0 0.25% reduce > copy (3 of 4 at 0.29 MB/s) > 
+2012-02-07 21:18:36,752 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202072117_0001_r_000000_0 0.25% reduce > copy (3 of 4 at 0.29 MB/s) > 
+2012-02-07 21:18:38,093 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201202072117_0001_r_000000_0 is in commit-pending, task state:COMMIT_PENDING
+2012-02-07 21:18:38,093 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202072117_0001_r_000000_0 0.25% reduce > copy (3 of 4 at 0.29 MB/s) > 
+2012-02-07 21:18:39,904 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202072117_0001_r_000000_0 1.0% reduce > reduce
+2012-02-07 21:18:40,316 INFO org.apache.hadoop.mapred.TaskTracker: Received commit task action for attempt_201202072117_0001_r_000000_0
+2012-02-07 21:18:41,159 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202072117_0001_r_000000_0 1.0% reduce > reduce
+2012-02-07 21:18:41,161 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201202072117_0001_r_000000_0 is done.
+2012-02-07 21:18:41,161 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201202072117_0001_r_000000_0  was 0
+2012-02-07 21:18:41,164 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2012-02-07 21:18:41,186 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201202072117_0001_r_-2093479224 exited. Number of tasks it ran: 1
+2012-02-07 21:18:43,332 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201202072117_0001_m_000004_0 task's state:UNASSIGNED
+2012-02-07 21:18:43,332 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201202072117_0001_m_000004_0
+2012-02-07 21:18:43,332 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201202072117_0001_m_000004_0
+2012-02-07 21:18:43,333 INFO org.apache.hadoop.mapred.TaskTracker: Received KillTaskAction for task: attempt_201202072117_0001_r_000000_0
+2012-02-07 21:18:43,334 INFO org.apache.hadoop.mapred.TaskTracker: About to purge task: attempt_201202072117_0001_r_000000_0
+2012-02-07 21:18:43,334 INFO org.apache.hadoop.mapred.TaskRunner: attempt_201202072117_0001_r_000000_0 done; removing files.
+2012-02-07 21:18:43,377 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201202072117_0001_m_-909872716
+2012-02-07 21:18:43,377 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201202072117_0001_m_-909872716 spawned.
+2012-02-07 21:18:43,983 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201202072117_0001_m_-909872716 given task: attempt_201202072117_0001_m_000004_0
+2012-02-07 21:18:44,525 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202072117_0001_m_000004_0 0.0% 
+2012-02-07 21:18:44,618 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202072117_0001_m_000004_0 0.0% cleanup
+2012-02-07 21:18:44,620 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201202072117_0001_m_000004_0 is done.
+2012-02-07 21:18:44,620 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201202072117_0001_m_000004_0  was 0
+2012-02-07 21:18:44,621 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2012-02-07 21:18:44,683 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201202072117_0001_m_-909872716 exited. Number of tasks it ran: 1
+2012-02-07 21:18:46,332 INFO org.apache.hadoop.mapred.TaskTracker: org.apache.hadoop.util.DiskChecker$DiskErrorException: Could not find taskTracker/jobcache/job_201202072117_0001/attempt_201202072117_0001_m_000004_0/output/file.out in any of the configured local directories
+2012-02-07 21:18:46,397 INFO org.apache.hadoop.mapred.TaskTracker: Received 'KillJobAction' for job: job_201202072117_0001
+2012-02-07 21:18:46,397 INFO org.apache.hadoop.mapred.TaskRunner: attempt_201202072117_0001_m_000003_0 done; removing files.
+2012-02-07 21:18:46,400 INFO org.apache.hadoop.mapred.TaskRunner: attempt_201202072117_0001_m_000000_0 done; removing files.
+2012-02-07 21:18:46,404 INFO org.apache.hadoop.mapred.TaskRunner: attempt_201202072117_0001_m_000001_0 done; removing files.
+2012-02-07 21:18:46,409 INFO org.apache.hadoop.mapred.TaskRunner: attempt_201202072117_0001_m_000004_0 done; removing files.
+2012-02-07 21:18:46,411 INFO org.apache.hadoop.mapred.IndexCache: Map ID attempt_201202072117_0001_m_000004_0 not found in cache
+2012-02-07 21:18:46,411 INFO org.apache.hadoop.mapred.TaskRunner: attempt_201202072117_0001_m_000002_0 done; removing files.
+2012-02-07 21:41:34,883 ERROR org.apache.hadoop.mapred.TaskTracker: Caught exception: java.io.IOException: Call to master/192.168.11.19:54311 failed on local exception: java.io.IOException: Connection timed out
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:775)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at org.apache.hadoop.mapred.$Proxy4.heartbeat(Unknown Source)
+	at org.apache.hadoop.mapred.TaskTracker.transmitHeartBeat(TaskTracker.java:1215)
+	at org.apache.hadoop.mapred.TaskTracker.offerService(TaskTracker.java:1037)
+	at org.apache.hadoop.mapred.TaskTracker.run(TaskTracker.java:1720)
+	at org.apache.hadoop.mapred.TaskTracker.main(TaskTracker.java:2833)
+Caused by: java.io.IOException: Connection timed out
+	at sun.nio.ch.FileDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:21)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:202)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:175)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:243)
+	at org.apache.hadoop.net.SocketInputStream$Reader.performIO(SocketInputStream.java:55)
+	at org.apache.hadoop.net.SocketIOWithTimeout.doIO(SocketIOWithTimeout.java:142)
+	at org.apache.hadoop.net.SocketInputStream.read(SocketInputStream.java:155)
+	at org.apache.hadoop.net.SocketInputStream.read(SocketInputStream.java:128)
+	at java.io.FilterInputStream.read(FilterInputStream.java:116)
+	at org.apache.hadoop.ipc.Client$Connection$PingInputStream.read(Client.java:276)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:218)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:237)
+	at java.io.DataInputStream.readInt(DataInputStream.java:370)
+	at org.apache.hadoop.ipc.Client$Connection.receiveResponse(Client.java:501)
+	at org.apache.hadoop.ipc.Client$Connection.run(Client.java:446)
+
+2012-02-07 21:41:34,883 INFO org.apache.hadoop.mapred.TaskTracker: Resending 'status' to 'master' with reponseId '43
+2012-02-07 21:41:55,906 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 0 time(s).
+2012-02-07 21:42:16,926 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 1 time(s).
+2012-02-07 21:42:37,946 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 2 time(s).
+2012-02-07 21:42:58,966 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 3 time(s).
+2012-02-07 21:43:19,986 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 4 time(s).
+2012-02-07 21:43:41,006 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 5 time(s).
+2012-02-07 21:44:02,026 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 6 time(s).
+2012-02-07 21:44:23,046 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 7 time(s).
+2012-02-07 21:44:44,066 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 8 time(s).
+2012-02-07 21:45:05,086 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 9 time(s).
+2012-02-07 21:45:26,106 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 10 time(s).
+2012-02-07 21:45:47,126 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 11 time(s).
+2012-02-07 21:46:08,146 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 12 time(s).
+2012-02-07 21:46:29,162 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 13 time(s).
+2012-02-07 21:46:50,170 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 14 time(s).
+2012-02-07 21:47:11,190 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 15 time(s).
+2012-02-07 21:47:32,210 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 16 time(s).
+2012-02-07 21:47:53,230 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 17 time(s).
+2012-02-07 21:48:14,250 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 18 time(s).
+2012-02-07 21:48:35,262 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 19 time(s).
+2012-02-07 21:48:56,276 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 20 time(s).
+2012-02-07 21:49:17,294 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 21 time(s).
+2012-02-07 21:49:38,311 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 22 time(s).
+2012-02-07 21:49:59,330 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 23 time(s).
+2012-02-07 21:50:20,350 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 24 time(s).
+2012-02-07 21:50:41,370 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 25 time(s).
+2012-02-07 21:51:02,390 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 26 time(s).
+2012-02-07 21:51:23,410 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 27 time(s).
+2012-02-07 21:51:44,431 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 28 time(s).
+2012-02-07 21:52:05,450 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 29 time(s).
+2012-02-07 21:52:26,470 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 30 time(s).
+2012-02-07 21:52:47,490 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 31 time(s).
+2012-02-07 21:53:08,510 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 32 time(s).
+2012-02-07 21:53:29,530 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 33 time(s).
+2012-02-07 21:53:50,543 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 34 time(s).
+2012-02-07 21:54:11,555 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 35 time(s).
+2012-02-07 21:54:32,573 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 36 time(s).
+2012-02-07 21:54:53,594 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 37 time(s).
+2012-02-07 21:55:14,614 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 38 time(s).
+2012-02-07 21:55:35,617 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 39 time(s).
+2012-02-07 21:55:56,630 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 40 time(s).
+2012-02-07 21:56:17,647 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 41 time(s).
+2012-02-07 21:56:38,667 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 42 time(s).
+2012-02-07 21:56:59,687 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 43 time(s).
+2012-02-07 21:57:20,706 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 44 time(s).
+2012-02-07 21:57:40,728 ERROR org.apache.hadoop.mapred.TaskTracker: Caught exception: java.net.SocketTimeoutException: Call to master/192.168.11.19:54311 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54311]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at org.apache.hadoop.mapred.$Proxy4.heartbeat(Unknown Source)
+	at org.apache.hadoop.mapred.TaskTracker.transmitHeartBeat(TaskTracker.java:1215)
+	at org.apache.hadoop.mapred.TaskTracker.offerService(TaskTracker.java:1037)
+	at org.apache.hadoop.mapred.TaskTracker.run(TaskTracker.java:1720)
+	at org.apache.hadoop.mapred.TaskTracker.main(TaskTracker.java:2833)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54311]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 6 more
+
+2012-02-07 21:57:40,728 INFO org.apache.hadoop.mapred.TaskTracker: Resending 'status' to 'master' with reponseId '43
+2012-02-07 21:58:01,753 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 0 time(s).
+2012-02-07 21:58:22,764 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 1 time(s).
+2012-02-07 21:58:43,774 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 2 time(s).
+2012-02-07 21:59:04,794 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 3 time(s).
+2012-02-07 21:59:25,814 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 4 time(s).
+2012-02-07 21:59:46,815 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 5 time(s).
+2012-02-07 22:00:07,834 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 6 time(s).
+2012-02-07 22:00:28,852 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 7 time(s).
+2012-02-07 22:00:49,861 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 8 time(s).
+2012-02-07 22:01:10,880 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 9 time(s).
+2012-02-07 22:01:31,898 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 10 time(s).
+2012-02-07 22:01:52,914 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 11 time(s).
+2012-02-07 22:02:13,932 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 12 time(s).
+2012-02-07 22:02:34,939 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 13 time(s).
+2012-02-07 22:02:55,958 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 14 time(s).
+2012-02-07 22:03:16,965 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 15 time(s).
+2012-02-07 22:03:37,986 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 16 time(s).
+2012-02-07 22:03:59,006 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 17 time(s).
+2012-02-07 22:04:20,022 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 18 time(s).
+2012-02-07 22:04:41,042 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 19 time(s).
+2012-02-07 22:05:02,062 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 20 time(s).
+2012-02-07 22:05:23,082 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 21 time(s).
+2012-02-07 22:05:44,102 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 22 time(s).
+2012-02-07 22:06:05,122 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 23 time(s).
+2012-02-07 22:06:26,142 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 24 time(s).
+2012-02-07 22:06:47,162 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 25 time(s).
+2012-02-07 22:07:08,177 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 26 time(s).
+2012-02-07 22:07:29,195 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 27 time(s).
+2012-02-07 22:07:50,211 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 28 time(s).
+2012-02-07 22:08:11,228 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 29 time(s).
+2012-02-07 22:08:32,238 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 30 time(s).
+2012-02-07 22:08:53,248 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 31 time(s).
+2012-02-07 22:09:14,267 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 32 time(s).
+2012-02-07 22:09:35,287 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 33 time(s).
+2012-02-07 22:09:56,291 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 34 time(s).
+2012-02-07 22:10:17,309 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 35 time(s).
+2012-02-07 22:10:38,318 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 36 time(s).
+2012-02-07 22:10:59,336 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 37 time(s).
+2012-02-07 22:11:20,338 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 38 time(s).
+2012-02-07 22:11:41,356 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 39 time(s).
+2012-02-07 22:12:02,375 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 40 time(s).
+2012-02-07 22:12:23,381 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 41 time(s).
+2012-02-07 22:12:44,398 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 42 time(s).
+2012-02-07 22:13:05,418 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 43 time(s).
+2012-02-07 22:13:26,438 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 44 time(s).
+2012-02-07 22:13:46,458 ERROR org.apache.hadoop.mapred.TaskTracker: Caught exception: java.net.SocketTimeoutException: Call to master/192.168.11.19:54311 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54311]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at org.apache.hadoop.mapred.$Proxy4.heartbeat(Unknown Source)
+	at org.apache.hadoop.mapred.TaskTracker.transmitHeartBeat(TaskTracker.java:1215)
+	at org.apache.hadoop.mapred.TaskTracker.offerService(TaskTracker.java:1037)
+	at org.apache.hadoop.mapred.TaskTracker.run(TaskTracker.java:1720)
+	at org.apache.hadoop.mapred.TaskTracker.main(TaskTracker.java:2833)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54311]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 6 more
+
+2012-02-07 22:13:46,458 INFO org.apache.hadoop.mapred.TaskTracker: Resending 'status' to 'master' with reponseId '43
+2012-02-07 22:14:07,491 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 0 time(s).
+2012-02-07 22:14:28,510 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 1 time(s).
+2012-02-07 22:14:49,526 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 2 time(s).
+2012-02-07 22:15:10,546 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 3 time(s).
+2012-02-07 22:15:31,566 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 4 time(s).
+2012-02-07 22:15:52,586 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 5 time(s).
+2012-02-07 22:16:13,606 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 6 time(s).
+2012-02-07 22:16:34,623 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 7 time(s).
+2012-02-07 22:16:55,642 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 8 time(s).
+2012-02-07 22:17:16,653 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 9 time(s).
+2012-02-07 22:17:37,662 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 10 time(s).
+2012-02-07 22:17:58,681 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 11 time(s).
+2012-02-07 22:18:19,702 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 12 time(s).
+2012-02-07 22:18:40,722 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 13 time(s).
+2012-02-07 22:19:01,728 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 14 time(s).
+2012-02-07 22:19:22,748 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 15 time(s).
+2012-02-07 22:19:43,759 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 16 time(s).
+2012-02-07 22:20:04,778 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 17 time(s).
+2012-02-07 22:20:25,796 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 18 time(s).
+2012-02-07 22:20:46,816 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 19 time(s).
+2012-02-07 22:21:07,821 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 20 time(s).
+2012-02-07 22:21:28,839 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 21 time(s).
+2012-02-07 22:21:49,860 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 22 time(s).
+2012-02-07 22:22:10,879 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 23 time(s).
+2012-02-07 22:22:31,889 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 24 time(s).
+2012-02-07 22:22:52,902 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 25 time(s).
+2012-02-07 22:23:13,913 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 26 time(s).
+2012-02-07 22:23:34,914 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 27 time(s).
+2012-02-07 22:23:55,927 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 28 time(s).
+2012-02-07 22:24:16,935 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 29 time(s).
+2012-02-07 22:24:37,952 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 30 time(s).
+2012-02-07 22:24:58,970 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 31 time(s).
+2012-02-07 22:25:19,990 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 32 time(s).
+2012-02-07 22:25:41,009 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 33 time(s).
+2012-02-07 22:26:02,030 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 34 time(s).
+2012-02-07 22:26:23,044 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 35 time(s).
+2012-02-07 22:26:44,054 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 36 time(s).
+2012-02-07 22:27:05,074 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 37 time(s).
+2012-02-07 22:27:26,090 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 38 time(s).
+2012-02-07 22:27:47,110 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 39 time(s).
+2012-02-07 22:28:08,130 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 40 time(s).
+2012-02-07 22:28:29,150 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 41 time(s).
+2012-02-07 22:28:50,170 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 42 time(s).
+2012-02-07 22:29:11,187 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 43 time(s).
+2012-02-07 22:29:32,205 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 44 time(s).
+2012-02-07 22:29:52,224 ERROR org.apache.hadoop.mapred.TaskTracker: Caught exception: java.net.SocketTimeoutException: Call to master/192.168.11.19:54311 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54311]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at org.apache.hadoop.mapred.$Proxy4.heartbeat(Unknown Source)
+	at org.apache.hadoop.mapred.TaskTracker.transmitHeartBeat(TaskTracker.java:1215)
+	at org.apache.hadoop.mapred.TaskTracker.offerService(TaskTracker.java:1037)
+	at org.apache.hadoop.mapred.TaskTracker.run(TaskTracker.java:1720)
+	at org.apache.hadoop.mapred.TaskTracker.main(TaskTracker.java:2833)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54311]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 6 more
+
+2012-02-07 22:29:52,224 INFO org.apache.hadoop.mapred.TaskTracker: Resending 'status' to 'master' with reponseId '43
+2012-02-07 22:30:13,254 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 0 time(s).
+2012-02-07 22:30:34,274 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 1 time(s).
+2012-02-07 22:30:55,292 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 2 time(s).
+2012-02-07 22:31:16,312 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 3 time(s).
+2012-02-07 22:31:37,328 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 4 time(s).
+2012-02-07 22:31:58,335 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 5 time(s).
+2012-02-07 22:32:19,338 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 6 time(s).
+2012-02-07 22:32:40,345 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 7 time(s).
+2012-02-07 22:33:01,348 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 8 time(s).
+2012-02-07 22:33:22,352 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 9 time(s).
+2012-02-07 22:33:43,354 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 10 time(s).
+2012-02-07 22:34:04,363 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 11 time(s).
+2012-02-07 22:34:25,378 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 12 time(s).
+2012-02-07 22:34:46,398 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 13 time(s).
+2012-02-07 22:35:07,405 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 14 time(s).
+2012-02-07 22:35:28,422 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 15 time(s).
+2012-02-07 22:35:49,430 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 16 time(s).
+2012-02-07 22:36:10,448 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 17 time(s).
+2012-02-07 22:36:31,458 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 18 time(s).
+2012-02-07 22:36:52,478 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 19 time(s).
+2012-02-07 22:37:13,498 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 20 time(s).
+2012-02-07 22:37:34,518 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 21 time(s).
+2012-02-07 22:37:55,538 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 22 time(s).
+2012-02-07 22:38:16,558 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 23 time(s).
+2012-02-07 22:38:37,579 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 24 time(s).
+2012-02-07 22:38:58,598 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 25 time(s).
+2012-02-07 22:39:19,605 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 26 time(s).
+2012-02-07 22:39:40,626 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 27 time(s).
+2012-02-07 22:40:01,646 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 28 time(s).
+2012-02-07 22:40:22,666 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 29 time(s).
+2012-02-07 22:40:43,683 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 30 time(s).
+2012-02-07 22:41:04,694 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 31 time(s).
+2012-02-07 22:41:25,714 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 32 time(s).
+2012-02-07 22:41:46,730 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 33 time(s).
+2012-02-07 22:42:07,743 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 34 time(s).
+2012-02-07 22:42:28,751 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 35 time(s).
+2012-02-07 22:42:49,766 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 36 time(s).
+2012-02-07 22:43:10,786 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 37 time(s).
+2012-02-07 22:43:31,799 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 38 time(s).
+2012-02-07 22:43:52,806 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 39 time(s).
+2012-02-07 22:44:13,824 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 40 time(s).
+2012-02-07 22:44:34,842 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 41 time(s).
+2012-02-07 22:44:55,862 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 42 time(s).
+2012-02-07 22:45:16,873 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 43 time(s).
+2012-02-07 22:45:37,894 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 44 time(s).
+2012-02-07 22:45:57,914 ERROR org.apache.hadoop.mapred.TaskTracker: Caught exception: java.net.SocketTimeoutException: Call to master/192.168.11.19:54311 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54311]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at org.apache.hadoop.mapred.$Proxy4.heartbeat(Unknown Source)
+	at org.apache.hadoop.mapred.TaskTracker.transmitHeartBeat(TaskTracker.java:1215)
+	at org.apache.hadoop.mapred.TaskTracker.offerService(TaskTracker.java:1037)
+	at org.apache.hadoop.mapred.TaskTracker.run(TaskTracker.java:1720)
+	at org.apache.hadoop.mapred.TaskTracker.main(TaskTracker.java:2833)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54311]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 6 more
+
+2012-02-07 22:45:57,914 INFO org.apache.hadoop.mapred.TaskTracker: Resending 'status' to 'master' with reponseId '43
+2012-02-07 22:46:18,946 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 0 time(s).
+2012-02-07 22:46:39,964 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 1 time(s).
+2012-02-07 22:47:00,983 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 2 time(s).
+2012-02-07 22:47:22,002 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 3 time(s).
+2012-02-07 22:47:43,022 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 4 time(s).
+2012-02-07 22:48:04,042 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 5 time(s).
+2012-02-07 22:48:25,062 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 6 time(s).
+2012-02-07 22:48:46,080 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 7 time(s).
+2012-02-07 22:49:07,098 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 8 time(s).
+2012-02-07 22:49:28,104 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 9 time(s).
+2012-02-07 22:49:49,125 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 10 time(s).
+2012-02-07 22:50:10,134 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 11 time(s).
+2012-02-07 22:50:31,152 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 12 time(s).
+2012-02-07 22:50:52,160 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 13 time(s).
+2012-02-07 22:51:13,178 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 14 time(s).
+2012-02-07 22:51:34,196 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 15 time(s).
+2012-02-07 22:51:55,210 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 16 time(s).
+2012-02-07 22:52:16,230 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 17 time(s).
+2012-02-07 22:52:37,245 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 18 time(s).
+2012-02-07 22:52:58,250 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 19 time(s).
+2012-02-07 22:53:19,257 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 20 time(s).
+2012-02-07 22:53:40,275 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 21 time(s).
+2012-02-07 22:54:01,295 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 22 time(s).
+2012-02-07 22:54:22,314 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 23 time(s).
+2012-02-07 22:54:43,330 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 24 time(s).
+2012-02-07 22:55:04,346 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 25 time(s).
+2012-02-07 22:55:25,364 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 26 time(s).
+2012-02-07 22:55:46,382 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 27 time(s).
+2012-02-07 22:56:07,402 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 28 time(s).
+2012-02-07 22:56:28,422 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 29 time(s).
+2012-02-07 22:56:49,442 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 30 time(s).
+2012-02-07 22:57:10,462 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 31 time(s).
+2012-02-07 22:57:31,480 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 32 time(s).
+2012-02-07 22:57:52,491 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 33 time(s).
+2012-02-07 22:58:13,506 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 34 time(s).
+2012-02-07 22:58:34,526 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 35 time(s).
+2012-02-07 22:58:55,546 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 36 time(s).
+2012-02-07 22:59:16,566 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 37 time(s).
+2012-02-07 22:59:37,586 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 38 time(s).
+2012-02-07 22:59:58,606 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 39 time(s).
+2012-02-07 23:00:19,625 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 40 time(s).
+2012-02-07 23:00:40,639 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 41 time(s).
+2012-02-07 23:01:01,657 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 42 time(s).
+2012-02-07 23:01:22,675 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 43 time(s).
+2012-02-07 23:01:43,690 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 44 time(s).
+2012-02-07 23:02:03,710 ERROR org.apache.hadoop.mapred.TaskTracker: Caught exception: java.net.SocketTimeoutException: Call to master/192.168.11.19:54311 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54311]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at org.apache.hadoop.mapred.$Proxy4.heartbeat(Unknown Source)
+	at org.apache.hadoop.mapred.TaskTracker.transmitHeartBeat(TaskTracker.java:1215)
+	at org.apache.hadoop.mapred.TaskTracker.offerService(TaskTracker.java:1037)
+	at org.apache.hadoop.mapred.TaskTracker.run(TaskTracker.java:1720)
+	at org.apache.hadoop.mapred.TaskTracker.main(TaskTracker.java:2833)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54311]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 6 more
+
+2012-02-07 23:02:03,710 INFO org.apache.hadoop.mapred.TaskTracker: Resending 'status' to 'master' with reponseId '43
+2012-02-07 23:02:24,735 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 0 time(s).
+2012-02-07 23:02:45,750 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 1 time(s).
+2012-02-07 23:03:06,768 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 2 time(s).
+2012-02-07 23:03:27,786 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 3 time(s).
+2012-02-07 23:03:48,805 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 4 time(s).
+2012-02-07 23:04:09,812 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 5 time(s).
+2012-02-07 23:04:30,831 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 6 time(s).
+2012-02-07 23:04:51,850 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 7 time(s).
+2012-02-07 23:05:12,860 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 8 time(s).
+2012-02-07 23:05:33,878 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 9 time(s).
+2012-02-07 23:05:54,898 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 10 time(s).
+2012-02-07 23:06:15,918 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 11 time(s).
+2012-02-07 23:06:36,935 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 12 time(s).
+2012-02-07 23:06:57,954 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 13 time(s).
+2012-02-07 23:07:18,955 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 14 time(s).
+2012-02-07 23:07:39,969 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 15 time(s).
+2012-02-07 23:08:01,010 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 16 time(s).
+2012-02-07 23:08:22,028 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 17 time(s).
+2012-02-07 23:08:43,044 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 18 time(s).
+2012-02-07 23:09:04,064 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 19 time(s).
+2012-02-07 23:09:25,074 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 20 time(s).
+2012-02-07 23:09:46,087 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 21 time(s).
+2012-02-07 23:10:07,098 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 22 time(s).
+2012-02-07 23:10:28,119 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 23 time(s).
+2012-02-07 23:10:49,133 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 24 time(s).
+2012-02-07 23:11:10,153 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 25 time(s).
+2012-02-07 23:11:31,161 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 26 time(s).
+2012-02-07 23:11:52,169 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 27 time(s).
+2012-02-07 23:12:13,186 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 28 time(s).
+2012-02-07 23:12:34,201 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 29 time(s).
+2012-02-07 23:12:55,209 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 30 time(s).
+2012-02-07 23:13:16,224 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 31 time(s).
+2012-02-07 23:13:37,243 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 32 time(s).
+2012-02-07 23:13:58,262 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 33 time(s).
+2012-02-07 23:14:19,277 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 34 time(s).
+2012-02-07 23:14:40,298 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 35 time(s).
+2012-02-07 23:15:01,317 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 36 time(s).
+2012-02-07 23:15:22,334 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 37 time(s).
+2012-02-07 23:15:43,353 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 38 time(s).
+2012-02-07 23:16:04,370 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 39 time(s).
+2012-02-07 23:16:25,390 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 40 time(s).
+2012-02-07 23:16:46,408 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 41 time(s).
+2012-02-07 23:17:07,418 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 42 time(s).
+2012-02-07 23:17:28,438 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 43 time(s).
+2012-02-07 23:17:49,456 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 44 time(s).
+2012-02-07 23:18:09,474 ERROR org.apache.hadoop.mapred.TaskTracker: Caught exception: java.net.SocketTimeoutException: Call to master/192.168.11.19:54311 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54311]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at org.apache.hadoop.mapred.$Proxy4.heartbeat(Unknown Source)
+	at org.apache.hadoop.mapred.TaskTracker.transmitHeartBeat(TaskTracker.java:1215)
+	at org.apache.hadoop.mapred.TaskTracker.offerService(TaskTracker.java:1037)
+	at org.apache.hadoop.mapred.TaskTracker.run(TaskTracker.java:1720)
+	at org.apache.hadoop.mapred.TaskTracker.main(TaskTracker.java:2833)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54311]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 6 more
+
+2012-02-07 23:18:09,474 INFO org.apache.hadoop.mapred.TaskTracker: Resending 'status' to 'master' with reponseId '43
+2012-02-07 23:18:30,491 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 0 time(s).
+2012-02-07 23:18:51,506 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 1 time(s).
+2012-02-07 23:19:12,527 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 2 time(s).
+2012-02-07 23:19:33,540 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 3 time(s).
+2012-02-07 23:19:54,556 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 4 time(s).
+2012-02-07 23:20:15,569 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 5 time(s).
+2012-02-07 23:20:36,584 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 6 time(s).
+2012-02-07 23:20:57,598 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 7 time(s).
+2012-02-07 23:21:18,613 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 8 time(s).
+2012-02-07 23:21:39,622 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 9 time(s).
+2012-02-07 23:22:00,627 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 10 time(s).
+2012-02-07 23:22:21,638 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 11 time(s).
+2012-02-07 23:22:42,644 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 12 time(s).
+2012-02-07 23:23:03,646 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 13 time(s).
+2012-02-07 23:23:24,657 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 14 time(s).
+2012-02-07 23:23:45,668 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 15 time(s).
+2012-02-07 23:24:06,670 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 16 time(s).
+2012-02-07 23:24:27,682 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 17 time(s).
+2012-02-07 23:24:48,686 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 18 time(s).
+2012-02-07 23:25:09,705 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 19 time(s).
+2012-02-07 23:25:30,722 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 20 time(s).
+2012-02-07 23:25:51,741 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 21 time(s).
+2012-02-07 23:26:12,762 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 22 time(s).
+2012-02-07 23:26:33,782 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 23 time(s).
+2012-02-07 23:26:54,802 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 24 time(s).
+2012-02-07 23:27:15,821 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 25 time(s).
+2012-02-07 23:27:36,842 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 26 time(s).
+2012-02-07 23:27:57,862 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 27 time(s).
+2012-02-07 23:28:18,882 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 28 time(s).
+2012-02-07 23:28:39,902 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 29 time(s).
+2012-02-07 23:29:00,923 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 30 time(s).
+2012-02-07 23:29:21,938 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 31 time(s).
+2012-02-07 23:29:42,946 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 32 time(s).
+2012-02-07 23:30:03,966 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 33 time(s).
+2012-02-07 23:30:24,986 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 34 time(s).
+2012-02-07 23:30:46,006 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 35 time(s).
+2012-02-07 23:31:07,026 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 36 time(s).
+2012-02-07 23:31:28,046 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 37 time(s).
+2012-02-07 23:31:49,066 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 38 time(s).
+2012-02-07 23:32:10,086 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 39 time(s).
+2012-02-07 23:32:31,106 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 40 time(s).
+2012-02-07 23:32:52,126 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 41 time(s).
+2012-02-07 23:33:13,146 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 42 time(s).
+2012-02-07 23:33:34,165 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 43 time(s).
+2012-02-07 23:33:55,185 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 44 time(s).
+2012-02-07 23:34:15,190 ERROR org.apache.hadoop.mapred.TaskTracker: Caught exception: java.net.SocketTimeoutException: Call to master/192.168.11.19:54311 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54311]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at org.apache.hadoop.mapred.$Proxy4.heartbeat(Unknown Source)
+	at org.apache.hadoop.mapred.TaskTracker.transmitHeartBeat(TaskTracker.java:1215)
+	at org.apache.hadoop.mapred.TaskTracker.offerService(TaskTracker.java:1037)
+	at org.apache.hadoop.mapred.TaskTracker.run(TaskTracker.java:1720)
+	at org.apache.hadoop.mapred.TaskTracker.main(TaskTracker.java:2833)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54311]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 6 more
+
+2012-02-07 23:34:15,191 INFO org.apache.hadoop.mapred.TaskTracker: Resending 'status' to 'master' with reponseId '43
+2012-02-07 23:34:36,207 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 0 time(s).
+2012-02-07 23:34:57,218 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 1 time(s).
+2012-02-07 23:35:18,222 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 2 time(s).
+2012-02-07 23:35:39,233 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 3 time(s).
+2012-02-07 23:36:00,254 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 4 time(s).
+2012-02-07 23:36:21,259 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 5 time(s).
+2012-02-07 23:36:42,274 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 6 time(s).
+2012-02-07 23:37:03,290 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 7 time(s).
+2012-02-07 23:37:24,310 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 8 time(s).
+2012-02-07 23:37:45,326 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 9 time(s).
+2012-02-07 23:38:06,344 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 10 time(s).
+2012-02-07 23:38:27,353 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 11 time(s).
+2012-02-07 23:38:48,356 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 12 time(s).
+2012-02-07 23:39:09,364 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 13 time(s).
+2012-02-07 23:39:30,369 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 14 time(s).
+2012-02-07 23:39:51,381 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 15 time(s).
+2012-02-07 23:40:12,385 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 16 time(s).
+2012-02-07 23:40:33,406 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 17 time(s).
+2012-02-07 23:40:54,426 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 18 time(s).
+2012-02-07 23:41:15,446 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 19 time(s).
+2012-02-07 23:41:36,462 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 20 time(s).
+2012-02-07 23:41:57,480 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 21 time(s).
+2012-02-07 23:42:18,494 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 22 time(s).
+2012-02-07 23:42:39,514 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 23 time(s).
+2012-02-07 23:43:00,534 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 24 time(s).
+2012-02-07 23:43:21,554 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 25 time(s).
+2012-02-07 23:43:42,573 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 26 time(s).
+2012-02-07 23:44:03,591 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 27 time(s).
+2012-02-07 23:44:24,610 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 28 time(s).
+2012-02-07 23:44:45,630 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 29 time(s).
+2012-02-07 23:45:06,650 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 30 time(s).
+2012-02-07 23:45:27,670 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 31 time(s).
+2012-02-07 23:45:48,690 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 32 time(s).
+2012-02-07 23:46:09,710 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 33 time(s).
+2012-02-07 23:46:30,730 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 34 time(s).
+2012-02-07 23:46:51,750 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 35 time(s).
+2012-02-07 23:47:12,770 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 36 time(s).
+2012-02-07 23:47:33,790 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 37 time(s).
+2012-02-07 23:47:54,810 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 38 time(s).
+2012-02-07 23:48:15,830 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 39 time(s).
+2012-02-07 23:48:36,850 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 40 time(s).
+2012-02-07 23:48:57,870 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 41 time(s).
+2012-02-07 23:49:18,890 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 42 time(s).
+2012-02-07 23:49:39,911 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 43 time(s).
+2012-02-07 23:50:00,915 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 44 time(s).
+2012-02-07 23:50:20,919 ERROR org.apache.hadoop.mapred.TaskTracker: Caught exception: java.net.SocketTimeoutException: Call to master/192.168.11.19:54311 failed on socket timeout exception: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54311]
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:771)
+	at org.apache.hadoop.ipc.Client.call(Client.java:743)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:220)
+	at org.apache.hadoop.mapred.$Proxy4.heartbeat(Unknown Source)
+	at org.apache.hadoop.mapred.TaskTracker.transmitHeartBeat(TaskTracker.java:1215)
+	at org.apache.hadoop.mapred.TaskTracker.offerService(TaskTracker.java:1037)
+	at org.apache.hadoop.mapred.TaskTracker.run(TaskTracker.java:1720)
+	at org.apache.hadoop.mapred.TaskTracker.main(TaskTracker.java:2833)
+Caused by: java.net.SocketTimeoutException: 20000 millis timeout while waiting for channel to be ready for connect. ch : java.nio.channels.SocketChannel[connection-pending remote=master/192.168.11.19:54311]
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:213)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:404)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:304)
+	at org.apache.hadoop.ipc.Client$Connection.access$1700(Client.java:176)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:860)
+	at org.apache.hadoop.ipc.Client.call(Client.java:720)
+	... 6 more
+
+2012-02-07 23:50:20,919 INFO org.apache.hadoop.mapred.TaskTracker: Resending 'status' to 'master' with reponseId '43
+2012-02-07 23:50:41,953 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 0 time(s).
+2012-02-07 23:51:02,974 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 1 time(s).
+2012-02-07 23:51:23,982 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 2 time(s).
+2012-02-07 23:51:44,994 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 3 time(s).
+2012-02-07 23:52:06,014 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 4 time(s).
+2012-02-07 23:52:27,027 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 5 time(s).
+2012-02-07 23:52:48,048 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 6 time(s).
+2012-02-07 23:53:09,067 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 7 time(s).
+2012-02-07 23:53:30,079 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 8 time(s).
+2012-02-07 23:53:51,098 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 9 time(s).
+2012-02-07 23:54:12,117 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 10 time(s).
+2012-02-07 23:54:33,120 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 11 time(s).
+2012-02-07 23:54:54,138 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 12 time(s).
+2012-02-07 23:55:15,158 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 13 time(s).
+2012-02-07 23:55:36,176 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 14 time(s).
+2012-02-07 23:55:57,196 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 15 time(s).
+2012-02-07 23:56:18,214 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 16 time(s).
+2012-02-07 23:56:39,234 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 17 time(s).
+2012-02-07 23:57:00,254 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 18 time(s).
+2012-02-07 23:57:21,274 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 19 time(s).
+2012-02-07 23:57:42,294 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 20 time(s).
+2012-02-07 23:58:03,314 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 21 time(s).
+2012-02-07 23:58:24,334 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 22 time(s).
+2012-02-07 23:58:45,354 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 23 time(s).
+2012-02-07 23:59:06,373 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 24 time(s).
+2012-02-07 23:59:27,390 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 25 time(s).
+2012-02-07 23:59:48,410 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: master/192.168.11.19:54311. Already tried 26 time(s).
